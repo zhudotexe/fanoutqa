@@ -1,0 +1,43 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "fanoutqa"
+version = "1.0.0"
+authors = [
+    { name = "Andrew Zhu", email = "andrew@zhu.codes" },
+    { name = "Alyssa Hwang", email = "ahwang16@seas.upenn.edu" },
+    { name = "Liam Dugan", email = "ldugan@seas.upenn.edu" },
+]
+description = "The companion code for the FanOutQA dataset + benchmark for LLMs."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    # https://pypi.org/classifiers/
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = []
+
+[project.urls]
+"Homepage" = "https://github.com/zhudotexe/fanoutqa"
+"Bug Tracker" = "https://github.com/zhudotexe/fanoutqa/issues"
+
+[tool.black]
+line-length = 120
+preview = true
+
+[tool.isort]
+profile = "black"
+skip_gitignore = true
+line_length = 120
+known_first_party = ["fanoutqa"]
+# I am bound by pycharm's import autosorting rules
+no_lines_before = "LOCALFOLDER"
+reverse_relative = true
+combine_as_imports = true

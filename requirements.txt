@@ -1,0 +1,21 @@
+accelerate~=0.26.1
+aiolimiter~=1.1.0
+anthropic~=0.14.0
+beautifulsoup4~=4.12.3
+ftfy~=6.1.3
+kani~=0.7.2
+markdownify~=0.11.6
+openai~=1.10.0
+protobuf~=4.25.2
+pymediawiki~=0.7.4
+rank-bm25~=0.2.2
+sentencepiece~=0.1.99
+spacy~=3.7.2
+tiktoken~=0.5.2
+torch~=2.2.0
+tqdm~=4.66.1
+transformers~=4.37.2
+
+# scoring
+rouge-score~=0.1.2
+git+https://github.com/google-research/bleurt.git@master
