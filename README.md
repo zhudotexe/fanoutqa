@@ -20,9 +20,8 @@ This repository contains utilities to download and work with the dataset in Pyth
 evaluation metrics presented in our paper. Alternatively, you can download the dev and test sets in JSON format and
 generate completions to submit to us for evaluation.
 
-## Leaderboards
-
-TODO: move to website
+To view the leaderboards and more documentation about how to use this dataset, check out our website
+at <https://fanoutqa.com>!
 
 ## Requirements and Installation
 
@@ -130,7 +129,8 @@ To evaluate a model's generation, first ensure that you have installed all the e
 
 To use the GPT-as-judge metric, you will need to provide your OpenAI API key. We intentionally do not read
 the `OPENAI_API_KEY` environment variable by default to prevent accidentally spending money; you must set the
-`FANOUTQA_OPENAI_API_KEY` environment variable instead.
+`FANOUTQA_OPENAI_API_KEY` environment variable instead. You can use `export FANOUTQA_OPENAI_API_KEY=$OPENAI_API_KEY` to
+quickly copy it over.
 
 You should record your model/system's outputs as a list of dicts with the following schema:
 

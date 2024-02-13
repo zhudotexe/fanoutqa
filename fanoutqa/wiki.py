@@ -14,7 +14,9 @@ WIKI_CACHE_DIR = CACHE_DIR / "wikicache"
 WIKI_CACHE_DIR.mkdir(exist_ok=True, parents=True)
 
 log = logging.getLogger(__name__)
-wikipedia = httpx.Client(base_url="https://en.wikipedia.org/w/api.php", headers={"User-Agent": USER_AGENT})
+wikipedia = httpx.Client(
+    base_url="https://en.wikipedia.org/w/api.php", headers={"User-Agent": USER_AGENT}, follow_redirects=True
+)
 
 
 class LazyEvidence(Evidence):
@@ -48,7 +50,7 @@ class LazyEvidence(Evidence):
         )
         resp.raise_for_status()
         data = resp.json()
-        page = data["query"]["pages"][self.pageid]
+        page = data["query"]["pages"][str(self.pageid)]
         return page["revisions"][0]["revid"]
 
 

@@ -110,7 +110,7 @@ class TestQuestion:
 
     @classmethod
     def from_dict(cls, d):
-        evidence = [Evidence.from_dict(e) for e in d["evidence"]]
+        evidence = [Evidence.from_dict(e) for e in d["necessary_evidence"]]
         return cls(
             id=d["id"],
             question=d["question"],
