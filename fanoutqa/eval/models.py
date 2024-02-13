@@ -35,5 +35,6 @@ class EvaluationScore:
 
 class Answer(TypedDict):
     """A dictionary of the form ``{"id": "...", "answer": "..."}``."""
+
     id: str
     answer: str
