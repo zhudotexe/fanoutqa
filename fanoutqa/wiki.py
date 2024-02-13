@@ -3,16 +3,15 @@
 import functools
 import logging
 import urllib.parse
-from pathlib import Path
 
 import httpx
 
 from .models import Evidence
-from .utils import DATASET_EPOCH, markdownify
+from .utils import CACHE_DIR, DATASET_EPOCH, markdownify
 
 USER_AGENT = "fanoutqa/1.0.0 (andrz@seas.upenn.edu)"
-CACHE_DIR = Path("~/.cache/fanoutqa/wikicache")
-CACHE_DIR.mkdir(exist_ok=True, parents=True)
+WIKI_CACHE_DIR = CACHE_DIR / "wikicache"
+WIKI_CACHE_DIR.mkdir(exist_ok=True, parents=True)
 
 log = logging.getLogger(__name__)
 wikipedia = httpx.Client(base_url="https://en.wikipedia.org/w/api.php", headers={"User-Agent": USER_AGENT})
@@ -70,7 +69,7 @@ def wiki_search(query: str, results=10) -> list[Evidence]:
 def wiki_content(doc: Evidence) -> str:
     """Get the page content in markdown, including tables and infoboxes, appropriate for displaying to an LLM."""
     # get the cached content, if available
-    cache_filename = CACHE_DIR / f"{doc.pageid}-dated.md"
+    cache_filename = WIKI_CACHE_DIR / f"{doc.pageid}-dated.md"
     if cache_filename.exists():
         return cache_filename.read_text()
 

@@ -80,6 +80,7 @@ class DevQuestion:
     question: str  # the top-level question to answer
     decomposition: list[DevSubquestion]  # human-written decomposition of the question
     answer: dict[str, Primitive] | list[Primitive] | Primitive
+    necessary_evidence: list[Evidence]
     categories: list[str]
 
 
@@ -115,10 +116,12 @@ are two main functions to interface with Wikipedia:
 
 To save on time waiting for requests and computation power (both locally and on Wikipedia's end), this package
 aggressively caches retrieved Wikipedia pages. By default, this cache is located in `~/.cache/fanoutqa/wikicache`.
-We provide many cached pages you can prepopulate this cache with, by using the following commands:
+We provide many cached pages (~9GB) you can prepopulate this cache with, by using the following commands:
 
 ```shell
-mkdir -p ~/.cache/fanoutqa/wikicache
+mkdir -p ~/.cache/fanoutqa
+wget -O ~/.cache/fanoutqa/wikicache.tar.gz https://datasets.mechanus.zhu.codes/fanoutqa/wikicache.tar.gz 
+tar -xzf ~/.cache/fanoutqa/wikicache.tar.gz
 ```
 
 ## Evaluation

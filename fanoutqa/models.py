@@ -2,6 +2,7 @@ from dataclasses import dataclass
 from typing import Optional, Union
 
 Primitive = Union[bool, int, float, str]
+AnswerType = Union[dict[str, Primitive], list[Primitive], Primitive]
 
 
 @dataclass
@@ -32,7 +33,7 @@ class DevSubquestion:
     id: str
     question: str
     decomposition: list["DevSubquestion"]
-    answer: Union[dict[str, Primitive], list[Primitive], Primitive]
+    answer: AnswerType
     """the answer to this subquestion"""
 
     depends_on: list[str]
@@ -64,7 +65,7 @@ class DevQuestion:
     """the top-level question to answer"""
     decomposition: list[DevSubquestion]
     """human-written decomposition of the question"""
-    answer: Union[dict[str, Primitive], list[Primitive], Primitive]
+    answer: AnswerType
     categories: list[str]
 
     @classmethod
@@ -77,6 +78,18 @@ class DevQuestion:
             answer=d["answer"],
             categories=d["categories"],
         )
+
+    @property
+    def necessary_evidence(self) -> list[Evidence]:
+        """A list of all the evidence used by human annotators to answer the question."""
+
+        def walk_evidences(subqs):
+            for subq in subqs:
+                if subq.evidence:
+                    yield subq.evidence
+                yield from walk_evidences(subq.decomposition)
+
+        return list(walk_evidences(self.decomposition))
 
 
 @dataclass

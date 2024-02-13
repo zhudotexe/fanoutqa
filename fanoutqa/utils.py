@@ -10,6 +10,8 @@ from .models import DevQuestion, TestQuestion
 
 AnyPath: TypeAlias = Union[str, bytes, os.PathLike]
 PKG_ROOT = Path(__file__).parent
+CACHE_DIR = Path("~/.cache/fanoutqa")
+CACHE_DIR.mkdir(exist_ok=True, parents=True)
 DATASET_EPOCH = datetime.datetime(year=2023, month=11, day=20, tzinfo=datetime.timezone.utc)
 """The day before which to get revisions from Wikipedia, to ensure that the contents of pages don't change over time."""
 
