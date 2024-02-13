@@ -9,7 +9,7 @@
 
 # FanOutQA
 
-Read the paper! | [Download the dataset!](/data)
+Read the paper! | [Download the dataset!](/fanoutqa/data)
 
 FanOutQA is a high quality, multi-hop, multi-document benchmark for large language models using English Wikipedia as its
 knowledge base. Compared to other question-answering benchmarks, FanOutQA requires reasoning over a greater number of
@@ -88,13 +88,18 @@ used in the human-written decompositions for our Evidence Provided task.
 class TestQuestion:
     id: str
     question: str
-    necessary_evidence: list[FinalEvidence]
+    necessary_evidence: list[Evidence]
     categories: list[str]
 ```
 
 ## Wikipedia Retrieval
 
 TODO
+
+To save on time waiting for requests and computation power (both locally and on Wikipedia's end), this package
+aggressively caches retrieved Wikipedia pages.
+
+TODO: instructions for setting cache and downloading cache from server
 
 ## Evaluation
 
