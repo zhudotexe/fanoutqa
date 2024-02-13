@@ -14,8 +14,7 @@ Read the paper! | [Download the dataset!](/data)
 FanOutQA is a high quality, multi-hop, multi-document benchmark for large language models using English Wikipedia as its
 knowledge base. Compared to other question-answering benchmarks, FanOutQA requires reasoning over a greater number of
 documents, with the benchmark's main focus being on the titular fan-out style of question. We present these questions
-in three tasks -- closed-book, open-book, and evidence-provided -- which
-measure different abilities of LLM systems.
+in three tasks -- closed-book, open-book, and evidence-provided -- which measure different abilities of LLM systems.
 
 This repository contains utilities to download and work with the dataset in Python, along with implementations of the
 evaluation metrics presented in our paper. Alternatively, you can download the dev and test sets in JSON format and
@@ -31,7 +30,14 @@ The `fanoutqa` package requires Python 3.8+.
 
 To work with just the data, use `pip install fanoutqa`.
 
-To run evaluations on the dev set, use `pip install "fanoutqa[eval]"`.
+To run evaluations on the dev set, you will need to run a couple more steps:
+
+```shell
+pip install "fanoutqa[eval]"
+wget https://storage.googleapis.com/bleurt-oss-21/BLEURT-20.zip
+unzip BLEURT-20.zip
+rm BLEURT-20.zip
+```
 
 ## Data Format
 
@@ -113,6 +119,7 @@ question:
 ```
 
 In the email body, please include details about your system, including at least:
+
 - the name of your system
 - the list of authors
 - a link to your paper and recommended short citation, if applicable
