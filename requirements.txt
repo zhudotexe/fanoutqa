@@ -1,6 +1,6 @@
 # dev requirements -- to just install the package from source, use pip install .
 # include the main package deps
--e .
+-e .[all]
 
 # devtools
 black
