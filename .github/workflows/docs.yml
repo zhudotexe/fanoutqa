@@ -25,9 +25,10 @@ jobs:
         run: sphinx-build -T -E -W --keep-going -b html "." "_build"
 
       - name: Upload artifact
+        working-directory: ./docs
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'docs/_build/html'
+          path: '_build/html'
 
   deploy:
     # Add a dependency to the build job
