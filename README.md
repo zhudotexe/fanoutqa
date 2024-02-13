@@ -1,13 +1,6 @@
 # FanOutQA
 
-<p align="center">
-  <a href="https://fanoutqa.readthedocs.io/en/latest/?badge=latest">
-    <img alt="Documentation Status" src="https://readthedocs.org/projects/fanoutqa/badge/?version=latest">
-  </a>
-  <a href="https://pypi.org/project/fanoutqa/">
-    <img alt="PyPI" src="https://img.shields.io/pypi/v/fanoutqa">
-  </a>
-</p>
+![PyPI](https://img.shields.io/pypi/v/fanoutqa)
 
 Read the paper! | [Download the dataset!](https://github.com/zhudotexe/fanoutqa/tree/main/fanoutqa/data)
 
