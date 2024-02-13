@@ -22,7 +22,26 @@ classifiers = [
     "Intended Audience :: Science/Research",
     "Topic :: Scientific/Engineering :: Artificial Intelligence",
 ]
-dependencies = []
+dependencies = [
+    "ftfy>=6.1.3,<=7.0.0",
+    "httpx>=0.26.0,<1.0.0",
+    "markdownify~=0.11.6",
+    "spacy>=3.7.2,<4.0.0",
+    # spacy model
+    "en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl",
+]
+
+[project.optional-dependencies]
+all = [".[retrieval,eval]"]
+
+retrieval = [
+    "rank-bm25~=0.2.2",
+]
+
+eval = [
+    "rouge-score~=0.1.2",
+    "git+https://github.com/google-research/bleurt.git@master",
+]
 
 [project.urls]
 "Homepage" = "https://github.com/zhudotexe/fanoutqa"

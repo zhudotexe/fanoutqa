@@ -29,6 +29,11 @@ TODO: move to website
 The `fanoutqa` package requires Python 3.8+.
 
 To work with just the data, use `pip install fanoutqa`.
+Use `pip install "fanoutqa[all]"` and read the following section to include a baseline retriever and evaluation metrics.
+
+### Optional
+
+To include a baseline BM25-based retriever, use `pip install "fanoutqa[retrieval]"`.
 
 To run evaluations on the dev set, you will need to run a couple more steps:
 
@@ -38,6 +43,14 @@ wget https://storage.googleapis.com/bleurt-oss-21/BLEURT-20.zip
 unzip BLEURT-20.zip
 rm BLEURT-20.zip
 ```
+
+## Quickstart
+
+1. Use `fanoutqa.load_dev()` or `fanoutqa.load_test()` to load the dataset.
+2. Run your generations.
+    1. Use `fanoutqa.wiki_search(title)` and `fanoutqa.wiki_content(evidence)` to retrieve the contents of
+       Wikipedia pages for the Open Book and Evidence Provided settings.
+3. Evaluate your generations with `fanoutqa.evaluate(dev_questions, answers)` (see below for the schema).
 
 ## Data Format
 
@@ -94,12 +107,19 @@ class TestQuestion:
 
 ## Wikipedia Retrieval
 
-TODO
+To retrieve the contents of Wikipedia pages used as evidence, this package queries Wikipedia's Revisions API. There
+are two main functions to interface with Wikipedia:
+
+- `wiki_search(query)` returns a list of Evidence (Wikipedia pages that best match the query)
+- `wiki_content(evidence)` takes an Evidence and returns its content (as of the dataset epoch) as Markdown.
 
 To save on time waiting for requests and computation power (both locally and on Wikipedia's end), this package
-aggressively caches retrieved Wikipedia pages.
+aggressively caches retrieved Wikipedia pages. By default, this cache is located in `~/.cache/fanoutqa/wikicache`.
+We provide many cached pages you can prepopulate this cache with, by using the following commands:
 
-TODO: instructions for setting cache and downloading cache from server
+```shell
+mkdir -p ~/.cache/fanoutqa/wikicache
+```
 
 ## Evaluation
 
@@ -130,3 +150,10 @@ In the email body, please include details about your system, including at least:
 - a link to your paper and recommended short citation, if applicable
 - whether it is a new foundation model, a fine-tune, a prompting approach, or other
 
+## Additional Resources
+
+Although this package queries live Wikipedia and uses the Revisions API to get page content as of the dataset epoch,
+we also provide a snapshot of English Wikipedia as of Nov 20, 2023. You can download this
+snapshot [here](https://datasets.mechanus.zhu.codes/fanoutqa/enwiki-20231120-pages-articles-multistream.xml.bz2) (23G)
+and its
+index [here](https://datasets.mechanus.zhu.codes/fanoutqa/enwiki-20231120-pages-articles-multistream-index.txt.bz2).

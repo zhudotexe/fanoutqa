@@ -1,12 +1,17 @@
+import datetime
 import json
 import os
 from pathlib import Path
 from typing import TypeAlias, Union
 
+from markdownify import MarkdownConverter
+
 from .models import DevQuestion, TestQuestion
 
 AnyPath: TypeAlias = Union[str, bytes, os.PathLike]
 PKG_ROOT = Path(__file__).parent
+DATASET_EPOCH = datetime.datetime(year=2023, month=11, day=20, tzinfo=datetime.timezone.utc)
+"""The day before which to get revisions from Wikipedia, to ensure that the contents of pages don't change over time."""
 
 
 def load_dev(fp: AnyPath = None) -> list[DevQuestion]:
@@ -33,3 +38,33 @@ def load_test(fp: AnyPath = None) -> list[TestQuestion]:
     with open(fp) as f:
         data = json.load(f)
     return [TestQuestion.from_dict(d) for d in data]
+
+
+# markdown
+# We make some minor adjustments to markdownify's default style to make it look a little bit nicer
+def discard(*_):
+    return ""
+
+
+class MDConverter(MarkdownConverter):
+    def convert_img(self, el, text, convert_as_inline):
+        alt = el.attrs.get("alt", None) or ""
+        return f"![{alt}](image)"
+
+    def convert_a(self, el, text, convert_as_inline):
+        return text
+
+    # noinspection PyMethodMayBeStatic,PyUnusedLocal
+    def convert_div(self, el, text, convert_as_inline):
+        content = text.strip()
+        if not content:
+            return ""
+        return f"{content}\n"
+
+    # sometimes these appear inline and are just annoying
+    convert_script = discard
+    convert_style = discard
+
+
+def markdownify(html: str):
+    return MDConverter(heading_style="atx").convert(html)
