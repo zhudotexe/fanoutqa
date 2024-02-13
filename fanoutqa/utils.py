@@ -1,6 +1,7 @@
 import datetime
 import json
 import os
+from itertools import islice
 from pathlib import Path
 from typing import TypeAlias, Union
 
@@ -40,6 +41,24 @@ def load_test(fp: AnyPath = None) -> list[TestQuestion]:
     with open(fp) as f:
         data = json.load(f)
     return [TestQuestion.from_dict(d) for d in data]
+
+
+def batched(iterable, n):
+    # batched('ABCDEFG', 3) --> ABC DEF G
+    if n < 1:
+        raise ValueError("n must be at least one")
+    it = iter(iterable)
+    while batch := tuple(islice(it, n)):
+        yield batch
+
+
+def copy_doc(src):
+    """A simple wrapper to copy the docstring of a source function to the decorated function."""
+
+    def wrapper(f):
+        f.__doc__ = src.__doc__
+
+    return wrapper
 
 
 # markdown

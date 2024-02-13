@@ -1,0 +1,38 @@
+from dataclasses import dataclass
+from typing import TypedDict
+
+
+@dataclass
+class AccuracyScore:
+    loose: float
+    """Loose accuracy: The mean proportion of reference strings found in the generation."""
+
+    strict: float
+    """Strict accuracy: The proportion of questions with a loose accuracy of 1.0."""
+
+
+@dataclass
+class RougeScorePart:
+    precision: float
+    recall: float
+    fscore: float
+
+
+@dataclass
+class RougeScore:
+    rouge1: RougeScorePart
+    rouge2: RougeScorePart
+    rougeL: RougeScorePart
+
+
+@dataclass
+class EvaluationScore:
+    acc: AccuracyScore
+    rouge: RougeScore
+    bleurt: float
+    gpt: float
+
+
+class Answer(TypedDict):
+    id: str
+    answer: str

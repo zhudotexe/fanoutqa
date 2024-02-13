@@ -50,7 +50,7 @@ rm BLEURT-20.zip
 2. Run your generations.
     1. Use `fanoutqa.wiki_search(title)` and `fanoutqa.wiki_content(evidence)` to retrieve the contents of
        Wikipedia pages for the Open Book and Evidence Provided settings.
-3. Evaluate your generations with `fanoutqa.evaluate(dev_questions, answers)` (see below for the schema).
+3. Evaluate your generations with `fanoutqa.eval.evaluate(dev_questions, answers)` (see below for the schema).
 
 ## Data Format
 
@@ -128,9 +128,52 @@ tar -xzf ~/.cache/fanoutqa/wikicache.tar.gz
 
 To evaluate a model's generation, first ensure that you have installed all the evaluation dependencies (see above).
 
-TODO: what env vars?
-TODO: what to run?
-TODO: what does it return?
+To use the GPT-as-judge metric, you will need to provide your OpenAI API key. We intentionally do not read
+the `OPENAI_API_KEY` environment variable by default to prevent accidentally spending money; you must set the
+`FANOUTQA_OPENAI_API_KEY` environment variable instead.
+
+You should record your model/system's outputs as a list of dicts with the following schema:
+
+```json
+{
+  "id": "The ID of the question (see test set schema) this is a generation for.",
+  "answer": "The model's generation."
+}
+```
+
+Finally, to evaluate your generations on the dev set,
+call `fanoutqa.eval.evaluate(dev_questions, answers, llm_cache_key="your-model-key")`. This will run all of the metrics
+and return an `EvaluationScore` object, which has attributes matching the following structure:
+
+```json
+{
+  "acc": {
+    "loose": 0,
+    "strict": 0
+  },
+  "rouge": {
+    "rouge1": {
+      "precision": 0,
+      "recall": 0,
+      "fscore": 0
+    },
+    "rouge2": {
+      "precision": 0,
+      "recall": 0,
+      "fscore": 0
+    },
+    "rougeL": {
+      "precision": 0,
+      "recall": 0,
+      "fscore": 0
+    }
+  },
+  "bleurt": 0,
+  "gpt": 0
+}
+```
+
+(to access this in this dictionary form, use `dataclasses.asdict()`.)
 
 ### Test Set Evaluation
 

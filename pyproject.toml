@@ -39,6 +39,7 @@ retrieval = [
 ]
 
 eval = [
+    "kani[openai]~=0.7.2",
     "rouge-score~=0.1.2",
     "bleurt @ git+https://github.com/google-research/bleurt.git@master",
 ]
