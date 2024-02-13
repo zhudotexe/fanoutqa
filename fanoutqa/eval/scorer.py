@@ -12,7 +12,7 @@ from fanoutqa.eval.models import AccuracyScore, Answer, EvaluationScore, RougeSc
 from fanoutqa.eval.string import answer_in_text
 from fanoutqa.eval.utils import str_answer
 from fanoutqa.models import DevQuestion
-from fanoutqa.utils import batched, copy_doc
+from fanoutqa.utils import batched
 
 ROUGE_TYPES = ("rouge1", "rouge2", "rougeL")
 
@@ -167,7 +167,16 @@ class Scorer:
         return avg_acc
 
 
-@copy_doc(Scorer.__init__)
 def evaluate(questions: list[DevQuestion], answers: list[Answer], **kwargs) -> EvaluationScore:
+    """
+    Evaluate all FOQA metrics across the given questions and generated answers.
+
+    :param questions: The questions and reference answers, as loaded by the dataset.
+    :param answers: The generated answers to score. These should be dictionaries like ``{"id": "...", "answer": "..."}``
+    :param only_score_answered: Whether to only score questions that have an answer (True), or consider unanswered
+        questions to have 0 score (False, default). This is useful for evaluating only a subset of the dataset.
+    :param llm_cache_key: If this is provided, cache the LLM-as-judge generations with this key. We recommend
+        setting this to a human-readable key for each system under test.
+    """
     scorer = Scorer(questions, answers, **kwargs)
     return asyncio.run(scorer.score())

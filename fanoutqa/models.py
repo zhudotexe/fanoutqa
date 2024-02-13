@@ -10,16 +10,16 @@ class Evidence:
     """A reference to a Wikipedia article at a given point in time."""
 
     pageid: int
-    """Wikipedia page ID"""
+    """Wikipedia page ID."""
 
     revid: int
-    """Wikipedia revision ID of page as of dataset epoch"""
+    """Wikipedia revision ID of page as of dataset epoch. Often referred to as ``oldid`` in Wikipedia API docs."""
 
     title: str
-    """Title of page"""
+    """Title of page."""
 
     url: str
-    """Link to page"""
+    """Link to page."""
 
     @classmethod
     def from_dict(cls, d):
@@ -31,16 +31,18 @@ class DevSubquestion:
     """A human-written decomposition of a top-level question."""
 
     id: str
+    """The ID of the question."""
     question: str
+    """The question for the system to answer."""
     decomposition: list["DevSubquestion"]
+    """A human-written decomposition of the question."""
     answer: AnswerType
-    """the answer to this subquestion"""
-
+    """The human-written reference answer to this subquestion."""
     depends_on: list[str]
-    """the IDs of subquestions that this subquestion requires answering first"""
-
+    """The IDs of subquestions that this subquestion requires answering first."""
     evidence: Optional[Evidence]
-    """if this is None, the question will have a decomposition"""
+    """The Wikipedia page used by the human annotator to answer this question.
+    If this is None, the question will have a decomposition."""
 
     @classmethod
     def from_dict(cls, d):
@@ -61,11 +63,13 @@ class DevQuestion:
     """A top-level question in the FOQA dataset and its decomposition."""
 
     id: str
+    """The ID of the question."""
     question: str
-    """the top-level question to answer"""
+    """The top-level question for the system to answer."""
     decomposition: list[DevSubquestion]
-    """human-written decomposition of the question"""
+    """A human-written decomposition of the question."""
     answer: AnswerType
+    """A human-written reference answer to the question."""
     categories: list[str]
 
     @classmethod
@@ -97,8 +101,11 @@ class TestQuestion:
     """A top-level question in the FOQA dataset, without its decomposition or answer."""
 
     id: str
+    """The ID of the question."""
     question: str
+    """The top-level question for the system to answer."""
     necessary_evidence: list[Evidence]
+    """A list of all the evidence used by human annotators to answer the question."""
     categories: list[str]
 
     @classmethod

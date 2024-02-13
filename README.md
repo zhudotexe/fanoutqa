@@ -1,3 +1,5 @@
+# FanOutQA
+
 <p align="center">
   <a href="https://fanoutqa.readthedocs.io/en/latest/?badge=latest">
     <img alt="Documentation Status" src="https://readthedocs.org/projects/fanoutqa/badge/?version=latest">
@@ -7,9 +9,7 @@
   </a>
 </p>
 
-# FanOutQA
-
-Read the paper! | [Download the dataset!](/fanoutqa/data)
+Read the paper! | [Download the dataset!](https://github.com/zhudotexe/fanoutqa/tree/main/fanoutqa/data)
 
 FanOutQA is a high quality, multi-hop, multi-document benchmark for large language models using English Wikipedia as its
 knowledge base. Compared to other question-answering benchmarks, FanOutQA requires reasoning over a greater number of

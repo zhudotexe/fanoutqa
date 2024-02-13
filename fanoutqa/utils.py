@@ -52,15 +52,6 @@ def batched(iterable, n):
         yield batch
 
 
-def copy_doc(src):
-    """A simple wrapper to copy the docstring of a source function to the decorated function."""
-
-    def wrapper(f):
-        f.__doc__ = src.__doc__
-
-    return wrapper
-
-
 # markdown
 # We make some minor adjustments to markdownify's default style to make it look a little bit nicer
 def discard(*_):

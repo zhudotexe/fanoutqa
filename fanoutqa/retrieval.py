@@ -26,7 +26,8 @@ class RetrievalResult:
 
 
 class Corpus:
-    """A corpus of wiki docs. Indexes the docs on creation, normalizing the text beforehand with lemmatization.
+    """
+    A corpus of wiki docs. Indexes the docs on creation, normalizing the text beforehand with lemmatization.
 
     Splits the documents into chunks no longer than a given length, preferring splitting on paragraph and sentence
     boundaries. Documents will be converted to Markdown.
@@ -42,7 +43,7 @@ class Corpus:
         corpus = fanoutqa.retrieval.Corpus(q.necessary_evidence)
         for fragment in corpus.best(q.question):
             # use your own structured prompt format here
-            prompt += f"# {fragment.title}\n{fragment.content}\n\n"
+            prompt += f"# {fragment.title}\\n{fragment.content}\\n\\n"
     """
 
     def __init__(self, documents: list[Evidence], doc_len: int = 2048):

@@ -30,6 +30,7 @@ extensions = [
     "sphinx_copybutton",  # https://sphinx-copybutton.readthedocs.io/en/latest/
     "sphinxemoji.sphinxemoji",  # https://sphinxemojicodes.readthedocs.io/en/stable/
     "sphinx_sitemap",  # https://sphinx-sitemap.readthedocs.io/en/latest/getting-started.html
+    "myst_parser",  # https://myst-parser.readthedocs.io/en/stable/intro.html
 ]
 
 templates_path = ["_templates"]
@@ -45,7 +46,7 @@ html_static_path = ["_static"]
 html_extra_path = ["_extra"]
 # html_logo = "_static/kani-logo@512.png"
 # html_favicon = "_extra/favicon.ico"
-# html_baseurl = "https://kani.readthedocs.io/en/latest/"
+html_baseurl = "https://fanoutqa.com/en/latest/"
 
 nitpicky = True
 nitpick_ignore_regex = [
