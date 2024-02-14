@@ -44,9 +44,9 @@ maximum_signature_line_length = 120
 html_theme = "furo"
 html_static_path = ["_static"]
 html_extra_path = ["_extra"]
-# html_logo = "_static/kani-logo@512.png"
-# html_favicon = "_extra/favicon.ico"
-html_baseurl = "https://fanoutqa.com/en/latest/"
+html_logo = "_static/folding-hand-fan_1faad.png"
+html_favicon = "_extra/favicon.ico"
+html_baseurl = "https://fanoutqa.com/"
 
 nitpicky = True
 nitpick_ignore_regex = [
