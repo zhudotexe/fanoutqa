@@ -27,8 +27,6 @@ dependencies = [
     "httpx>=0.26.0,<1.0.0",
     "markdownify~=0.11.6",
     "spacy>=3.7.2,<4.0.0",
-    # spacy model
-    "en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl",
 ]
 
 [project.optional-dependencies]
@@ -41,7 +39,6 @@ retrieval = [
 eval = [
     "kani[openai]~=0.7.2",
     "rouge-score~=0.1.2",
-    "bleurt @ git+https://github.com/google-research/bleurt.git@master",
 ]
 
 [project.urls]
@@ -61,6 +58,3 @@ known_first_party = ["fanoutqa"]
 no_lines_before = "LOCALFOLDER"
 reverse_relative = true
 combine_as_imports = true
-
-[tool.hatch.metadata]
-allow-direct-references = true
