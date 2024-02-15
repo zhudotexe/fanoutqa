@@ -42,7 +42,7 @@ maximum_signature_line_length = 120
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 html_theme = "furo"
-html_static_path = ["_static"]
+html_static_path = ["_static", "_leaderboard"]
 html_extra_path = ["_extra"]
 html_logo = "_static/folding-hand-fan_1faad.png"
 html_favicon = "_extra/favicon.ico"

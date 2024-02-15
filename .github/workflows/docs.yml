@@ -9,6 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # ==== sphinx ====
       - name: Set up Python 3.10
         uses: actions/setup-python@v5
         with:
@@ -23,6 +24,25 @@ jobs:
       - name: Build docs
         working-directory: ./docs
         run: sphinx-build -T -E -W --keep-going -b html "." "_build/html"
+
+      # ==== vue ====
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 'lts'
+          cache: "npm"
+
+      - name: Install leaderboard deps
+        working-directory: ./leaderboard
+        run: npm install
+
+      - name: Build leaderboard
+        working-directory: ./leaderboard
+        run: npm run build
+
+      # ==== upload ====
+      - name: Bundle leaderboard with docs
+        run: cp -R leaderboard/dist/. docs/_build/html/_leaderboard
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

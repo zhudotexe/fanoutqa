@@ -20,20 +20,16 @@ const filterSelections = reactive(new Map<string, Set<number>>())
 const sortOrders = reactive(new Map<string, SortOrder>())
 
 // computed
-const worldPlots = computed(() => {
-  const allPlots = Array.from(props.client.plotStates.values())
-  return allPlots.filter((state) => state.world_id === props.worldId)
-})
-const filteredSortedWorldPlots = computed(() => {
-  let plots = [...worldPlots.value]
+const filteredSortedData = computed(() => {
+  let data = [...worldPlots.value]
   // filter
   for (const [filterKey, selected] of filterSelections) {
     const filterImpl = filters[filterKey]
     if (!filterImpl) continue
-    plots = plots.filter(filterImpl.strategy(Array.from(selected)))
+    data = data.filter(filterImpl.strategy(Array.from(selected)))
   }
   // sort: return first non-zero sort
-  return plots.sort((a, b) => {
+  return data.sort((a, b) => {
     for (const [sorterKey, direction] of sortOrders) {
       const sorterImpl = sorters[sorterKey]
       if (!sorterImpl) continue
@@ -48,14 +44,14 @@ const filteredSortedWorldPlots = computed(() => {
     return defaultSorter(a, b)
   })
 })
-const currentPagePlots = computed(() => {
-  return filteredSortedWorldPlots.value.slice(
+const currentPageData = computed(() => {
+  return filteredSortedData.value.slice(
     pagination.currentPage * pagination.numPerPage,
     (pagination.currentPage + 1) * pagination.numPerPage
   )
 })
 const numPages = computed(() => {
-  return Math.ceil(filteredSortedWorldPlots.value.length / pagination.numPerPage)
+  return Math.ceil(filteredSortedData.value.length / pagination.numPerPage)
 })
 
 // methods
@@ -155,12 +151,12 @@ function loadSortQueryParams() {
   }
 }
 
-function buildSortQueryParam(): string[] {
+function buildSortQueryParam(): string {
   const result = []
   for (const [sorterKey, direction] of sortOrders) {
     result.push(`${sorterKey}:${direction}`)
   }
-  return result
+  return result.join(',')
 }
 
 // other
@@ -180,47 +176,16 @@ onMounted(() => {
 <template>
   <!-- # info -->
   <p>
-    {{ client.worldName(worldId) }} has
-    <FlashOnChange :value="worldPlots.length" />
-    open plots, at least
-    <FlashOnChange :value="worldPlots.filter(utils.isEntryPhase).length" />
-    of which are available for bidding.
-  </p>
-  <p v-if="worldPlots.filter(utils.isUnknownOrOutdatedPhase).length">
-    <strong>
-      <FlashOnChange :value="worldPlots.filter(utils.isUnknownOrOutdatedPhase).length" />
-    </strong>
-    plots have missing or outdated lottery data. You can contribute by installing the
-    <a href="https://github.com/zhudotexe/FFXIV_PaissaHouse#lottery-sweeps" target="_blank">
-      PaissaHouse XIVLauncher plugin
-    </a>
-    and clicking on the placard of any outdated plot in-game. This site will update in real time!
+    look, this is the loeaderboard waow
   </p>
   <!-- /# info -->
 
   <!-- filter info -->
   <div class="level mt-2">
-    <div class="level-left">
-      <p class="level-item" v-if="client.nextOrLatestPhaseChange() > +new Date() / 1000">
-        The current lottery phase ends at
-        <TimeDisplay :time="client.nextOrLatestPhaseChange()" format="datetimeWeekday" />
-        (
-        <TimeDisplay :time="client.nextOrLatestPhaseChange()" format="relative" />
-        ).
-      </p>
-      <p class="level-item" v-else-if="client.nextOrLatestPhaseChange() > 0">
-        The previous lottery phase ended at
-        <TimeDisplay :time="client.nextOrLatestPhaseChange()" format="datetimeWeekday" />
-        (
-        <TimeDisplay :time="client.nextOrLatestPhaseChange()" format="relative" />
-        ).
-      </p>
-      <p class="level-item" v-else>There is insufficient data to calculate when the next lottery phase ends.</p>
-    </div>
     <div class="level-right">
       <p class="level-item">
-        {{ filteredSortedWorldPlots.length }}
-        {{ filteredSortedWorldPlots.length === 1 ? 'plot matches' : 'plots match' }}
+        {{ filteredSortedData.length }}
+        {{ filteredSortedData.length === 1 ? 'entry matches' : 'entries match' }}
         your current filters.
       </p>
       <p class="level-item">
@@ -359,7 +324,7 @@ onMounted(() => {
 
       <tbody>
       <tr
-        v-for="plot in currentPagePlots"
+        v-for="plot in currentPageData"
         :key="[plot.world_id, plot.district_id, plot.ward_number, plot.plot_number].toString()"
       >
         <td>{{ client.districtName(plot.district_id) }}</td>
