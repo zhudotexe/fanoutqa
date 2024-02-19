@@ -18,9 +18,12 @@ export interface Score {
   url: string;
   citation: string;
   type: ModelType;
+  context: number;
   // score
   acc: { loose: number, strict: number };
   rouge: { rouge1: RougeScore, rouge2: RougeScore, rougeL: RougeScore };
   bleurt: number;
   gpt: number;
 }
+
+export type Datum = Score;

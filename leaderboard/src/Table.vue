@@ -1,35 +1,39 @@
 <script setup lang="ts">
 import FilterIcon from '@/FilterIcon.vue'
-import { filters } from '@/filters'
-import { sorters, SortOrder } from '@/sorters'
+import {filters} from '@/filters'
+import {defaultSorter, sorters, SortOrder} from '@/sorters'
 import SortIcon from '@/SortIcon.vue'
-import { isArray } from 'lodash'
-import { computed, onMounted, reactive } from 'vue'
-import { useRoute, useRouter } from 'vue-router'
+import {isArray} from 'lodash'
+import {computed, onMounted, reactive} from 'vue'
+import {useRoute, useRouter} from 'vue-router'
+import type {Datum} from "@/scores";
 
 // setup
 const router = useRouter()
 const route = useRoute()
+const props = defineProps<{
+  data: Datum[];
+}>();
 
 // state
 const pagination = reactive({
   currentPage: 0,
   numPerPage: 50
 })
-const filterSelections = reactive(new Map<string, Set<number>>())
+const filterSelections = reactive(new Map<string, Set<any>>())
 const sortOrders = reactive(new Map<string, SortOrder>())
 
 // computed
 const filteredSortedData = computed(() => {
-  let data = [...worldPlots.value]
+  let tempData = [...props.data]
   // filter
   for (const [filterKey, selected] of filterSelections) {
     const filterImpl = filters[filterKey]
     if (!filterImpl) continue
-    data = data.filter(filterImpl.strategy(Array.from(selected)))
+    tempData = tempData.filter(filterImpl.strategy(Array.from(selected)))
   }
   // sort: return first non-zero sort
-  return data.sort((a, b) => {
+  return tempData.sort((a, b) => {
     for (const [sorterKey, direction] of sortOrders) {
       const sorterImpl = sorters[sorterKey]
       if (!sorterImpl) continue
@@ -46,8 +50,8 @@ const filteredSortedData = computed(() => {
 })
 const currentPageData = computed(() => {
   return filteredSortedData.value.slice(
-    pagination.currentPage * pagination.numPerPage,
-    (pagination.currentPage + 1) * pagination.numPerPage
+      pagination.currentPage * pagination.numPerPage,
+      (pagination.currentPage + 1) * pagination.numPerPage
   )
 })
 const numPages = computed(() => {
@@ -68,7 +72,7 @@ function onFilterSelectionChange(filterKey: string, selected: number[]) {
   if (!selected.length) {
     filterSelections.delete(filterKey)
   } else {
-    filterSelections.set(filterKey, new Set<number>(selected))
+    filterSelections.set(filterKey, new Set(selected))
   }
   updateQueryParams()
 }
@@ -106,7 +110,7 @@ function updateQueryParams() {
       queryParams[filterKey] = undefined
     }
   }
-  router.replace({ query: queryParams })
+  router.replace({query: queryParams})
 }
 
 function loadFilterQueryParams() {
@@ -128,7 +132,7 @@ function loadFilterQueryParams() {
     }
     // and init the filter
     if (validOptions.length) {
-      filterSelections.set(filterKey, new Set<number>(validOptions))
+      filterSelections.set(filterKey, new Set(validOptions))
     }
   }
 }
@@ -201,121 +205,100 @@ onMounted(() => {
       <tr>
         <th>
             <span class="icon-text">
-              <span>District</span>
+              <span>Model</span>
               <FilterIcon
-                class="ml-1"
-                :options="filters.districts.options"
-                :selected="getSelectedFilterOptions('districts')"
-                @selectionChanged="onFilterSelectionChange('districts', $event)"
+                  class="ml-1"
+                  :options="filters.modelType.options"
+                  :selected="getSelectedFilterOptions('modelType')"
+                  @selectionChanged="onFilterSelectionChange('modelType', $event)"
               />
             </span>
         </th>
         <th>
             <span class="icon-text">
-              <span>Ward</span>
-              <FilterIconGrid
-                class="ml-1"
-                :options="filters.wards.options"
-                :selected="getSelectedFilterOptions('wards')"
-                @selectionChanged="onFilterSelectionChange('wards', $event)"
-              />
-            </span>
-        </th>
-        <th>
-            <span class="icon-text">
-              <span>Plot</span>
-              <FilterIconGrid
-                class="ml-1"
-                :options="filters.plots.options"
-                :selected="getSelectedFilterOptions('plots')"
-                @selectionChanged="onFilterSelectionChange('plots', $event)"
-              />
-            </span>
-        </th>
-        <th>
-            <span class="icon-text">
-              <span>Size</span>
+              <span>Context Size</span>
               <SortIcon
-                class="ml-1"
-                :index="getSortIndex('size')"
-                :direction="getSortDirection('size')"
-                @directionChanged="onSortDirectionChange('size', $event)"
-              />
-              <FilterIcon
-                :options="filters.sizes.options"
-                :selected="getSelectedFilterOptions('sizes')"
-                @selectionChanged="onFilterSelectionChange('sizes', $event)"
+                  class="ml-1"
+                  :index="getSortIndex('context')"
+                  :direction="getSortDirection('context')"
+                  @directionChanged="onSortDirectionChange('context', $event)"
               />
             </span>
         </th>
         <th>
             <span class="icon-text">
-              <span>Price</span>
+              <span>Loose</span>
               <SortIcon
-                class="ml-1"
-                :index="getSortIndex('price')"
-                :direction="getSortDirection('price')"
-                @directionChanged="onSortDirectionChange('price', $event)"
+                  class="ml-1"
+                  :index="getSortIndex('loose')"
+                  :direction="getSortDirection('loose')"
+                  @directionChanged="onSortDirectionChange('loose', $event)"
               />
             </span>
         </th>
         <th>
             <span class="icon-text">
-              <span>Entries</span>
+              <span>Strict</span>
               <SortIcon
-                class="ml-1"
-                :index="getSortIndex('entries')"
-                :direction="getSortDirection('entries')"
-                @directionChanged="onSortDirectionChange('entries', $event)"
+                  class="ml-1"
+                  :index="getSortIndex('strict')"
+                  :direction="getSortDirection('strict')"
+                  @directionChanged="onSortDirectionChange('strict', $event)"
               />
             </span>
         </th>
         <th>
             <span class="icon-text">
-              <span>Lottery Phase</span>
+              <span>ROUGE-1</span>
               <SortIcon
-                class="ml-1"
-                :index="getSortIndex('phase')"
-                :direction="getSortDirection('phase')"
-                @directionChanged="onSortDirectionChange('phase', $event)"
-              />
-              <FilterIcon
-                :options="filters.phases.options"
-                :selected="getSelectedFilterOptions('phases')"
-                @selectionChanged="onFilterSelectionChange('phases', $event)"
+                  class="ml-1"
+                  :index="getSortIndex('rouge1')"
+                  :direction="getSortDirection('rouge1')"
+                  @directionChanged="onSortDirectionChange('rouge1', $event)"
               />
             </span>
         </th>
         <th>
             <span class="icon-text">
-              <span>Allowed Tenants</span>
-              <FilterIcon
-                class="ml-1"
-                :options="filters.tenants.options"
-                :selected="getSelectedFilterOptions('tenants')"
-                @selectionChanged="onFilterSelectionChange('tenants', $event)"
-              />
-            </span>
-        </th>
-        <th>
-            <span class="icon-text">
-              <span>Last Updated</span>
+              <span>ROUGE-2</span>
               <SortIcon
-                class="ml-1"
-                :index="getSortIndex('updateTime')"
-                :direction="getSortDirection('updateTime')"
-                @directionChanged="onSortDirectionChange('updateTime', $event)"
+                  class="ml-1"
+                  :index="getSortIndex('rouge2')"
+                  :direction="getSortDirection('rouge2')"
+                  @directionChanged="onSortDirectionChange('rouge2', $event)"
               />
             </span>
         </th>
         <th>
             <span class="icon-text">
-              <span>First Seen</span>
+              <span>ROUGE-L</span>
               <SortIcon
-                class="ml-1"
-                :index="getSortIndex('firstSeen')"
-                :direction="getSortDirection('firstSeen')"
-                @directionChanged="onSortDirectionChange('firstSeen', $event)"
+                  class="ml-1"
+                  :index="getSortIndex('rougeL')"
+                  :direction="getSortDirection('rougeL')"
+                  @directionChanged="onSortDirectionChange('rougeL', $event)"
+              />
+            </span>
+        </th>
+        <th>
+            <span class="icon-text">
+              <span>BLEURT</span>
+              <SortIcon
+                  class="ml-1"
+                  :index="getSortIndex('bleurt')"
+                  :direction="getSortDirection('bleurt')"
+                  @directionChanged="onSortDirectionChange('bleurt', $event)"
+              />
+            </span>
+        </th>
+        <th>
+            <span class="icon-text">
+              <span>GPT Judge</span>
+              <SortIcon
+                  class="ml-1"
+                  :index="getSortIndex('gptscore')"
+                  :direction="getSortDirection('gptscore')"
+                  @directionChanged="onSortDirectionChange('gptscore', $event)"
               />
             </span>
         </th>
@@ -323,26 +306,16 @@ onMounted(() => {
       </thead>
 
       <tbody>
-      <tr
-        v-for="plot in currentPageData"
-        :key="[plot.world_id, plot.district_id, plot.ward_number, plot.plot_number].toString()"
-      >
-        <td>{{ client.districtName(plot.district_id) }}</td>
-        <td>Ward {{ plot.ward_number + 1 }}</td>
-        <td>Plot {{ plot.plot_number + 1 }}</td>
-        <td>{{ utils.sizeStr(plot.size) }}</td>
-        <td>{{ plot.price.toLocaleString() }}</td>
-        <td>
-          <FlashOnChange :value="utils.lotteryEntryCountStr(plot)" :class="{'is-italic': utils.shouldEm(plot)}" />
-        </td>
-        <td>
-          <FlashOnChange :value="utils.lotteryPhaseStr(plot)" :class="{'is-italic': utils.shouldEm(plot)}" />
-        </td>
-        <td>{{ utils.tenantStr(plot.purchase_system) }}</td>
-        <td>
-          <FlashOnChange :value="utils.updatedStr(plot.last_updated_time)" />
-        </td>
-        <td>{{ utils.updatedStr(plot.first_seen_time) }}</td>
+      <tr v-for="datum in currentPageData">
+        <td>{{ datum.name }} ({{ datum.citation }})</td>
+        <td>{{ datum.context }}</td>
+        <td>{{ datum.acc.loose }}</td>
+        <td>{{ datum.acc.strict }}</td>
+        <td>{{ datum.rouge.rouge1.fscore }}</td>
+        <td>{{ datum.rouge.rouge2.fscore }}</td>
+        <td>{{ datum.rouge.rougeL.fscore }}</td>
+        <td>{{ datum.bleurt }}</td>
+        <td>{{ datum.gpt }}</td>
       </tr>
       </tbody>
     </table>
@@ -351,13 +324,13 @@ onMounted(() => {
       <p class="level-item">
         <button class="button mr-2" v-if="pagination.currentPage > 0" @click="pagination.currentPage--">
           <span class="icon is-small">
-            <font-awesome-icon :icon="['fas', 'angle-left']" />
+            <font-awesome-icon :icon="['fas', 'angle-left']"/>
           </span>
         </button>
         <span>Page {{ pagination.currentPage + 1 }} / {{ numPages }}</span>
         <button class="button ml-2" v-if="pagination.currentPage < numPages - 1" @click="pagination.currentPage++">
           <span class="icon is-small">
-            <font-awesome-icon :icon="['fas', 'angle-right']" />
+            <font-awesome-icon :icon="['fas', 'angle-right']"/>
           </span>
         </button>
       </p>
