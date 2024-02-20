@@ -16,7 +16,7 @@ help:
 
 # make html and then open it in the browser
 preview: html
-	open "$(BUILDDIR)/html/index.html"
+	echo http://127.0.0.1:8000 && python -m http.server -d _build/html
 
 clean:
 	rm -rf "$(BUILDDIR)"

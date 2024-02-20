@@ -9,8 +9,6 @@ import {useRoute, useRouter} from 'vue-router'
 import type {Datum} from "@/scores";
 
 // setup
-const router = useRouter()
-const route = useRoute()
 const props = defineProps<{
   data: Datum[];
 }>();
@@ -98,30 +96,33 @@ function onSortDirectionChange(sorterKey: string, direction: SortOrder) {
 
 // query param helpers
 function updateQueryParams() {
-  const queryParams: { [key: string]: any } = {
-    ...route.query,
-    sort: buildSortQueryParam()
+  const searchParams = new URLSearchParams(window.location.search)
+
+  // build sort query param
+  searchParams.delete('sort')
+  for (const [sorterKey, direction] of sortOrders) {
+    searchParams.append('sort', `${sorterKey}:${direction}`)
   }
+
+  // build filter query params
   for (const filterKey of Object.keys(filters)) {
+    searchParams.delete(filterKey)
     const oneFilterSelections = filterSelections.get(filterKey)
     if (oneFilterSelections) {
-      queryParams[filterKey] = Array.from(oneFilterSelections)
-    } else {
-      queryParams[filterKey] = undefined
+      oneFilterSelections.forEach((v) => searchParams.append(filterKey, v))
     }
   }
-  router.replace({query: queryParams})
+
+  // set query string without reloading
+  const newRelativePathQuery = window.location.pathname + '?' + searchParams.toString()
+  history.pushState(null, '', newRelativePathQuery)
 }
 
 function loadFilterQueryParams() {
+  const searchParams = new URLSearchParams(window.location.search)
   for (const [filterKey, filterDef] of Object.entries(filters)) {
     // if the filter is in the query param and valid, set it up
-    // ensure query params are array
-    let filterQuery = route.query[filterKey]
-    if (!filterQuery) continue
-    if (!isArray(filterQuery)) {
-      filterQuery = [filterQuery]
-    }
+    const filterQuery = searchParams.getAll(filterKey)
     // find the valid options
     let validOptions = []
     for (const queryElem of filterQuery) {
@@ -139,12 +140,8 @@ function loadFilterQueryParams() {
 
 function loadSortQueryParams() {
   // if the sorter is in the query param and valid, set it up
-  // ensure query params are array
-  let sortQuery = route.query.sort
-  if (!sortQuery) return
-  if (!isArray(sortQuery)) {
-    sortQuery = [sortQuery]
-  }
+  const searchParams = new URLSearchParams(window.location.search)
+  const sortQuery = searchParams.getAll('sort')
   for (const sortElem of sortQuery) {
     // ensure key and direction are valid
     if (!sortElem) continue
@@ -153,14 +150,6 @@ function loadSortQueryParams() {
     // init the sorter
     sortOrders.set(sorterKey, +direction)
   }
-}
-
-function buildSortQueryParam(): string {
-  const result = []
-  for (const [sorterKey, direction] of sortOrders) {
-    result.push(`${sorterKey}:${direction}`)
-  }
-  return result.join(',')
 }
 
 // other
