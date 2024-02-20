@@ -1,17 +1,15 @@
 <script setup lang="ts">
 import FilterIcon from '@/FilterIcon.vue'
-import {filters} from '@/filters'
-import {defaultSorter, sorters, SortOrder} from '@/sorters'
+import { filters } from '@/filters'
+import { defaultSorter, sorters, SortOrder } from '@/sorters'
 import SortIcon from '@/SortIcon.vue'
-import {isArray} from 'lodash'
-import {computed, onMounted, reactive} from 'vue'
-import {useRoute, useRouter} from 'vue-router'
-import type {Datum} from "@/scores";
+import { computed, onMounted, reactive } from 'vue'
+import type { Datum } from '@/scores'
 
 // setup
 const props = defineProps<{
-  data: Datum[];
-}>();
+  data: Datum[]
+}>()
 
 // state
 const pagination = reactive({
@@ -48,8 +46,8 @@ const filteredSortedData = computed(() => {
 })
 const currentPageData = computed(() => {
   return filteredSortedData.value.slice(
-      pagination.currentPage * pagination.numPerPage,
-      (pagination.currentPage + 1) * pagination.numPerPage
+    pagination.currentPage * pagination.numPerPage,
+    (pagination.currentPage + 1) * pagination.numPerPage
   )
 })
 const numPages = computed(() => {
@@ -168,9 +166,7 @@ onMounted(() => {
 
 <template>
   <!-- # info -->
-  <p>
-    look, this is the loeaderboard waow
-  </p>
+  <p>look, this is the loeaderboard waow</p>
   <!-- /# info -->
 
   <!-- filter info -->
@@ -191,135 +187,143 @@ onMounted(() => {
   <div class="table-container mt-4">
     <table class="table is-striped is-fullwidth is-hoverable">
       <thead>
-      <tr>
-        <th>
+        <tr>
+          <th>
             <span class="icon-text">
               <span>Model</span>
               <FilterIcon
-                  class="ml-1"
-                  :options="filters.modelType.options"
-                  :selected="getSelectedFilterOptions('modelType')"
-                  @selectionChanged="onFilterSelectionChange('modelType', $event)"
+                class="ml-1"
+                :options="filters.modelType.options"
+                :selected="getSelectedFilterOptions('modelType')"
+                @selectionChanged="onFilterSelectionChange('modelType', $event)"
               />
             </span>
-        </th>
-        <th>
+          </th>
+          <th>
             <span class="icon-text">
               <span>Context Size</span>
               <SortIcon
-                  class="ml-1"
-                  :index="getSortIndex('context')"
-                  :direction="getSortDirection('context')"
-                  @directionChanged="onSortDirectionChange('context', $event)"
+                class="ml-1"
+                :index="getSortIndex('context')"
+                :direction="getSortDirection('context')"
+                @directionChanged="onSortDirectionChange('context', $event)"
               />
             </span>
-        </th>
-        <th>
+          </th>
+          <th>
             <span class="icon-text">
               <span>Loose</span>
               <SortIcon
-                  class="ml-1"
-                  :index="getSortIndex('loose')"
-                  :direction="getSortDirection('loose')"
-                  @directionChanged="onSortDirectionChange('loose', $event)"
+                class="ml-1"
+                :index="getSortIndex('loose')"
+                :direction="getSortDirection('loose')"
+                @directionChanged="onSortDirectionChange('loose', $event)"
               />
             </span>
-        </th>
-        <th>
+          </th>
+          <th>
             <span class="icon-text">
               <span>Strict</span>
               <SortIcon
-                  class="ml-1"
-                  :index="getSortIndex('strict')"
-                  :direction="getSortDirection('strict')"
-                  @directionChanged="onSortDirectionChange('strict', $event)"
+                class="ml-1"
+                :index="getSortIndex('strict')"
+                :direction="getSortDirection('strict')"
+                @directionChanged="onSortDirectionChange('strict', $event)"
               />
             </span>
-        </th>
-        <th>
+          </th>
+          <th>
             <span class="icon-text">
               <span>ROUGE-1</span>
               <SortIcon
-                  class="ml-1"
-                  :index="getSortIndex('rouge1')"
-                  :direction="getSortDirection('rouge1')"
-                  @directionChanged="onSortDirectionChange('rouge1', $event)"
+                class="ml-1"
+                :index="getSortIndex('rouge1')"
+                :direction="getSortDirection('rouge1')"
+                @directionChanged="onSortDirectionChange('rouge1', $event)"
               />
             </span>
-        </th>
-        <th>
+          </th>
+          <th>
             <span class="icon-text">
               <span>ROUGE-2</span>
               <SortIcon
-                  class="ml-1"
-                  :index="getSortIndex('rouge2')"
-                  :direction="getSortDirection('rouge2')"
-                  @directionChanged="onSortDirectionChange('rouge2', $event)"
+                class="ml-1"
+                :index="getSortIndex('rouge2')"
+                :direction="getSortDirection('rouge2')"
+                @directionChanged="onSortDirectionChange('rouge2', $event)"
               />
             </span>
-        </th>
-        <th>
+          </th>
+          <th>
             <span class="icon-text">
               <span>ROUGE-L</span>
               <SortIcon
-                  class="ml-1"
-                  :index="getSortIndex('rougeL')"
-                  :direction="getSortDirection('rougeL')"
-                  @directionChanged="onSortDirectionChange('rougeL', $event)"
+                class="ml-1"
+                :index="getSortIndex('rougeL')"
+                :direction="getSortDirection('rougeL')"
+                @directionChanged="onSortDirectionChange('rougeL', $event)"
               />
             </span>
-        </th>
-        <th>
+          </th>
+          <th>
             <span class="icon-text">
               <span>BLEURT</span>
               <SortIcon
-                  class="ml-1"
-                  :index="getSortIndex('bleurt')"
-                  :direction="getSortDirection('bleurt')"
-                  @directionChanged="onSortDirectionChange('bleurt', $event)"
+                class="ml-1"
+                :index="getSortIndex('bleurt')"
+                :direction="getSortDirection('bleurt')"
+                @directionChanged="onSortDirectionChange('bleurt', $event)"
               />
             </span>
-        </th>
-        <th>
+          </th>
+          <th>
             <span class="icon-text">
               <span>GPT Judge</span>
               <SortIcon
-                  class="ml-1"
-                  :index="getSortIndex('gptscore')"
-                  :direction="getSortDirection('gptscore')"
-                  @directionChanged="onSortDirectionChange('gptscore', $event)"
+                class="ml-1"
+                :index="getSortIndex('gptscore')"
+                :direction="getSortDirection('gptscore')"
+                @directionChanged="onSortDirectionChange('gptscore', $event)"
               />
             </span>
-        </th>
-      </tr>
+          </th>
+        </tr>
       </thead>
 
       <tbody>
-      <tr v-for="datum in currentPageData">
-        <td>{{ datum.name }} ({{ datum.citation }})</td>
-        <td>{{ datum.context }}</td>
-        <td>{{ datum.acc.loose }}</td>
-        <td>{{ datum.acc.strict }}</td>
-        <td>{{ datum.rouge.rouge1.fscore }}</td>
-        <td>{{ datum.rouge.rouge2.fscore }}</td>
-        <td>{{ datum.rouge.rougeL.fscore }}</td>
-        <td>{{ datum.bleurt }}</td>
-        <td>{{ datum.gpt }}</td>
-      </tr>
+        <tr v-for="datum in currentPageData">
+          <td>{{ datum.name }} ({{ datum.citation }})</td>
+          <td>{{ datum.context }}</td>
+          <td>{{ datum.acc.loose }}</td>
+          <td>{{ datum.acc.strict }}</td>
+          <td>{{ datum.rouge.rouge1.fscore }}</td>
+          <td>{{ datum.rouge.rouge2.fscore }}</td>
+          <td>{{ datum.rouge.rougeL.fscore }}</td>
+          <td>{{ datum.bleurt }}</td>
+          <td>{{ datum.gpt }}</td>
+        </tr>
       </tbody>
     </table>
 
     <div class="level" v-if="numPages > 1">
       <p class="level-item">
-        <button class="button mr-2" v-if="pagination.currentPage > 0" @click="pagination.currentPage--">
+        <button
+          class="button mr-2"
+          v-if="pagination.currentPage > 0"
+          @click="pagination.currentPage--"
+        >
           <span class="icon is-small">
-            <font-awesome-icon :icon="['fas', 'angle-left']"/>
+            <font-awesome-icon :icon="['fas', 'angle-left']" />
           </span>
         </button>
         <span>Page {{ pagination.currentPage + 1 }} / {{ numPages }}</span>
-        <button class="button ml-2" v-if="pagination.currentPage < numPages - 1" @click="pagination.currentPage++">
+        <button
+          class="button ml-2"
+          v-if="pagination.currentPage < numPages - 1"
+          @click="pagination.currentPage++"
+        >
           <span class="icon is-small">
-            <font-awesome-icon :icon="['fas', 'angle-right']"/>
+            <font-awesome-icon :icon="['fas', 'angle-right']" />
           </span>
         </button>
       </p>

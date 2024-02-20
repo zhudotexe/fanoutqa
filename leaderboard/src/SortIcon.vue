@@ -3,12 +3,12 @@ import { SortOrder } from '@/sorters'
 
 // setup
 const props = defineProps<{
-  index: number | null;
-  direction: SortOrder;
-  disallowSortDesc?: boolean;
+  index: number | null
+  direction: SortOrder
+  disallowSortDesc?: boolean
 }>()
 const emit = defineEmits<{
-  (e: 'directionChanged', direction: SortOrder): void;
+  (e: 'directionChanged', direction: SortOrder): void
 }>()
 
 // methods

@@ -5,11 +5,11 @@ import { defineProps, ref } from 'vue'
 
 // setup
 const props = defineProps<{
-  options: FilterOption<number>[];
-  selected: number[];
+  options: FilterOption<number>[]
+  selected: number[]
 }>()
 const emit = defineEmits<{
-  (e: 'selectionChanged', selectedOptions: number[]): void;
+  (e: 'selectionChanged', selectedOptions: number[]): void
 }>()
 const vClickOutside = clickOutside.directive
 
@@ -37,7 +37,12 @@ function onClickOutside() {
 </script>
 
 <template>
-  <div class="dropdown" :class="{'is-active': isExpanded}" @click="onClick" v-click-outside="onClickOutside">
+  <div
+    class="dropdown"
+    :class="{ 'is-active': isExpanded }"
+    @click="onClick"
+    v-click-outside="onClickOutside"
+  >
     <div class="dropdown-trigger">
       <!-- dropdown controller = filter button -->
       <span class="icon m-0 is-clickable" aria-haspopup="true" aria-controls="dropdown-menu">
