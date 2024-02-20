@@ -13,8 +13,9 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 'lts/*'
+          node-version: "lts/*"
           cache: "npm"
+          cache-dependency-path: "leaderboard/package-lock.json"
 
       - name: Install leaderboard deps
         working-directory: ./leaderboard
