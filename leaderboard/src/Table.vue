@@ -124,7 +124,7 @@ function loadFilterQueryParams() {
     // find the valid options
     let validOptions = []
     for (const queryElem of filterQuery) {
-      const matchingOption = filterDef.options.find((option) => option.value === +(queryElem ?? 0))
+      const matchingOption = filterDef.options.find((option) => option.value == (queryElem ?? 0))
       if (matchingOption) {
         validOptions.push(matchingOption.value)
       }
@@ -165,13 +165,9 @@ onMounted(() => {
 </script>
 
 <template>
-  <!-- # info -->
-  <p>look, this is the loeaderboard waow</p>
-  <!-- /# info -->
-
   <!-- filter info -->
   <div class="level mt-2">
-    <div class="level-right">
+    <div class="level-left">
       <p class="level-item">
         {{ filteredSortedData.length }}
         {{ filteredSortedData.length === 1 ? 'entry matches' : 'entries match' }}

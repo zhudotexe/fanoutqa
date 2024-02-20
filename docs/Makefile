@@ -21,7 +21,12 @@ preview: html
 clean:
 	rm -rf "$(BUILDDIR)"
 
+leaderboard:
+	cd ../leaderboard; \
+	npm run build; \
+	cp -R dist/. ../docs/_extra/leaderboard;
+
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
-%: Makefile
+%: Makefile leaderboard
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
