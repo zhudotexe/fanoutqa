@@ -1,0 +1,198 @@
+[
+  {
+    "acc": { "loose": 0.3549958003169331, "strict": 0.06629834254143646 },
+    "rouge": {
+      "rouge1": {
+        "precision": 0.3081323409240976,
+        "recall": 0.4026625098759217,
+        "fscore": 0.313123968945042
+      },
+      "rouge2": {
+        "precision": 0.1696203592964782,
+        "recall": 0.22556614456096988,
+        "fscore": 0.1769179306107922
+      },
+      "rougeL": {
+        "precision": 0.2618982426700318,
+        "recall": 0.3437078118709097,
+        "fscore": 0.26676820286543684
+      }
+    },
+    "bleurt": 0.4191427961588729,
+    "gpt": 0.14917127071823205,
+    "name": "GPT-4",
+    "authors": "OpenAI",
+    "url": "https://platform.openai.com/docs/models/gpt-4-and-gpt-4-turbo",
+    "citation": "OpenAI, 2023",
+    "type": "FOUNDATION",
+    "context": 8192
+  },
+  {
+    "acc": { "loose": 0.4597296177579326, "strict": 0.10082872928176796 },
+    "rouge": {
+      "rouge1": {
+        "precision": 0.5061057938990791,
+        "recall": 0.5171893148007345,
+        "fscore": 0.48194841967428786
+      },
+      "rouge2": {
+        "precision": 0.29559659009870354,
+        "recall": 0.30901380162874503,
+        "fscore": 0.290250346638784
+      },
+      "rougeL": {
+        "precision": 0.43012909178526687,
+        "recall": 0.440115792132854,
+        "fscore": 0.4091321043635482
+      }
+    },
+    "bleurt": 0.49333308180228125,
+    "gpt": 0.19889502762430938,
+    "name": "GPT-4-turbo",
+    "authors": "OpenAI",
+    "url": "https://platform.openai.com/docs/models/gpt-4-and-gpt-4-turbo",
+    "citation": "OpenAI, 2023",
+    "type": "FOUNDATION",
+    "context": 128000
+  },
+  {
+    "acc": { "loose": 0.3979994873440785, "strict": 0.058011049723756904 },
+    "rouge": {
+      "rouge1": {
+        "precision": 0.40734904473273553,
+        "recall": 0.45162239056919035,
+        "fscore": 0.4012819044350075
+      },
+      "rouge2": {
+        "precision": 0.22803347570177684,
+        "recall": 0.2518584000616542,
+        "fscore": 0.2271839790263482
+      },
+      "rougeL": {
+        "precision": 0.34711466296455995,
+        "recall": 0.38661536042587596,
+        "fscore": 0.34195490807715956
+      }
+    },
+    "bleurt": 0.4551408462926169,
+    "gpt": 0.14502762430939226,
+    "name": "GPT-3.5-turbo",
+    "authors": "OpenAI",
+    "url": "https://platform.openai.com/docs/models/gpt-3-5-turbo",
+    "citation": "OpenAI, 2023",
+    "type": "FOUNDATION",
+    "context": 16384
+  },
+  {
+    "acc": { "loose": 0.4403229470249054, "strict": 0.058011049723756904 },
+    "rouge": {
+      "rouge1": {
+        "precision": 0.21079994013879805,
+        "recall": 0.5309704790876308,
+        "fscore": 0.2847323680812482
+      },
+      "rouge2": {
+        "precision": 0.11206570754887477,
+        "recall": 0.26618658655979804,
+        "fscore": 0.14873440544450633
+      },
+      "rougeL": {
+        "precision": 0.17624114336611502,
+        "recall": 0.44614569152308986,
+        "fscore": 0.23787236888912539
+      }
+    },
+    "bleurt": 0.44125290332331185,
+    "gpt": 0.12016574585635359,
+    "name": "LLaMA 2 70B",
+    "authors": "Meta",
+    "url": "https://ai.meta.com/research/publications/llama-2-open-foundation-and-fine-tuned-chat-models/",
+    "citation": "Touvron et al., 2023",
+    "type": "FOUNDATION",
+    "context": 4096
+  },
+  {
+    "acc": { "loose": 0.4271172854502475, "strict": 0.055248618784530384 },
+    "rouge": {
+      "rouge1": {
+        "precision": 0.19504405031464528,
+        "recall": 0.5205896670595586,
+        "fscore": 0.2603643670617223
+      },
+      "rouge2": {
+        "precision": 0.09285001789519015,
+        "recall": 0.23254410979936643,
+        "fscore": 0.12283050286793348
+      },
+      "rougeL": {
+        "precision": 0.15867921904916787,
+        "recall": 0.42898549246034995,
+        "fscore": 0.21227960835014928
+      }
+    },
+    "bleurt": 0.4494648841801434,
+    "gpt": 0.10220994475138122,
+    "name": "Mistral-7B",
+    "authors": "Mistral AI",
+    "url": "https://mistral.ai/news/announcing-mistral-7b/",
+    "citation": "Jiang et al., 2023",
+    "type": "FOUNDATION",
+    "context": 32000
+  },
+  {
+    "acc": { "loose": 0.4695900993561285, "strict": 0.08149171270718232 },
+    "rouge": {
+      "rouge1": {
+        "precision": 0.2402434133434171,
+        "recall": 0.5465023664516744,
+        "fscore": 0.3023042602650845
+      },
+      "rouge2": {
+        "precision": 0.1278099874524417,
+        "recall": 0.26409680478109976,
+        "fscore": 0.15751696515253602
+      },
+      "rougeL": {
+        "precision": 0.20205125579019406,
+        "recall": 0.46086662623646035,
+        "fscore": 0.2538329572357096
+      }
+    },
+    "bleurt": 0.46641780631565255,
+    "gpt": 0.18646408839779005,
+    "name": "Mixtral-8x7B",
+    "authors": "Mistral AI",
+    "url": "https://mistral.ai/news/mixtral-of-experts/",
+    "citation": "Jiang et al., 2024",
+    "type": "FOUNDATION",
+    "context": 32000
+  },
+  {
+    "acc": { "loose": 0.34087118650894077, "strict": 0.04143646408839779 },
+    "rouge": {
+      "rouge1": {
+        "precision": 0.5180287739482223,
+        "recall": 0.3878211545435264,
+        "fscore": 0.41162891337334295
+      },
+      "rouge2": {
+        "precision": 0.25046659737457144,
+        "recall": 0.19938401442157735,
+        "fscore": 0.20843439451844803
+      },
+      "rougeL": {
+        "precision": 0.4368122438044132,
+        "recall": 0.3228172228944878,
+        "fscore": 0.34362967985991916
+      }
+    },
+    "bleurt": 0.42636404607383255,
+    "gpt": 0.11049723756906077,
+    "name": "Claude 2.1",
+    "authors": "Anthropic",
+    "url": "https://www.anthropic.com/news/claude-2-1",
+    "citation": "Anthropic, 2023",
+    "type": "FOUNDATION",
+    "context": 200000
+  }
+]

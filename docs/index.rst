@@ -4,7 +4,7 @@
 .. toctree::
     :maxdepth: 2
 
-    leaderboards.md
+    Leaderboard <https://fanoutqa.com/leaderboard>
     api_reference
     genindex
     Paper <https://TODO.TODO>

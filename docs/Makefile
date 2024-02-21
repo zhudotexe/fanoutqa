@@ -16,12 +16,17 @@ help:
 
 # make html and then open it in the browser
 preview: html
-	open "$(BUILDDIR)/html/index.html"
+	echo http://127.0.0.1:8000 && python -m http.server -d _build/html
 
 clean:
 	rm -rf "$(BUILDDIR)"
 
+leaderboard:
+	cd ../leaderboard; \
+	npm run build; \
+	cp -R dist/. ../docs/_extra/leaderboard;
+
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
-%: Makefile
+%: Makefile leaderboard
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
