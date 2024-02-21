@@ -319,7 +319,11 @@ function isMaximum(
               )
             }"
           >
-            {{ datum.rouge.rouge1.fscore.toFixed(3) }}
+            <abbr
+              :title="`P: ${datum.rouge.rouge1.precision.toFixed(3)} / R: ${datum.rouge.rouge1.recall.toFixed(3)}`"
+            >
+              {{ datum.rouge.rouge1.fscore.toFixed(3) }}
+            </abbr>
           </td>
           <td
             :class="{
@@ -329,7 +333,11 @@ function isMaximum(
               )
             }"
           >
-            {{ datum.rouge.rouge2.fscore.toFixed(3) }}
+            <abbr
+              :title="`P: ${datum.rouge.rouge2.precision.toFixed(3)} / R: ${datum.rouge.rouge2.recall.toFixed(3)}`"
+            >
+              {{ datum.rouge.rouge2.fscore.toFixed(3) }}
+            </abbr>
           </td>
           <td
             :class="{
@@ -339,7 +347,11 @@ function isMaximum(
               )
             }"
           >
-            {{ datum.rouge.rougeL.fscore.toFixed(3) }}
+            <abbr
+              :title="`P: ${datum.rouge.rougeL.precision.toFixed(3)} / R: ${datum.rouge.rougeL.recall.toFixed(3)}`"
+            >
+              {{ datum.rouge.rougeL.fscore.toFixed(3) }}
+            </abbr>
           </td>
           <td :class="{ 'has-text-weight-bold': isMaximum(datum.bleurt, (d) => d.bleurt) }">
             {{ datum.bleurt.toFixed(3) }}
