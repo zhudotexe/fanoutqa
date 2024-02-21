@@ -162,6 +162,16 @@ onMounted(() => {
   loadFilterQueryParams()
   loadSortQueryParams()
 })
+
+// attr max helpers
+function isMaximum(
+  x: number,
+  attr: (datum: Datum) => number,
+  round: (x: number) => any = (x) => x.toFixed(3)
+): boolean {
+  const max = filteredSortedData.value.reduce((acc, v) => Math.max(acc, attr(v)), -Infinity)
+  return round(x) === round(max)
+}
 </script>
 
 <template>
@@ -288,15 +298,55 @@ onMounted(() => {
 
       <tbody>
         <tr v-for="datum in currentPageData">
-          <td>{{ datum.name }} ({{ datum.citation }})</td>
+          <td>
+            {{ datum.name }} (<a :href="datum.url" v-if="datum.url" target="_blank">{{
+              datum.citation
+            }}</a
+            >)
+          </td>
           <td>{{ new Intl.NumberFormat().format(datum.context) }}</td>
-          <td>{{ datum.acc.loose.toFixed(3) }}</td>
-          <td>{{ datum.acc.strict.toFixed(3) }}</td>
-          <td>{{ datum.rouge.rouge1.fscore.toFixed(3) }}</td>
-          <td>{{ datum.rouge.rouge2.fscore.toFixed(3) }}</td>
-          <td>{{ datum.rouge.rougeL.fscore.toFixed(3) }}</td>
-          <td>{{ datum.bleurt.toFixed(3) }}</td>
-          <td>{{ datum.gpt.toFixed(3) }}</td>
+          <td :class="{ 'has-text-weight-bold': isMaximum(datum.acc.loose, (d) => d.acc.loose) }">
+            {{ datum.acc.loose.toFixed(3) }}
+          </td>
+          <td :class="{ 'has-text-weight-bold': isMaximum(datum.acc.strict, (d) => d.acc.strict) }">
+            {{ datum.acc.strict.toFixed(3) }}
+          </td>
+          <td
+            :class="{
+              'has-text-weight-bold': isMaximum(
+                datum.rouge.rouge1.fscore,
+                (d) => d.rouge.rouge1.fscore
+              )
+            }"
+          >
+            {{ datum.rouge.rouge1.fscore.toFixed(3) }}
+          </td>
+          <td
+            :class="{
+              'has-text-weight-bold': isMaximum(
+                datum.rouge.rouge2.fscore,
+                (d) => d.rouge.rouge2.fscore
+              )
+            }"
+          >
+            {{ datum.rouge.rouge2.fscore.toFixed(3) }}
+          </td>
+          <td
+            :class="{
+              'has-text-weight-bold': isMaximum(
+                datum.rouge.rougeL.fscore,
+                (d) => d.rouge.rougeL.fscore
+              )
+            }"
+          >
+            {{ datum.rouge.rougeL.fscore.toFixed(3) }}
+          </td>
+          <td :class="{ 'has-text-weight-bold': isMaximum(datum.bleurt, (d) => d.bleurt) }">
+            {{ datum.bleurt.toFixed(3) }}
+          </td>
+          <td :class="{ 'has-text-weight-bold': isMaximum(datum.gpt, (d) => d.gpt) }">
+            {{ datum.gpt.toFixed(3) }}
+          </td>
         </tr>
       </tbody>
     </table>
