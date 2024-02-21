@@ -289,14 +289,14 @@ onMounted(() => {
       <tbody>
         <tr v-for="datum in currentPageData">
           <td>{{ datum.name }} ({{ datum.citation }})</td>
-          <td>{{ datum.context }}</td>
-          <td>{{ datum.acc.loose }}</td>
-          <td>{{ datum.acc.strict }}</td>
-          <td>{{ datum.rouge.rouge1.fscore }}</td>
-          <td>{{ datum.rouge.rouge2.fscore }}</td>
-          <td>{{ datum.rouge.rougeL.fscore }}</td>
-          <td>{{ datum.bleurt }}</td>
-          <td>{{ datum.gpt }}</td>
+          <td>{{ new Intl.NumberFormat().format(datum.context) }}</td>
+          <td>{{ datum.acc.loose.toFixed(3) }}</td>
+          <td>{{ datum.acc.strict.toFixed(3) }}</td>
+          <td>{{ datum.rouge.rouge1.fscore.toFixed(3) }}</td>
+          <td>{{ datum.rouge.rouge2.fscore.toFixed(3) }}</td>
+          <td>{{ datum.rouge.rougeL.fscore.toFixed(3) }}</td>
+          <td>{{ datum.bleurt.toFixed(3) }}</td>
+          <td>{{ datum.gpt.toFixed(3) }}</td>
         </tr>
       </tbody>
     </table>
