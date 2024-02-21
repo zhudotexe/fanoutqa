@@ -184,12 +184,13 @@ question:
 }
 ```
 
-In the email body, please include details about your system, including at least:
+In the email body, please include details about your system, including:
 
 - the name of your system
 - the list of authors
 - a link to your paper and recommended short citation, if applicable
-- whether it is a new foundation model, a fine-tune, a prompting approach, or other
+- the context length of your model
+- whether your model is a new foundation model, a fine-tune, a prompting approach, or other
 
 ## Additional Resources
 

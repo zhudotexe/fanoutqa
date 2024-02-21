@@ -42,4 +42,4 @@ export const sorters: { [id: string]: { asc: Sorter; desc?: Sorter } } = {
   bleurt: { asc: numeric((datum) => datum.bleurt), desc: numericDesc((datum) => datum.bleurt) },
   gptscore: { asc: numeric((datum) => datum.gpt), desc: numericDesc((datum) => datum.gpt) }
 }
-export const defaultSorter: Sorter = sorters.context.asc
+export const defaultSorter: Sorter = sorters.gptscore.desc!
