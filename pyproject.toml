@@ -48,7 +48,7 @@ eval = [
 [tool.black]
 line-length = 120
 preview = true
-exclude = "reference"
+extend-exclude = "reference"
 
 [tool.isort]
 profile = "black"
