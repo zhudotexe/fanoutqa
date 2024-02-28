@@ -9,10 +9,6 @@ from kani.engines.huggingface.llama2 import LlamaEngine
 from kani.engines.openai import OpenAIEngine
 from kani.engines.openai.models import ChatCompletion
 
-# openai
-ft_org_id = "org-dxkPAvuWroRmYw7z0VhqMC5S"
-lab_org_id = "org-bgAXfs8WdU5942SLngg0OGpd"
-
 # hf
 common_hf_model_args = dict(
     device_map="auto",
@@ -31,7 +27,6 @@ def get_engine(name: str, ctx_size=None) -> BaseEngine:
     if name == "gpt-4":
         return RatelimitedOpenAIEngine(
             model="gpt-4-0613",
-            organization=lab_org_id,
             max_context_size=ctx_size or 8192,
             tpm_limiter=aiolimiter.AsyncLimiter(300000),
             temperature=0,
@@ -39,7 +34,6 @@ def get_engine(name: str, ctx_size=None) -> BaseEngine:
     elif name == "gpt-4-turbo":
         return RatelimitedOpenAIEngine(
             model="gpt-4-0125-preview",
-            organization=ft_org_id,
             max_context_size=ctx_size or 128000,
             tpm_limiter=aiolimiter.AsyncLimiter(400000),
             temperature=0,
@@ -47,7 +41,6 @@ def get_engine(name: str, ctx_size=None) -> BaseEngine:
     elif name == "gpt-3.5-turbo":
         return RatelimitedOpenAIEngine(
             model="gpt-3.5-turbo-1106",
-            organization=ft_org_id,
             max_context_size=ctx_size or 16000,
             tpm_limiter=aiolimiter.AsyncLimiter(2000000),
             temperature=0,
