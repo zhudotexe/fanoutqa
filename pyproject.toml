@@ -55,6 +55,7 @@ profile = "black"
 skip_gitignore = true
 line_length = 120
 known_first_party = ["fanoutqa"]
+extend_skip = ["reference"]
 # I am bound by pycharm's import autosorting rules
 no_lines_before = "LOCALFOLDER"
 reverse_relative = true
