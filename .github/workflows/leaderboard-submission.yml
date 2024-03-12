@@ -34,6 +34,9 @@ jobs:
           rm leaderboard-submissions/pr-results
           cp -r /pr/leaderboard-submissions/results/. leaderboard-submissions/pr-results
 
+      - name: Download test set answers
+        run: wget ${{ secrets.TEST_ANSWERS_URL }} -O fanoutqa-test-answers.json
+
       # set up in local workdir and hydrate results
       - name: Set up Python 3.10
         uses: actions/setup-python@v5
@@ -52,6 +55,7 @@ jobs:
       - name: Run eval script
         env:
           LEADERBOARD_SALT: ${{ secrets.LEADERBOARD_SALT }}
+          FANOUTQA_OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: python leaderboard-submissions/hydrate.py
 
       - name: Commit results files
