@@ -12,13 +12,14 @@ for fp in sys.argv[1:]:
     with open(fp) as f:
         results = json.load(f)
 
+    metadata = results["metadata"]
     cb = results["closedbook"]
     ob = results["openbook"]
     ep = results["evidenceprovided"]
 
     print(
-        f"# {results['name']}\n"
-        f"*[{results['citation']}]({results['url']})*\n\n"
+        f"# {metadata['name']}\n"
+        f"*[{metadata['citation']}]({metadata['url']})*\n\n"
         "## Closed Book\n\n"
         f"- **Loose**: {cb['acc']['loose']:.3}\n"
         f"- **Strict**: {cb['acc']['strict']:.3}\n"
