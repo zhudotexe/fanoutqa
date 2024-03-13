@@ -1,0 +1,11 @@
+{
+  "name": "GPT-4",
+  "authors": "OpenAI",
+  "url": "https://platform.openai.com/docs/models/gpt-4-and-gpt-4-turbo",
+  "citation": "OpenAI, 2023",
+  "type": "FOUNDATION",
+  "context": 8192,
+  "closedbook_generations": "results-closedbook-gpt-4.jsonl",
+  "openbook_generations": "results-openbook-gpt-4.jsonl",
+  "evidenceprovided_generations": "results-wiki-provided-gpt-4.jsonl"
+}

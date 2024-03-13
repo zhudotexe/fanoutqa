@@ -1,0 +1,11 @@
+{
+  "name": "GPT-3.5-turbo",
+  "authors": "OpenAI",
+  "url": "https://platform.openai.com/docs/models/gpt-3-5-turbo",
+  "citation": "OpenAI, 2023",
+  "type": "FOUNDATION",
+  "context": 16384,
+  "closedbook_generations": "results-closedbook-gpt-3.5-turbo.jsonl",
+  "openbook_generations": "results-openbook-gpt-3.5-turbo.jsonl",
+  "evidenceprovided_generations": "results-wiki-provided-gpt-3.5-turbo.jsonl"
+}
