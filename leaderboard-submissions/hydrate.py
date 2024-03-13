@@ -2,7 +2,7 @@ import hashlib
 import json
 import os
 from collections import namedtuple
-from dataclasses import dataclass
+from dataclasses import asdict, dataclass
 from pathlib import Path
 from typing import List, Literal, Optional
 
@@ -56,6 +56,7 @@ def read_jsonl_answers(fp: Path) -> List[dict]:
 def hydrate_all():
     """Main entrypoint - ensure all metadata submissions have valid associated results files"""
     exit_code = 0
+    written_files = []
     # for each submission file,
     for metadata_fp in METADATA_PATH.glob("*.json"):
         # check if it is valid and needs eval
@@ -75,11 +76,21 @@ def hydrate_all():
         print(f"Open-book generations path: {OB_PATH / check_result.metadata.openbook_generations}")
         print(f"Evidence-provided generations path: {EP_PATH / check_result.metadata.evidenceprovided_generations}")
         try:
-            eval_submission(metadata_fp, check_result)
+            result_fp = eval_submission(metadata_fp, check_result)
+            written_files.append(result_fp)
         except Exception as e:
             # if invalid, log a check annotation and mark job failure
             print(f"::error file={metadata_fp},title=Could not eval submission::{e}")
             exit_code = 1
+
+    print(f"Done. Wrote {len(written_files)} results files.")
+
+    # write the written results files to GH outputs
+    if "GITHUB_OUTPUT" in os.environ:
+        written_files_list = " ".join(f'"{fp.absolute()}"' for fp in written_files)
+        with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+            f.write(f"changed={len(written_files)}\n")
+            f.write(f"written-results={written_files_list}\n")
     return exit_code
 
 
@@ -128,19 +139,32 @@ def check_submission(metadata_fp: Path) -> CheckResult:
 
 def eval_submission(metadata_fp: Path, check_result: CheckResult):
     """Read in the answers and generations and eval them all, then write the results file."""
-    questions = fanoutqa.load_dev("fanoutqa-test-answers.json")
+    # TODO test remove me and uncomment below
+    dummy = {
+        "acc": {"loose": 0, "strict": 0},
+        "rouge": {
+            "rouge1": {"precision": 0, "recall": 0, "fscore": 0},
+            "rouge2": {"precision": 0, "recall": 0, "fscore": 0},
+            "rougeL": {"precision": 0, "recall": 0, "fscore": 0},
+        },
+        "bleurt": 0,
+        "gpt": 0,
+    }
+    closedbook_results = openbook_results = evidenceprovided_results = dummy
 
-    print("Evaluating closed book answers...")
-    closedbook_answers = read_jsonl_answers(CB_PATH / check_result.metadata.closedbook_generations)
-    closedbook_results = evaluate(questions, closedbook_answers)
-
-    print("Evaluating open book answers...")
-    openbook_answers = read_jsonl_answers(OB_PATH / check_result.metadata.openbook_generations)
-    openbook_results = evaluate(questions, openbook_answers)
-
-    print("Evaluating evidence provided answers...")
-    evidenceprovided_answers = read_jsonl_answers(EP_PATH / check_result.metadata.evidenceprovided_generations)
-    evidenceprovided_results = evaluate(questions, evidenceprovided_answers)
+    # questions = fanoutqa.load_dev("fanoutqa-test-answers.json")
+    #
+    # print("Evaluating closed book answers...")
+    # closedbook_answers = read_jsonl_answers(CB_PATH / check_result.metadata.closedbook_generations)
+    # closedbook_results = asdict(evaluate(questions, closedbook_answers))
+    #
+    # print("Evaluating open book answers...")
+    # openbook_answers = read_jsonl_answers(OB_PATH / check_result.metadata.openbook_generations)
+    # openbook_results = asdict(evaluate(questions, openbook_answers))
+    #
+    # print("Evaluating evidence provided answers...")
+    # evidenceprovided_answers = read_jsonl_answers(EP_PATH / check_result.metadata.evidenceprovided_generations)
+    # evidenceprovided_results = asdict(evaluate(questions, evidenceprovided_answers))
 
     # hash the results to prevent score manipulation
     results_hash = hashlib.sha256()
@@ -171,6 +195,7 @@ def eval_submission(metadata_fp: Path, check_result: CheckResult):
     result_fp = RESULTS_OUT_PATH / metadata_fp.name
     with open(result_fp, "w") as f:
         json.dump(result, f)
+    return result_fp
 
 
 if __name__ == "__main__":

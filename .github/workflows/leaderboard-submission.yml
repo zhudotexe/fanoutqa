@@ -53,11 +53,20 @@ jobs:
           rm BLEURT-20.zip
 
       - name: Run eval script
+        id: eval
         env:
           LEADERBOARD_SALT: ${{ secrets.LEADERBOARD_SALT }}
           FANOUTQA_OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: python leaderboard-submissions/hydrate.py
 
-      - name: Commit results files
+      - name: Add PR comment (failure)
+        if: failure()
+        run: gh pr comment ${{ github.event.number }} -b "It looks like this eval run failed. Please check the [workflow logs](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}/job/${{ github.job }}) to see what went wrong, then push a new commit to your PR to rerun the eval."
 
       - name: Add PR comment (success)
+        if: steps.eval.outputs.changed > 0
+        env:
+          RUN_LINK: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}/job/${{ github.job }})
+        run: python leaderboard-submissions/gh-print-new-results.py ${{ steps.eval.outputs.written-results }} | gh pr comment ${{ github.event.number }} -F -
+
+#      - name: Commit results files to PR
