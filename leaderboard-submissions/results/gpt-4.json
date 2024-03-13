@@ -1,0 +1,87 @@
+{
+  "_submission_hash": "576a4d65e318aadd4d0c26efaff9502187fec9fdf251e9bc7007c93a0841f7bf",
+  "_results_hash": "5cb1e53e4c7b54f0f2295b759ee29e2b005c7da85ba65b04090032a50924948f",
+  "metadata": {
+    "name": "GPT-4",
+    "authors": "OpenAI",
+    "url": "https://platform.openai.com/docs/models/gpt-4-and-gpt-4-turbo",
+    "citation": "OpenAI, 2023",
+    "type": "FOUNDATION",
+    "context": 8192
+  },
+  "closedbook": {
+    "acc": {
+      "loose": 0.0,
+      "strict": 0.0
+    },
+    "rouge": {
+      "rouge1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "fscore": 0.0
+      },
+      "rouge2": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "fscore": 0.0
+      },
+      "rougeL": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "fscore": 0.0
+      }
+    },
+    "bleurt": 0.0,
+    "gpt": 0.0
+  },
+  "openbook": {
+    "acc": {
+      "loose": 0.0,
+      "strict": 0.0
+    },
+    "rouge": {
+      "rouge1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "fscore": 0.0
+      },
+      "rouge2": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "fscore": 0.0
+      },
+      "rougeL": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "fscore": 0.0
+      }
+    },
+    "bleurt": 0.0,
+    "gpt": 0.0
+  },
+  "evidenceprovided": {
+    "acc": {
+      "loose": 0.0,
+      "strict": 0.0
+    },
+    "rouge": {
+      "rouge1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "fscore": 0.0
+      },
+      "rouge2": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "fscore": 0.0
+      },
+      "rougeL": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "fscore": 0.0
+      }
+    },
+    "bleurt": 0.0,
+    "gpt": 0.0
+  }
+}
