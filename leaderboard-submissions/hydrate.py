@@ -13,7 +13,7 @@ from fanoutqa.eval import evaluate
 LEADERBOARD_SALT = os.getenv("LEADERBOARD_SALT", "supersecret").encode()
 SUBMISSIONS_ROOT = Path(__file__).parent
 METADATA_PATH = SUBMISSIONS_ROOT / "metadata"
-RESULTS_IN_PATH = SUBMISSIONS_ROOT / "results-pr"
+RESULTS_IN_PATH = SUBMISSIONS_ROOT / "pr-results"
 RESULTS_OUT_PATH = SUBMISSIONS_ROOT / "results"
 CB_PATH = SUBMISSIONS_ROOT / "closedbook-generations"
 OB_PATH = SUBMISSIONS_ROOT / "openbook-generations"
@@ -141,14 +141,14 @@ def eval_submission(metadata_fp: Path, check_result: CheckResult):
     """Read in the answers and generations and eval them all, then write the results file."""
     # TODO test remove me and uncomment below
     dummy = {
-        "acc": {"loose": 0, "strict": 0},
+        "acc": {"loose": 0., "strict": 0.},
         "rouge": {
-            "rouge1": {"precision": 0, "recall": 0, "fscore": 0},
-            "rouge2": {"precision": 0, "recall": 0, "fscore": 0},
-            "rougeL": {"precision": 0, "recall": 0, "fscore": 0},
+            "rouge1": {"precision": 0., "recall": 0., "fscore": 0.},
+            "rouge2": {"precision": 0., "recall": 0., "fscore": 0.},
+            "rougeL": {"precision": 0., "recall": 0., "fscore": 0.},
         },
-        "bleurt": 0,
-        "gpt": 0,
+        "bleurt": 0.,
+        "gpt": 0.,
     }
     closedbook_results = openbook_results = evidenceprovided_results = dummy
 
@@ -194,7 +194,7 @@ def eval_submission(metadata_fp: Path, check_result: CheckResult):
 
     result_fp = RESULTS_OUT_PATH / metadata_fp.name
     with open(result_fp, "w") as f:
-        json.dump(result, f)
+        json.dump(result, f, indent=2)
     return result_fp
 
 
