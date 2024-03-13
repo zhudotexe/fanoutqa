@@ -12,27 +12,29 @@ on:
 jobs:
   evaluate:
     runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
 
     steps:
       # Clone the main repo
       - uses: actions/checkout@v4
 
-      # Clone the PR head to /pr
+      # Clone the PR head to _pr_submission
       - uses: actions/checkout@v4
         with:
-          path: /pr
+          path: _pr_submission
           ref: ${{ github.head_ref }}
 
       # copy submission files over to main repo
       # results files go to a new dir to prevent weird commit behaviour when committing results
       - name: Copy submission files to eval workspace
         run: |
-          cp -r /pr/leaderboard-submissions/closedbook-generations/. leaderboard-submissions/closedbook-generations
-          cp -r /pr/leaderboard-submissions/openbook-generations/. leaderboard-submissions/openbook-generations
-          cp -r /pr/leaderboard-submissions/evidenceprovided-generations/. leaderboard-submissions/evidenceprovided-generations
-          cp -r /pr/leaderboard-submissions/metadata/. leaderboard-submissions/metadata
+          cp -r _pr_submission/leaderboard-submissions/closedbook-generations/. leaderboard-submissions/closedbook-generations
+          cp -r _pr_submission/leaderboard-submissions/openbook-generations/. leaderboard-submissions/openbook-generations
+          cp -r _pr_submission/leaderboard-submissions/evidenceprovided-generations/. leaderboard-submissions/evidenceprovided-generations
+          cp -r _pr_submission/leaderboard-submissions/metadata/. leaderboard-submissions/metadata
           rm leaderboard-submissions/pr-results
-          cp -r /pr/leaderboard-submissions/results/. leaderboard-submissions/pr-results
+          cp -r _pr_submission/leaderboard-submissions/results/. leaderboard-submissions/pr-results
 
       - name: Download test set answers
         run: wget ${{ secrets.TEST_ANSWERS_URL }} -O fanoutqa-test-answers.json
