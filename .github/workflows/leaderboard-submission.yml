@@ -41,7 +41,7 @@ jobs:
           cp -r _pr_submission/leaderboard-submissions/results/. leaderboard-submissions/pr-results
 
       - name: Download test set answers
-        run: wget ${{ secrets.TEST_ANSWERS_URL }} -O fanoutqa-test-answers.json
+        run: wget -q ${{ secrets.TEST_ANSWERS_URL }} -O fanoutqa-test-answers.json
 
       # set up in local workdir and hydrate results
       - name: Set up Python 3.10
@@ -54,7 +54,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-          wget https://storage.googleapis.com/bleurt-oss-21/BLEURT-20.zip
+          wget -nv https://storage.googleapis.com/bleurt-oss-21/BLEURT-20.zip
           unzip BLEURT-20.zip
           rm BLEURT-20.zip
 
@@ -80,6 +80,8 @@ jobs:
         run: |
           cp ${{ steps.eval.outputs.written-results }} _pr_submission/leaderboard-submissions/results/
           cd _pr_submission
-          git add _pr_submission/leaderboard-submissions/results
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add leaderboard-submissions/results
           git commit -m "leaderboard: add eval results"
           git push
