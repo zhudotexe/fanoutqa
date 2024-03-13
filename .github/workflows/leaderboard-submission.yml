@@ -9,6 +9,10 @@ on:
       - leaderboard-submissions/metadata/*.json
       - leaderboard-submissions/*generations/*.jsonl
 
+permissions:
+  pull-requests: write
+  contents: write
+
 jobs:
   evaluate:
     runs-on: ubuntu-latest
@@ -68,7 +72,7 @@ jobs:
       - name: Add PR comment (success)
         if: steps.eval.outputs.changed > 0
         env:
-          RUN_LINK: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}/job/${{ github.job }})
+          RUN_LINK: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}/job/${{ github.job_id }}
         run: python leaderboard-submissions/gh-print-new-results.py ${{ steps.eval.outputs.written-results }} | gh pr comment ${{ github.event.number }} -F -
 
 #      - name: Commit results files to PR
