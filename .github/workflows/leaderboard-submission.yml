@@ -80,6 +80,8 @@ jobs:
         run: |
           cp ${{ steps.eval.outputs.written-results }} _pr_submission/leaderboard-submissions/results/
           cd _pr_submission
-          git add _pr_submission/leaderboard-submissions/results
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add leaderboard-submissions/results
           git commit -m "leaderboard: add eval results"
           git push
