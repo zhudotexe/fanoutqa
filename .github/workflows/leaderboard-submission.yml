@@ -67,12 +67,19 @@ jobs:
 
       - name: Add PR comment (failure)
         if: failure()
-        run: gh pr comment ${{ github.event.number }} -b "It looks like this eval run failed. Please check the [workflow logs](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}/job/${{ github.job }}) to see what went wrong, then push a new commit to your PR to rerun the eval."
+        run: gh pr comment ${{ github.event.number }} -b "It looks like this eval run failed. Please check the [workflow logs](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}) to see what went wrong, then push a new commit to your PR to rerun the eval."
 
       - name: Add PR comment (success)
         if: steps.eval.outputs.changed > 0
         env:
-          RUN_LINK: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}/job/${{ github.job_id }}
+          RUN_LINK: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: python leaderboard-submissions/gh-print-new-results.py ${{ steps.eval.outputs.written-results }} | gh pr comment ${{ github.event.number }} -F -
 
-#      - name: Commit results files to PR
+      - name: Commit results files to PR
+        if: steps.eval.outputs.changed > 0
+        run: |
+          cp ${{ steps.eval.outputs.written-results }} _pr_submission/leaderboard-submissions/results/
+          cd _pr_submission
+          git add _pr_submission/leaderboard-submissions/results
+          git commit -m "leaderboard: add eval results"
+          git push
