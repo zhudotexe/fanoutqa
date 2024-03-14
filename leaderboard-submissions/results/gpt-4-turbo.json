@@ -1,0 +1,87 @@
+{
+  "_submission_hash": "",
+  "_results_hash": "",
+  "metadata": {
+    "name": "GPT-4-turbo",
+    "authors": "OpenAI",
+    "url": "https://platform.openai.com/docs/models/gpt-4-and-gpt-4-turbo",
+    "citation": "OpenAI, 2023",
+    "type": "FOUNDATION",
+    "context": 128000
+  },
+  "closedbook": {
+    "acc": {
+      "loose": 0.4597296177579326,
+      "strict": 0.10082872928176796
+    },
+    "rouge": {
+      "rouge1": {
+        "precision": 0.5061057938990791,
+        "recall": 0.5171893148007345,
+        "fscore": 0.48194841967428786
+      },
+      "rouge2": {
+        "precision": 0.29559659009870354,
+        "recall": 0.30901380162874503,
+        "fscore": 0.290250346638784
+      },
+      "rougeL": {
+        "precision": 0.43012909178526687,
+        "recall": 0.440115792132854,
+        "fscore": 0.4091321043635482
+      }
+    },
+    "bleurt": 0.49333308180228125,
+    "gpt": 0.19889502762430938
+  },
+  "openbook": {
+    "acc": {
+      "loose": 0.4703468836864732,
+      "strict": 0.10911602209944751
+    },
+    "rouge": {
+      "rouge1": {
+        "precision": 0.32591691806739764,
+        "recall": 0.5274025346455309,
+        "fscore": 0.35589614186761614
+      },
+      "rouge2": {
+        "precision": 0.18949097802681353,
+        "recall": 0.28817587063251693,
+        "fscore": 0.20743984742825158
+      },
+      "rougeL": {
+        "precision": 0.28537777495423555,
+        "recall": 0.46967882341300493,
+        "fscore": 0.31379331104952
+      }
+    },
+    "bleurt": 0.4865400605212424,
+    "gpt": 0.26243093922651933
+  },
+  "evidenceprovided": {
+    "acc": {
+      "loose": 0.6281475667110468,
+      "strict": 0.1919889502762431
+    },
+    "rouge": {
+      "rouge1": {
+        "precision": 0.6321127734126731,
+        "recall": 0.6764341478682872,
+        "fscore": 0.6144612886380147
+      },
+      "rouge2": {
+        "precision": 0.3984152059157445,
+        "recall": 0.4292697483707228,
+        "fscore": 0.39470073987610177
+      },
+      "rougeL": {
+        "precision": 0.536314082392947,
+        "recall": 0.5794550216005496,
+        "fscore": 0.5226280415927149
+      }
+    },
+    "bleurt": 0.5809288421923614,
+    "gpt": 0.4129834254143646
+  }
+}

@@ -172,10 +172,9 @@ and return an `EvaluationScore` object, which has attributes matching the follow
 
 ### Test Set Evaluation
 
-To evaluate your model on the hidden test set, please email your generations
-to [andrz@seas.upenn.edu](mailto:andrz@seas.upenn.edu) with the subject "FanOutQA Test Evaluation". Your generations
-should be in the form of a JSONL file, with each line being a JSON object with the following schema for each test
-question:
+To evaluate your model on the hidden test set, first generate answers for each question in the test set.
+Your generations should be in the form of a JSONL file, with each line being a JSON object with the following schema for
+each test question:
 
 ```json
 {
@@ -184,13 +183,33 @@ question:
 }
 ```
 
-In the email body, please include details about your system, including:
+You will also need to write a metadata file for your model. Your metadata file should use this template:
 
-- the name of your system
-- the list of authors
-- a link to your paper and recommended short citation, if applicable
-- the context length of your model
-- whether your model is a new foundation model, a fine-tune, a prompting approach, or other
+```json
+{
+  "name": "The name of your model",
+  "authors": "The list of authors, in natural language (e.g. `Andrew Zhu, Alyssa Hwang, Liam Dugan, and Chris Callison-Burch`)",
+  "url": "A link to your model's website, if applicable (null otherwise)",
+  "citation": "The list of authors and year, in citation format (e.g. `Zhu et al., 2024`)",
+  "type": "FOUNDATION | FINETUNE | PROMPT | OTHER",
+  "context": "The context length of the model your system uses (as an int)",
+  "closedbook_generations": "YOUR-SYSTEM-NAME.jsonl",
+  "openbook_generations": "YOUR-SYSTEM-NAME.jsonl",
+  "evidenceprovided_generations": "YOUR-SYSTEM-NAME.jsonl"
+}
+```
+
+Then, fork this repository. Add your generation files to 
+`leaderboard-submissions/[SETTING]-generations/YOUR-SYSTEM-NAME.jsonl`
+and your metadata file to `leaderboard-submissions/metadata/YOUR-SYSTEM-NAME.json` and make a pull request.
+
+If you do not want to release the generations of your model, please email these files to 
+[andrz@seas.upenn.edu](mailto:andrz@seas.upenn.edu) instead and we will add your model to the leaderboards without
+pushing the generations.
+
+Finally, our GitHub bot will automatically run metrics on the submitted generations and commit a metrics file to
+`leaderboard-submissions/results/YOUR-SYSTEM-NAME.jsonl`. If all looks well, a maintainer will merge the PR and your
+model will appear on the leaderboards!
 
 ## Additional Resources
 
