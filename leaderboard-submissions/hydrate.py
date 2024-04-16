@@ -1,6 +1,7 @@
 import hashlib
 import json
 import os
+import traceback
 from collections import namedtuple
 from dataclasses import asdict, dataclass
 from pathlib import Path
@@ -81,6 +82,7 @@ def hydrate_all():
         except Exception as e:
             # if invalid, log a check annotation and mark job failure
             print(f"::error file={metadata_fp},title=Could not eval submission::{e}")
+            traceback.print_exc()
             exit_code = 1
 
     print(f"Done. Wrote {len(written_files)} results files.")
