@@ -73,8 +73,6 @@ class Scorer:
         else:
             for q in self.questions:
                 a = self.answers_by_id.get(q.id)
-                if a is None:
-                    yield q, None
                 yield q, a
 
     # scorers

@@ -50,6 +50,7 @@ def read_jsonl_answers(fp: Path) -> List[dict]:
             assert "id" in ans, "All generated answers must contain the 'id' key"
             assert "answer" in ans, "All generated answers must contain the 'answer' key"
             assert isinstance(ans["answer"], str), "All generated answers must be strings"
+            answers.append(ans)
     return answers
 
 
