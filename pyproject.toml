@@ -37,7 +37,7 @@ retrieval = [
 ]
 
 eval = [
-    "kani[openai]~=0.7.2",
+    "kani[openai]>=1.0.0rc0,<2.0.0",
     "rouge-score~=0.1.2",
 ]
 
