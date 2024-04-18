@@ -1,0 +1,87 @@
+{
+  "_submission_hash": "1305a2b1c69400ce2a3d23f6faead21a2e44cb9e1934a8c887ee6cc28b8e9878",
+  "_results_hash": "6b80d6d21303b16c04af772854de01666bfc11814dbcdbec20be3d8c8221beb2",
+  "metadata": {
+    "name": "Gemma 1.1 7B IT",
+    "authors": "Thomas Mesnard, Cassidy Hardin, Robert Dadashi, Surya Bhupatiraju, Shreya Pathak, Laurent Sifre, Morgane Rivi\u00e8re, Mihir Sanjay Kale, Juliette Love, Pouya Tafti, L\u00e9onard Hussenot, Pier Giuseppe Sessa, Aakanksha Chowdhery, Adam Roberts, Aditya Barua, Alex Botev, Alex Castro-Ros, Ambrose Slone, Am\u00e9lie H\u00e9liou, Andrea Tacchetti, Anna Bulanova, Antonia Paterson, Beth Tsai, Bobak Shahriari, Charline Le Lan, Christopher A. Choquette-Choo, Cl\u00e9ment Crepy, Daniel Cer, Daphne Ippolito, David Reid, Elena Buchatskaya, Eric Ni, Eric Noland, Geng Yan, George Tucker, George-Christian Muraru, Grigory Rozhdestvenskiy, Henryk Michalewski, Ian Tenney, Ivan Grishchenko, Jacob Austin, James Keeling, Jane Labanowski, Jean-Baptiste Lespiau, Jeff Stanway, Jenny Brennan, Jeremy Chen, Johan Ferret, Justin Chiu, Justin Mao-Jones, Katherine Lee, Kathy Yu, Katie Millican, Lars Lowe Sjoesund, Lisa Lee, Lucas Dixon, Machel Reid, Maciej Miku\u0142a, Mateo Wirth, Michael Sharman, Nikolai Chinaev, Nithum Thain, Olivier Bachem, Oscar Chang, Oscar Wahltinez, Paige Bailey, Paul Michel, Petko Yotov, Rahma Chaabouni, Ramona Comanescu, Reena Jana, Rohan Anil, Ross McIlroy, Ruibo Liu, Ryan Mullins, Samuel L Smith, Sebastian Borgeaud, Sertan Girgin, Sholto Douglas, Shree Pandya, Siamak Shakeri, Soham De, Ted Klimenko, Tom Hennigan, Vlad Feinberg, Wojciech Stokowiec, Yu-hui Chen, Zafarali Ahmed, Zhitao Gong, Tris Warkentin, Ludovic Peran, Minh Giang, Cl\u00e9ment Farabet, Oriol Vinyals, Jeff Dean, Koray Kavukcuoglu, Demis Hassabis, Zoubin Ghahramani, Douglas Eck , Joelle Barral, Fernando Pereira, Eli Collins, Armand Joulin, Noah Fiedel, Evan Senter, Alek Andreev, Kathleen Kenealy",
+    "url": "https://ai.google.dev/gemma/docs",
+    "citation": "Gemma Team, 2024",
+    "type": "FOUNDATION",
+    "context": 8192
+  },
+  "closedbook": {
+    "acc": {
+      "loose": 0.1865215087245475,
+      "strict": 0.023480662983425413
+    },
+    "rouge": {
+      "rouge1": {
+        "precision": 0.20163359854791843,
+        "recall": 0.21859651571316863,
+        "fscore": 0.1944185616543765
+      },
+      "rouge2": {
+        "precision": 0.08807040158027891,
+        "recall": 0.09772947167622041,
+        "fscore": 0.08794468119807348
+      },
+      "rougeL": {
+        "precision": 0.16349729333319707,
+        "recall": 0.1790524049706339,
+        "fscore": 0.15770479474718296
+      }
+    },
+    "bleurt": 0.36741639172545126,
+    "gpt": 0.03729281767955801
+  },
+  "openbook": {
+    "acc": {
+      "loose": 0.147820913739422,
+      "strict": 0.008287292817679558
+    },
+    "rouge": {
+      "rouge1": {
+        "precision": 0.17161378784632472,
+        "recall": 0.1794642032215909,
+        "fscore": 0.16491950141754808
+      },
+      "rouge2": {
+        "precision": 0.07987290307706457,
+        "recall": 0.0856415251767209,
+        "fscore": 0.07881668172465738
+      },
+      "rougeL": {
+        "precision": 0.14008938701707271,
+        "recall": 0.14722347613548337,
+        "fscore": 0.13466426558208466
+      }
+    },
+    "bleurt": 0.3456440573733156,
+    "gpt": 0.024861878453038673
+  },
+  "evidenceprovided": {
+    "acc": {
+      "loose": 0.1881688446605573,
+      "strict": 0.012430939226519336
+    },
+    "rouge": {
+      "rouge1": {
+        "precision": 0.21696985063794247,
+        "recall": 0.22607452474102618,
+        "fscore": 0.2068240474202807
+      },
+      "rouge2": {
+        "precision": 0.11225296411859044,
+        "recall": 0.1147171413851453,
+        "fscore": 0.10753181130375898
+      },
+      "rougeL": {
+        "precision": 0.17607804351780745,
+        "recall": 0.18415248698453185,
+        "fscore": 0.16762219531771125
+      }
+    },
+    "bleurt": 0.3787077568697831,
+    "gpt": 0.031767955801104975
+  }
+}
