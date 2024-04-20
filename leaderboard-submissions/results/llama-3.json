@@ -1,0 +1,87 @@
+{
+  "_submission_hash": "5f7a3733ec45981f2a9d8387ef7fa618c96187f9e61d91c0d6c13372a4ccbfac",
+  "_results_hash": "149438b76bcb138f7b7798d57a62d60a2fce23548401d78a36d13aeeeef8acdb",
+  "metadata": {
+    "name": "Llama 3 70B-Instruct",
+    "authors": "Meta",
+    "url": "https://ai.meta.com/blog/meta-llama-3/",
+    "citation": "Meta, 2024",
+    "type": "FOUNDATION",
+    "context": 8192
+  },
+  "closedbook": {
+    "acc": {
+      "loose": 0.46615229259616364,
+      "strict": 0.06767955801104972
+    },
+    "rouge": {
+      "rouge1": {
+        "precision": 0.4631332362598857,
+        "recall": 0.5371821850032036,
+        "fscore": 0.46289360261572743
+      },
+      "rouge2": {
+        "precision": 0.2579209125801027,
+        "recall": 0.3004963517133437,
+        "fscore": 0.2636216329275711
+      },
+      "rougeL": {
+        "precision": 0.3880671846191338,
+        "recall": 0.4489699054327381,
+        "fscore": 0.3866726627735914
+      }
+    },
+    "bleurt": 0.47776114855229196,
+    "gpt": 0.15883977900552487
+  },
+  "openbook": {
+    "acc": {
+      "loose": 0.4682574924914193,
+      "strict": 0.0925414364640884
+    },
+    "rouge": {
+      "rouge1": {
+        "precision": 0.22408623080672696,
+        "recall": 0.5483560960567966,
+        "fscore": 0.2818457602025324
+      },
+      "rouge2": {
+        "precision": 0.11670773659730314,
+        "recall": 0.26196485918068046,
+        "fscore": 0.14296149842203265
+      },
+      "rougeL": {
+        "precision": 0.19429245032731035,
+        "recall": 0.47541757803293877,
+        "fscore": 0.24302232905117382
+      }
+    },
+    "bleurt": 0.4730032659881846,
+    "gpt": 0.21685082872928177
+  },
+  "evidenceprovided": {
+    "acc": {
+      "loose": 0.5729133597285995,
+      "strict": 0.1132596685082873
+    },
+    "rouge": {
+      "rouge1": {
+        "precision": 0.4851840263294143,
+        "recall": 0.6383790378446155,
+        "fscore": 0.4999906343132503
+      },
+      "rouge2": {
+        "precision": 0.26752242447520685,
+        "recall": 0.3606244592230509,
+        "fscore": 0.2852580524378716
+      },
+      "rougeL": {
+        "precision": 0.3918322597257888,
+        "recall": 0.517388793407006,
+        "fscore": 0.40399234960750435
+      }
+    },
+    "bleurt": 0.5209101250508378,
+    "gpt": 0.27486187845303867
+  }
+}

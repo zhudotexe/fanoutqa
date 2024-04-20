@@ -1,0 +1,11 @@
+{
+  "name": "Llama 3 70B-Instruct",
+  "authors": "Meta",
+  "url": "https://ai.meta.com/blog/meta-llama-3/",
+  "citation": "Meta, 2024",
+  "type": "FOUNDATION",
+  "context": 8192,
+  "closedbook_generations": "results-closedbook-llama3.jsonl",
+  "openbook_generations": "results-openbook-llama3.jsonl",
+  "evidenceprovided_generations": "results-wiki-provided-llama3.jsonl"
+}
