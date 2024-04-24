@@ -2,12 +2,14 @@
   "_submission_hash": "",
   "_results_hash": "",
   "metadata": {
-    "name": "Mixtral-8x7B",
+    "name": "Mixtral-8x7B Instruct",
     "authors": "Mistral AI",
     "url": "https://mistral.ai/news/mixtral-of-experts/",
     "citation": "Jiang et al., 2024",
     "type": "FOUNDATION",
-    "context": 32000
+    "context": 32000,
+    "is_trained_for_function_calling": false,
+    "details": "mistralai/Mixtral-8x7B-Instruct-v0.1"
   },
   "closedbook": {
     "acc": {

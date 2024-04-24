@@ -7,7 +7,9 @@
     "url": "https://platform.openai.com/docs/models/gpt-4-and-gpt-4-turbo",
     "citation": "OpenAI, 2023",
     "type": "FOUNDATION",
-    "context": 128000
+    "context": 128000,
+    "is_trained_for_function_calling": true,
+    "details": "gpt-4-0125-preview (February 2024)"
   },
   "closedbook": {
     "acc": {

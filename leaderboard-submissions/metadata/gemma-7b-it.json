@@ -5,6 +5,8 @@
   "citation": "Gemma Team, 2024",
   "type": "FOUNDATION",
   "context": 8192,
+  "is_trained_for_function_calling": false,
+  "details": "google/gemma-1.1-7b-it",
   "closedbook_generations": "results-closedbook-gemma.jsonl",
   "openbook_generations": "results-openbook-gemma.jsonl",
   "evidenceprovided_generations": "results-wiki-provided-gemma.jsonl"

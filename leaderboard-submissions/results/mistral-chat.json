@@ -2,12 +2,14 @@
   "_submission_hash": "",
   "_results_hash": "",
   "metadata": {
-    "name": "Mistral-7B",
+    "name": "Mistral-7B Instruct",
     "authors": "Mistral AI",
     "url": "https://mistral.ai/news/announcing-mistral-7b/",
     "citation": "Jiang et al., 2023",
     "type": "FOUNDATION",
-    "context": 32000
+    "context": 32000,
+    "is_trained_for_function_calling": false,
+    "details": "mistralai/Mistral-7B-Instruct-v0.2"
   },
   "closedbook": {
     "acc": {
