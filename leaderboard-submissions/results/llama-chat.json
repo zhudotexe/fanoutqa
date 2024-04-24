@@ -2,12 +2,13 @@
   "_submission_hash": "",
   "_results_hash": "",
   "metadata": {
-    "name": "LLaMA 2 70B",
+    "name": "LLaMA 2 Chat 70B",
     "authors": "Meta",
     "url": "https://ai.meta.com/research/publications/llama-2-open-foundation-and-fine-tuned-chat-models/",
     "citation": "Touvron et al., 2023",
     "type": "FOUNDATION",
-    "context": 4096
+    "context": 4096,
+    "is_trained_for_function_calling": false
   },
   "closedbook": {
     "acc": {
