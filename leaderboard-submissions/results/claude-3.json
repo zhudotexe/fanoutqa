@@ -1,0 +1,89 @@
+{
+  "_submission_hash": "fa08eb801cd31c9e5ad85b4eab237acc05550d1294c2bbab41b3b2c0107076fd",
+  "_results_hash": "f0341413c6a0056ca7de345385662878e1342677753e343994fd55e95e5dae1e",
+  "metadata": {
+    "name": "Claude 3 Opus",
+    "authors": "Anthropic",
+    "url": "https://www.anthropic.com/news/claude-3-family",
+    "citation": "Anthropic, 2024",
+    "type": "FOUNDATION",
+    "context": 200000,
+    "is_trained_for_function_calling": true,
+    "details": "claude-3-opus-20240229"
+  },
+  "closedbook": {
+    "acc": {
+      "loose": 0.4476825726057143,
+      "strict": 0.08839779005524862
+    },
+    "rouge": {
+      "rouge1": {
+        "precision": 0.46968261643590814,
+        "recall": 0.5074655521519158,
+        "fscore": 0.45497231547727685
+      },
+      "rouge2": {
+        "precision": 0.2454607914601874,
+        "recall": 0.2789144343526825,
+        "fscore": 0.24993982912648366
+      },
+      "rougeL": {
+        "precision": 0.39060942067788446,
+        "recall": 0.42222025122709456,
+        "fscore": 0.3776007625447359
+      }
+    },
+    "bleurt": 0.4696230097205599,
+    "gpt": 0.19613259668508287
+  },
+  "openbook": {
+    "acc": {
+      "loose": 0.37013155548287446,
+      "strict": 0.09392265193370165
+    },
+    "rouge": {
+      "rouge1": {
+        "precision": 0.05973577623821192,
+        "recall": 0.4411699654342103,
+        "fscore": 0.09925461909693029
+      },
+      "rouge2": {
+        "precision": 0.02950208485637033,
+        "recall": 0.21915872319712182,
+        "fscore": 0.04914385565530011
+      },
+      "rougeL": {
+        "precision": 0.05239905561247283,
+        "recall": 0.4005881702666839,
+        "fscore": 0.08761122632881004
+      }
+    },
+    "bleurt": 0.5197975339357694,
+    "gpt": 0.24447513812154695
+  },
+  "evidenceprovided": {
+    "acc": {
+      "loose": 0.7147480193436235,
+      "strict": 0.26519337016574585
+    },
+    "rouge": {
+      "rouge1": {
+        "precision": 0.36192912683786727,
+        "recall": 0.7778422889793735,
+        "fscore": 0.46257529398112524
+      },
+      "rouge2": {
+        "precision": 0.21857130103415393,
+        "recall": 0.45699475132934153,
+        "fscore": 0.27940135443273956
+      },
+      "rougeL": {
+        "precision": 0.3068568709413918,
+        "recall": 0.6714847832322518,
+        "fscore": 0.39398084239182174
+      }
+    },
+    "bleurt": 0.5348930968722915,
+    "gpt": 0.5414364640883977
+  }
+}
