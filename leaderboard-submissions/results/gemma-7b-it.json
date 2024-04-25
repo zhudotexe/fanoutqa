@@ -1,13 +1,15 @@
 {
-  "_submission_hash": "1305a2b1c69400ce2a3d23f6faead21a2e44cb9e1934a8c887ee6cc28b8e9878",
-  "_results_hash": "6b80d6d21303b16c04af772854de01666bfc11814dbcdbec20be3d8c8221beb2",
+  "_submission_hash": "0b1d7a2b2d3477a66f69963324a9cb3b4f62bafb2bb6c797eed5bf065387bf0d",
+  "_results_hash": "6c8f812e898656aae077b588104118e6d86f3337353ef1e79cc6f83d142d7a0e",
   "metadata": {
     "name": "Gemma 1.1 7B IT",
     "authors": "Thomas Mesnard, Cassidy Hardin, Robert Dadashi, Surya Bhupatiraju, Shreya Pathak, Laurent Sifre, Morgane Rivi\u00e8re, Mihir Sanjay Kale, Juliette Love, Pouya Tafti, L\u00e9onard Hussenot, Pier Giuseppe Sessa, Aakanksha Chowdhery, Adam Roberts, Aditya Barua, Alex Botev, Alex Castro-Ros, Ambrose Slone, Am\u00e9lie H\u00e9liou, Andrea Tacchetti, Anna Bulanova, Antonia Paterson, Beth Tsai, Bobak Shahriari, Charline Le Lan, Christopher A. Choquette-Choo, Cl\u00e9ment Crepy, Daniel Cer, Daphne Ippolito, David Reid, Elena Buchatskaya, Eric Ni, Eric Noland, Geng Yan, George Tucker, George-Christian Muraru, Grigory Rozhdestvenskiy, Henryk Michalewski, Ian Tenney, Ivan Grishchenko, Jacob Austin, James Keeling, Jane Labanowski, Jean-Baptiste Lespiau, Jeff Stanway, Jenny Brennan, Jeremy Chen, Johan Ferret, Justin Chiu, Justin Mao-Jones, Katherine Lee, Kathy Yu, Katie Millican, Lars Lowe Sjoesund, Lisa Lee, Lucas Dixon, Machel Reid, Maciej Miku\u0142a, Mateo Wirth, Michael Sharman, Nikolai Chinaev, Nithum Thain, Olivier Bachem, Oscar Chang, Oscar Wahltinez, Paige Bailey, Paul Michel, Petko Yotov, Rahma Chaabouni, Ramona Comanescu, Reena Jana, Rohan Anil, Ross McIlroy, Ruibo Liu, Ryan Mullins, Samuel L Smith, Sebastian Borgeaud, Sertan Girgin, Sholto Douglas, Shree Pandya, Siamak Shakeri, Soham De, Ted Klimenko, Tom Hennigan, Vlad Feinberg, Wojciech Stokowiec, Yu-hui Chen, Zafarali Ahmed, Zhitao Gong, Tris Warkentin, Ludovic Peran, Minh Giang, Cl\u00e9ment Farabet, Oriol Vinyals, Jeff Dean, Koray Kavukcuoglu, Demis Hassabis, Zoubin Ghahramani, Douglas Eck , Joelle Barral, Fernando Pereira, Eli Collins, Armand Joulin, Noah Fiedel, Evan Senter, Alek Andreev, Kathleen Kenealy",
     "url": "https://ai.google.dev/gemma/docs",
     "citation": "Gemma Team, 2024",
     "type": "FOUNDATION",
-    "context": 8192
+    "context": 8192,
+    "is_trained_for_function_calling": false,
+    "details": "google/gemma-1.1-7b-it"
   },
   "closedbook": {
     "acc": {
@@ -32,7 +34,7 @@
       }
     },
     "bleurt": 0.36741639172545126,
-    "gpt": 0.03729281767955801
+    "gpt": 0.04834254143646409
   },
   "openbook": {
     "acc": {
@@ -57,7 +59,7 @@
       }
     },
     "bleurt": 0.3456440573733156,
-    "gpt": 0.024861878453038673
+    "gpt": 0.022099447513812154
   },
   "evidenceprovided": {
     "acc": {
@@ -82,6 +84,6 @@
       }
     },
     "bleurt": 0.3787077568697831,
-    "gpt": 0.031767955801104975
+    "gpt": 0.03591160220994475
   }
 }

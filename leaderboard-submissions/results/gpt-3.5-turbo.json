@@ -7,7 +7,9 @@
     "url": "https://platform.openai.com/docs/models/gpt-3-5-turbo",
     "citation": "OpenAI, 2023",
     "type": "FOUNDATION",
-    "context": 16384
+    "context": 16384,
+    "is_trained_for_function_calling": true,
+    "details": "gpt-3.5-turbo-1106 (February 2024)"
   },
   "closedbook": {
     "acc": {

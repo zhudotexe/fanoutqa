@@ -193,6 +193,8 @@ You will also need to write a metadata file for your model. Your metadata file s
   "citation": "The list of authors and year, in citation format (e.g. `Zhu et al., 2024`)",
   "type": "FOUNDATION | FINETUNE | PROMPT | OTHER",
   "context": "The context length of the model your system uses (as an int)",
+  "is_trained_for_function_calling": "Whether your model was trained for function calling specifically (true/false)",
+  "details": "Additional model details (e.g. API model revision or Hugging Face model ID) - optional",
   "closedbook_generations": "YOUR-SYSTEM-NAME.jsonl",
   "openbook_generations": "YOUR-SYSTEM-NAME.jsonl",
   "evidenceprovided_generations": "YOUR-SYSTEM-NAME.jsonl"

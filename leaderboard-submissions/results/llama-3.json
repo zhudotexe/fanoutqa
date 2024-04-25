@@ -1,13 +1,15 @@
 {
-  "_submission_hash": "5f7a3733ec45981f2a9d8387ef7fa618c96187f9e61d91c0d6c13372a4ccbfac",
-  "_results_hash": "149438b76bcb138f7b7798d57a62d60a2fce23548401d78a36d13aeeeef8acdb",
+  "_submission_hash": "55567660c1534ca3d368b2872e302aab1b26cb83d3f764b65a77c0e05119beb8",
+  "_results_hash": "52f3142a1f80fcbd17101bef14179180e28dead7c448c1867faa157c9c7abacc",
   "metadata": {
-    "name": "Llama 3 70B-Instruct",
+    "name": "Llama 3 70B Instruct",
     "authors": "Meta",
     "url": "https://ai.meta.com/blog/meta-llama-3/",
     "citation": "Meta, 2024",
     "type": "FOUNDATION",
-    "context": 8192
+    "context": 8192,
+    "is_trained_for_function_calling": false,
+    "details": "meta-llama/Meta-Llama-3-70B-Instruct"
   },
   "closedbook": {
     "acc": {
@@ -32,7 +34,7 @@
       }
     },
     "bleurt": 0.47776114855229196,
-    "gpt": 0.15883977900552487
+    "gpt": 0.1574585635359116
   },
   "openbook": {
     "acc": {
@@ -57,7 +59,7 @@
       }
     },
     "bleurt": 0.4730032659881846,
-    "gpt": 0.21685082872928177
+    "gpt": 0.22099447513812154
   },
   "evidenceprovided": {
     "acc": {
@@ -82,6 +84,6 @@
       }
     },
     "bleurt": 0.5209101250508378,
-    "gpt": 0.27486187845303867
+    "gpt": 0.27071823204419887
   }
 }
