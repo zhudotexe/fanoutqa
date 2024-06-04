@@ -201,11 +201,11 @@ You will also need to write a metadata file for your model. Your metadata file s
 }
 ```
 
-Then, fork this repository. Add your generation files to 
+Then, fork this repository. Add your generation files to
 `leaderboard-submissions/[SETTING]-generations/YOUR-SYSTEM-NAME.jsonl`
 and your metadata file to `leaderboard-submissions/metadata/YOUR-SYSTEM-NAME.json` and make a pull request.
 
-If you do not want to release the generations of your model, please email these files to 
+If you do not want to release the generations of your model, please email these files to
 [andrz@seas.upenn.edu](mailto:andrz@seas.upenn.edu) instead and we will add your model to the leaderboards without
 pushing the generations.
 
@@ -220,3 +220,16 @@ we also provide a snapshot of English Wikipedia as of Nov 20, 2023. You can down
 snapshot [here](https://datasets.mechanus.zhu.codes/fanoutqa/enwiki-20231120-pages-articles-multistream.xml.bz2) (23G)
 and its
 index [here](https://datasets.mechanus.zhu.codes/fanoutqa/enwiki-20231120-pages-articles-multistream-index.txt.bz2).
+
+## Acknowledgements
+
+We would like to thank the members of the lab of Chris Callison-Burch for detailed feedback on the contents of this
+paper and the members of the Northern Lights Province Discord for their participation in our human evaluation. In
+particular, we would like to thank Bryan Li for his thoughtful suggestions with regards to our human evaluation and
+other parts of our paper.
+
+This research is supported in part by the Office of the Director of National Intelligence (ODNI), Intelligence Advanced
+Research Projects Activity (IARPA), via the HIATUS Program contract #2022-22072200005. The views and conclusions
+contained herein are those of the authors and should not be interpreted as necessarily representing the official
+policies, either expressed or implied, of ODNI, IARPA, or the U.S. Government. The U.S. Government is authorized to
+reproduce and distribute reprints for governmental purposes notwithstanding any copyright annotation therein.
