@@ -15,7 +15,10 @@ WIKI_CACHE_DIR.mkdir(exist_ok=True, parents=True)
 
 log = logging.getLogger(__name__)
 wikipedia = httpx.Client(
-    base_url="https://en.wikipedia.org/w/api.php", headers={"User-Agent": USER_AGENT}, follow_redirects=True
+    base_url="https://en.wikipedia.org/w/api.php",
+    headers={"User-Agent": USER_AGENT},
+    follow_redirects=True,
+    timeout=30,
 )
 
 
