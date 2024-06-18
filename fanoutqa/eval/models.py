@@ -1,4 +1,4 @@
-from dataclasses import dataclass
+from dataclasses import asdict, dataclass
 from typing import TypedDict
 
 
@@ -26,11 +26,27 @@ class RougeScore:
 
 
 @dataclass
+class EvaluationSingleScore:
+    question_id: str
+    acc: float
+    rouge: RougeScore
+    bleurt: float
+    gpt: int
+
+
+@dataclass
 class EvaluationScore:
     acc: AccuracyScore
     rouge: RougeScore
     bleurt: float
     gpt: float
+    raw: list[EvaluationSingleScore]
+
+    def to_dict(self, include_raw: bool = False):
+        data = asdict(self)
+        if not include_raw:
+            data.pop("raw", None)
+        return data
 
 
 class Answer(TypedDict):
