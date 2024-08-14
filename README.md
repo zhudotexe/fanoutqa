@@ -2,7 +2,7 @@
 
 ![PyPI](https://img.shields.io/pypi/v/fanoutqa)
 
-[Read the paper!](https://arxiv.org/abs/2402.14116) | [Download the dataset!](https://github.com/zhudotexe/fanoutqa/tree/main/fanoutqa/data)
+[Read the paper!](https://aclanthology.org/2024.acl-short.2/) | [Download the dataset!](https://github.com/zhudotexe/fanoutqa/tree/main/fanoutqa/data)
 
 FanOutQA is a high quality, multi-hop, multi-document benchmark for large language models using English Wikipedia as its
 knowledge base. Compared to other question-answering benchmarks, FanOutQA requires reasoning over a greater number of
