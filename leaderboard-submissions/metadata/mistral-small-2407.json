@@ -1,0 +1,13 @@
+{
+  "name": "Mistral-Small-Instruct-2409 (22B)",
+  "authors": "Mistral AI",
+  "url": "https://huggingface.co/mistralai/Mistral-Small-Instruct-2409",
+  "citation": "Mistral AI, 2024",
+  "type": "FOUNDATION",
+  "context": 32000,
+  "is_trained_for_function_calling": true,
+  "details": "mistralai/Mistral-Small-Instruct-2409",
+  "closedbook_generations": "results-closedbook-mistral-small-2409.jsonl",
+  "openbook_generations": "results-openbook-mistral-small-2409.jsonl",
+  "evidenceprovided_generations": "results-wiki-provided-mistral-small-2409.jsonl"
+}
