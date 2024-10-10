@@ -1,0 +1,89 @@
+{
+  "_submission_hash": "44f29b285feea7b76639d19a2c192ecfd25348ffdcee53c2c307f8e705909a90",
+  "_results_hash": "d3af0027d184918f72ed4ec495c2b14e5380e3e5adbaf08a89825abfa3af35e2",
+  "metadata": {
+    "name": "Mistral-Small-Instruct-2409 (22B)",
+    "authors": "Mistral AI",
+    "url": "https://huggingface.co/mistralai/Mistral-Small-Instruct-2409",
+    "citation": "Mistral AI, 2024",
+    "type": "FOUNDATION",
+    "context": 32000,
+    "is_trained_for_function_calling": true,
+    "details": "mistralai/Mistral-Small-Instruct-2409"
+  },
+  "closedbook": {
+    "acc": {
+      "loose": 0.45009737596509086,
+      "strict": 0.0718232044198895
+    },
+    "rouge": {
+      "rouge1": {
+        "precision": 0.40413593124020636,
+        "recall": 0.5203778032263678,
+        "fscore": 0.4289685522275595
+      },
+      "rouge2": {
+        "precision": 0.22677952683741726,
+        "recall": 0.28246582033023643,
+        "fscore": 0.23970226499726682
+      },
+      "rougeL": {
+        "precision": 0.33815109507904656,
+        "recall": 0.4376086364815907,
+        "fscore": 0.35935635298293217
+      }
+    },
+    "bleurt": 0.47831919019558156,
+    "gpt": 0.17679558011049723
+  },
+  "openbook": {
+    "acc": {
+      "loose": 0.1648043800345083,
+      "strict": 0.024861878453038673
+    },
+    "rouge": {
+      "rouge1": {
+        "precision": 0.08807170710615721,
+        "recall": 0.19938182128421078,
+        "fscore": 0.10339134253355729
+      },
+      "rouge2": {
+        "precision": 0.034980458138033084,
+        "recall": 0.08356692517473442,
+        "fscore": 0.04381925675910583
+      },
+      "rougeL": {
+        "precision": 0.07920926275369623,
+        "recall": 0.17572237714942518,
+        "fscore": 0.09205489092446673
+      }
+    },
+    "bleurt": 0.3076735539927832,
+    "gpt": 0.06077348066298342
+  },
+  "evidenceprovided": {
+    "acc": {
+      "loose": 0.5412839161496934,
+      "strict": 0.11602209944751381
+    },
+    "rouge": {
+      "rouge1": {
+        "precision": 0.5434171449488068,
+        "recall": 0.5991728084304127,
+        "fscore": 0.5257063117207197
+      },
+      "rouge2": {
+        "precision": 0.3034771259186124,
+        "recall": 0.33855921563246183,
+        "fscore": 0.3014339606975428
+      },
+      "rougeL": {
+        "precision": 0.4337592194646311,
+        "recall": 0.48099067004018287,
+        "fscore": 0.41983527281644906
+      }
+    },
+    "bleurt": 0.521161766897743,
+    "gpt": 0.2292817679558011
+  }
+}
