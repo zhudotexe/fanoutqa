@@ -76,7 +76,7 @@ def wiki_content(doc: Evidence) -> str:
     # get the cached content, if available
     cache_filename = WIKI_CACHE_DIR / f"{doc.pageid}-dated.md"
     if cache_filename.exists():
-        return cache_filename.read_text()
+        return cache_filename.read_text(encoding="utf-8")
 
     # otherwise retrieve it from Wikipedia
     resp = wikipedia.get("", params={"format": "json", "action": "parse", "oldid": doc.revid, "prop": "text"})
@@ -90,5 +90,5 @@ def wiki_content(doc: Evidence) -> str:
 
     # MD it, cache it, and return
     text = markdownify(html)
-    cache_filename.write_text(text)
+    cache_filename.write_text(text, encoding="utf-8")
     return text

@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "fanoutqa"
-version = "1.1.0"
+version = "1.1.1"
 authors = [
     { name = "Andrew Zhu", email = "andrew@zhu.codes" },
     { name = "Alyssa Hwang", email = "ahwang16@seas.upenn.edu" },

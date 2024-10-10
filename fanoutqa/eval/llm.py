@@ -42,7 +42,7 @@ async def get_llm_factuality(question: DevQuestion, answer: str, cache_key=None)
         ans_hash = hashlib.sha256(answer.encode()).hexdigest()[:8]
         cache_filename = LLM_CACHE_DIR / f"factual-{cache_key}-{question.id}-{ans_hash}.txt"
         if cache_filename.exists():
-            return cache_filename.read_text()
+            return cache_filename.read_text(encoding="utf-8")
 
     # ask the LLM if it is subjective
     prompt = factuality_prompt(question.question, str_answer(question.answer), answer)
@@ -51,5 +51,5 @@ async def get_llm_factuality(question: DevQuestion, answer: str, cache_key=None)
 
     if cache_key:
         # noinspection PyUnboundLocalVariable
-        cache_filename.write_text(resp)
+        cache_filename.write_text(resp, encoding="utf-8")
     return resp
