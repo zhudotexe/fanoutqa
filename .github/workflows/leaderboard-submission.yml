@@ -63,6 +63,7 @@ jobs:
         id: eval
         env:
           LEADERBOARD_SALT: ${{ secrets.LEADERBOARD_SALT }}
+          FANOUTQA_OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: python leaderboard-submissions/hydrate.py
 
       # ensure the PR comment exists so we can edit it in future steps
