@@ -12,7 +12,7 @@ LLM_CACHE_DIR = CACHE_DIR / "llmcache"
 LLM_CACHE_DIR.mkdir(exist_ok=True)
 OPENAI_API_KEY = os.getenv("FANOUTQA_OPENAI_API_KEY", "")
 
-engine = OpenAIEngine(api_key=OPENAI_API_KEY, model="gpt-4-0613", temperature=0, seed=31415)
+engine = OpenAIEngine(api_key=OPENAI_API_KEY, model="gpt-4o-2024-11-20", temperature=0, seed=31415)
 factuality_system = "You are comparing a submitted answer to an expert answer on a given question."
 
 
