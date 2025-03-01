@@ -1,0 +1,89 @@
+{
+  "_submission_hash": "af5811b3e9bf9e0f8e5967898ce8e61b48772c2c267d10f5f6a47aa3f6221a67",
+  "_results_hash": "9fec365a2e7272ddaeaa0c93d9a792b07bb371ab61ce58f8a183f701d2118905",
+  "metadata": {
+    "name": "Llama3.3 70b distilled DS - 32k ss",
+    "authors": "SambaNova Systems",
+    "url": null,
+    "citation": "",
+    "type": "PROMPT",
+    "context": "32,000",
+    "is_trained_for_function_calling": false,
+    "details": "Additional model details (e.g. API model revision or Hugging Face model ID) - optional"
+  },
+  "closedbook": {
+    "acc": {
+      "loose": 0.5146399381846491,
+      "strict": 0.11049723756906077
+    },
+    "rouge": {
+      "rouge1": {
+        "precision": 0.39506324834246265,
+        "recall": 0.5981784417572024,
+        "fscore": 0.44362514027396305
+      },
+      "rouge2": {
+        "precision": 0.2185731210859842,
+        "recall": 0.3152650236948555,
+        "fscore": 0.24433595958015872
+      },
+      "rougeL": {
+        "precision": 0.3279649663747149,
+        "recall": 0.501721775810348,
+        "fscore": 0.36860975010534547
+      }
+    },
+    "bleurt": 0.4949774522107938,
+    "gpt": 0.19337016574585636
+  },
+  "openbook": {
+    "acc": {
+      "loose": 0.5589082340608355,
+      "strict": 0.12569060773480664
+    },
+    "rouge": {
+      "rouge1": {
+        "precision": 0.4648666571003417,
+        "recall": 0.6315235877039482,
+        "fscore": 0.5025006057388298
+      },
+      "rouge2": {
+        "precision": 0.2666021904005115,
+        "recall": 0.35322076393768814,
+        "fscore": 0.2890946053464048
+      },
+      "rougeL": {
+        "precision": 0.3952035318721278,
+        "recall": 0.5424450065079786,
+        "fscore": 0.4286490181909285
+      }
+    },
+    "bleurt": 0.5296848898660906,
+    "gpt": 0.27624309392265195
+  },
+  "evidenceprovided": {
+    "acc": {
+      "loose": 0.6585387888500631,
+      "strict": 0.17955801104972377
+    },
+    "rouge": {
+      "rouge1": {
+        "precision": 0.5389617314855132,
+        "recall": 0.7310799636512487,
+        "fscore": 0.5854004243809355
+      },
+      "rouge2": {
+        "precision": 0.3247304534580084,
+        "recall": 0.4308209051742917,
+        "fscore": 0.35338011510338374
+      },
+      "rougeL": {
+        "precision": 0.45586973408819154,
+        "recall": 0.6202056803486834,
+        "fscore": 0.4946168890142627
+      }
+    },
+    "bleurt": 0.5824599785431808,
+    "gpt": 0.4129834254143646
+  }
+}
