@@ -16,6 +16,8 @@ permissions:
 jobs:
   evaluate:
     runs-on: ubuntu-latest
+    environment:
+      name: leaderboard-eval-run
     env:
       GH_TOKEN: ${{ github.token }}
 
@@ -43,6 +45,12 @@ jobs:
 
       - name: Download test set answers
         run: wget -q ${{ secrets.TEST_ANSWERS_URL }} -O fanoutqa-test-answers.json
+
+      - name: Cache FOQA Cache
+        uses: actions/cache@v4
+        with:
+          path: "~/.cache/fanoutqa"
+          key: foqa-cache
 
       # set up in local workdir and hydrate results
       - name: Set up Python 3.10
