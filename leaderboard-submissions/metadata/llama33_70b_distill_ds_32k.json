@@ -1,0 +1,13 @@
+{
+    "name": "Llama3.3 70b distilled DS - 32k ss",
+    "authors": "SambaNova Systems",
+    "url": null,
+    "citation": "",
+    "type": "PROMPT",
+    "context": "32,000",
+    "is_trained_for_function_calling": false,
+    "details": "Additional model details (e.g. API model revision or Hugging Face model ID) - optional",
+    "closedbook_generations": "llama33_70b_distill_ds_32k.jsonl",
+    "openbook_generations": "llama33_70b_distill_ds_32k.jsonl",
+    "evidenceprovided_generations": "llama33_70b_distill_ds_32k.jsonl"
+  }
