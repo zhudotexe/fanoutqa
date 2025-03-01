@@ -74,6 +74,12 @@ jobs:
           FANOUTQA_OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: python leaderboard-submissions/hydrate.py
 
+      - name: Save FOQA Cache
+        uses: actions/cache/save@v4
+        with:
+          path: "~/.cache/fanoutqa"
+          key: foqa-cache
+
       # ensure the PR comment exists so we can edit it in future steps
       - name: Ensure PR comment
         if: steps.eval.outputs.changed > 0 || failure()
