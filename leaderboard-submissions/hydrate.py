@@ -162,17 +162,17 @@ async def eval_submission(metadata_fp: Path, check_result: CheckResult):
 
     print("Evaluating closed book answers...")
     closedbook_answers = read_jsonl_answers(CB_PATH / check_result.metadata.closedbook_generations)
-    closedbook_scorer = Scorer(questions, closedbook_answers)
+    closedbook_scorer = Scorer(questions, closedbook_answers, llm_cache_key="eval")
     closedbook_results = (await closedbook_scorer.score()).to_dict()
 
     print("Evaluating open book answers...")
     openbook_answers = read_jsonl_answers(OB_PATH / check_result.metadata.openbook_generations)
-    openbook_scorer = Scorer(questions, openbook_answers)
+    openbook_scorer = Scorer(questions, openbook_answers, llm_cache_key="eval")
     openbook_results = (await openbook_scorer.score()).to_dict()
 
     print("Evaluating evidence provided answers...")
     evidenceprovided_answers = read_jsonl_answers(EP_PATH / check_result.metadata.evidenceprovided_generations)
-    evidenceprovided_scorer = Scorer(questions, evidenceprovided_answers)
+    evidenceprovided_scorer = Scorer(questions, evidenceprovided_answers, llm_cache_key="eval")
     evidenceprovided_results = (await evidenceprovided_scorer.score()).to_dict()
 
     # hash the results to prevent score manipulation
