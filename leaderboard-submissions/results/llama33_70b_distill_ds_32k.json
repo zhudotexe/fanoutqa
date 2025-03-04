@@ -1,15 +1,15 @@
 {
-  "_submission_hash": "af5811b3e9bf9e0f8e5967898ce8e61b48772c2c267d10f5f6a47aa3f6221a67",
-  "_results_hash": "9fec365a2e7272ddaeaa0c93d9a792b07bb371ab61ce58f8a183f701d2118905",
+  "_submission_hash": "0115054d62b42cb80e3967c115a071a5af5e6879d8b2b1fb3b65a3bd85bf93a8",
+  "_results_hash": "adc70848c8a7f98337f5a56a08e51af318f9dcb41c876da80bbbb2fe892f70bd",
   "metadata": {
     "name": "Llama3.3 70b distilled DS - 32k ss",
     "authors": "SambaNova Systems",
     "url": null,
-    "citation": "",
+    "citation": "SambaNova Systems, 2025",
     "type": "PROMPT",
-    "context": "32,000",
+    "context": 32000,
     "is_trained_for_function_calling": false,
-    "details": "Additional model details (e.g. API model revision or Hugging Face model ID) - optional"
+    "details": null
   },
   "closedbook": {
     "acc": {
@@ -34,7 +34,7 @@
       }
     },
     "bleurt": 0.4949774522107938,
-    "gpt": 0.19337016574585636
+    "gpt": 0.19475138121546962
   },
   "openbook": {
     "acc": {
@@ -59,7 +59,7 @@
       }
     },
     "bleurt": 0.5296848898660906,
-    "gpt": 0.27624309392265195
+    "gpt": 0.26933701657458564
   },
   "evidenceprovided": {
     "acc": {
@@ -84,6 +84,6 @@
       }
     },
     "bleurt": 0.5824599785431808,
-    "gpt": 0.4129834254143646
+    "gpt": 0.4116022099447514
   }
 }
