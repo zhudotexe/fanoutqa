@@ -1,10 +1,10 @@
 {
-  "_submission_hash": "0115054d62b42cb80e3967c115a071a5af5e6879d8b2b1fb3b65a3bd85bf93a8",
-  "_results_hash": "adc70848c8a7f98337f5a56a08e51af318f9dcb41c876da80bbbb2fe892f70bd",
+  "_submission_hash": "d410aa7882dc6c840b3445b71f8d3287274006d671e226b494b66d87b84b4c60",
+  "_results_hash": "d6c49947a2ac2477d14f72211531609d8950433df0885f86e60b2a9534685a87",
   "metadata": {
     "name": "Llama3.3 70b distilled DS - 32k ss",
     "authors": "SambaNova Systems",
-    "url": null,
+    "url": "https://cloud.sambanova.ai/",
     "citation": "SambaNova Systems, 2025",
     "type": "PROMPT",
     "context": 32000,
@@ -34,7 +34,7 @@
       }
     },
     "bleurt": 0.4949774522107938,
-    "gpt": 0.19475138121546962
+    "gpt": 0.20027624309392264
   },
   "openbook": {
     "acc": {
@@ -59,7 +59,7 @@
       }
     },
     "bleurt": 0.5296848898660906,
-    "gpt": 0.26933701657458564
+    "gpt": 0.27209944751381215
   },
   "evidenceprovided": {
     "acc": {
@@ -84,6 +84,6 @@
       }
     },
     "bleurt": 0.5824599785431808,
-    "gpt": 0.4116022099447514
+    "gpt": 0.4102209944751381
   }
 }
