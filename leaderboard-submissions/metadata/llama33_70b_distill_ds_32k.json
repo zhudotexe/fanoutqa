@@ -1,7 +1,7 @@
 {
     "name": "Llama3.3 70b distilled DS - 32k ss",
     "authors": "SambaNova Systems",
-    "url": null,
+    "url": "https://cloud.sambanova.ai/",
     "citation": "SambaNova Systems, 2025",
     "type": "PROMPT",
     "context": 32000,
