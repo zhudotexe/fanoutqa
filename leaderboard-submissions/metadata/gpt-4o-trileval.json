@@ -8,6 +8,6 @@
   "is_trained_for_function_calling": true,
   "details": "gpt-4o-2024-05-13",
   "closedbook_generations": "results-closedbook-gpt-4o.jsonl",
-  "openbook_generations": "results-openbook-gpt-4o.jsonl",
+  "openbook_generations": "results-trileval-gpt-4o.jsonl",
   "evidenceprovided_generations": "results-wiki-provided-gpt-4o.jsonl"
 }
