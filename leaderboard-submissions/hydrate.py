@@ -77,9 +77,12 @@ async def hydrate_all():
         if not check_result.needs_eval:
             continue
         print(f"Found submission for {check_result.metadata.name} at {metadata_fp.name} that requires eval!")
-        print(f"Closed-book generations path: {CB_PATH / check_result.metadata.closedbook_generations}")
-        print(f"Open-book generations path: {OB_PATH / check_result.metadata.openbook_generations}")
-        print(f"Evidence-provided generations path: {EP_PATH / check_result.metadata.evidenceprovided_generations}")
+        if check_result.metadata.closedbook_generations is not None:
+            print(f"Closed-book generations path: {CB_PATH / check_result.metadata.closedbook_generations}")
+        if check_result.metadata.openbook_generations is not None:
+            print(f"Open-book generations path: {OB_PATH / check_result.metadata.openbook_generations}")
+        if check_result.metadata.evidenceprovided_generations is not None:
+            print(f"Evidence-provided generations path: {EP_PATH / check_result.metadata.evidenceprovided_generations}")
         try:
             result_fp = await eval_submission(metadata_fp, check_result)
             written_files.append(result_fp)
