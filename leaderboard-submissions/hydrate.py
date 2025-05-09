@@ -32,9 +32,9 @@ class SubmissionMetadata:
     type: Literal["FOUNDATION", "FINETUNE", "PROMPT", "OTHER"]
     context: int
     is_trained_for_function_calling: bool
-    closedbook_generations: str
-    openbook_generations: str
-    evidenceprovided_generations: str
+    closedbook_generations: Optional[str]
+    openbook_generations: Optional[str]
+    evidenceprovided_generations: Optional[str]
     details: Optional[str] = None
 
 
@@ -118,12 +118,15 @@ def check_submission(metadata_fp: Path) -> CheckResult:
 
     # ensure the submission files exist
     # hash the submission files
-    cb_fp = CB_PATH / metadata_data.closedbook_generations
-    the_hash.update(cb_fp.read_bytes())
-    ob_fp = OB_PATH / metadata_data.openbook_generations
-    the_hash.update(ob_fp.read_bytes())
-    ep_fp = EP_PATH / metadata_data.evidenceprovided_generations
-    the_hash.update(ep_fp.read_bytes())
+    if metadata_data.closedbook_generations is not None:
+        cb_fp = CB_PATH / metadata_data.closedbook_generations
+        the_hash.update(cb_fp.read_bytes())
+    if metadata_data.openbook_generations is not None:
+        ob_fp = OB_PATH / metadata_data.openbook_generations
+        the_hash.update(ob_fp.read_bytes())
+    if metadata_data.evidenceprovided_generations is not None:
+        ep_fp = EP_PATH / metadata_data.evidenceprovided_generations
+        the_hash.update(ep_fp.read_bytes())
 
     # salt the hash
     the_hash.update(LEADERBOARD_SALT)
@@ -160,20 +163,29 @@ async def eval_submission(metadata_fp: Path, check_result: CheckResult):
 
     questions = fanoutqa.load_dev("fanoutqa-test-answers.json")
 
-    print("Evaluating closed book answers...")
-    closedbook_answers = read_jsonl_answers(CB_PATH / check_result.metadata.closedbook_generations)
-    closedbook_scorer = Scorer(questions, closedbook_answers, llm_cache_key="eval")
-    closedbook_results = (await closedbook_scorer.score()).to_dict()
+    if check_result.metadata.closedbook_generations is not None:
+        print("Evaluating closed book answers...")
+        closedbook_answers = read_jsonl_answers(CB_PATH / check_result.metadata.closedbook_generations)
+        closedbook_scorer = Scorer(questions, closedbook_answers, llm_cache_key="eval")
+        closedbook_results = (await closedbook_scorer.score()).to_dict()
+    else:
+        closedbook_results = None
 
-    print("Evaluating open book answers...")
-    openbook_answers = read_jsonl_answers(OB_PATH / check_result.metadata.openbook_generations)
-    openbook_scorer = Scorer(questions, openbook_answers, llm_cache_key="eval")
-    openbook_results = (await openbook_scorer.score()).to_dict()
+    if check_result.metadata.openbook_generations is not None:
+        print("Evaluating open book answers...")
+        openbook_answers = read_jsonl_answers(OB_PATH / check_result.metadata.openbook_generations)
+        openbook_scorer = Scorer(questions, openbook_answers, llm_cache_key="eval")
+        openbook_results = (await openbook_scorer.score()).to_dict()
+    else:
+        openbook_results = None
 
-    print("Evaluating evidence provided answers...")
-    evidenceprovided_answers = read_jsonl_answers(EP_PATH / check_result.metadata.evidenceprovided_generations)
-    evidenceprovided_scorer = Scorer(questions, evidenceprovided_answers, llm_cache_key="eval")
-    evidenceprovided_results = (await evidenceprovided_scorer.score()).to_dict()
+    if check_result.metadata.evidenceprovided_generations is not None:
+        print("Evaluating evidence provided answers...")
+        evidenceprovided_answers = read_jsonl_answers(EP_PATH / check_result.metadata.evidenceprovided_generations)
+        evidenceprovided_scorer = Scorer(questions, evidenceprovided_answers, llm_cache_key="eval")
+        evidenceprovided_results = (await evidenceprovided_scorer.score()).to_dict()
+    else:
+        evidenceprovided_results = None
 
     # hash the results to prevent score manipulation
     results_hash = hashlib.sha256()

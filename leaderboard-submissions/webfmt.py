@@ -19,13 +19,17 @@ def main():
         with open(fp) as f:
             result = json.load(f)
 
-        cb = {**result["metadata"], **result["closedbook"]}
-        ob = {**result["metadata"], **result["openbook"]}
-        ep = {**result["metadata"], **result["evidenceprovided"]}
+        if result["closedbook"] is not None:
+            cb = {**result["metadata"], **result["closedbook"]}
+            results_closed.append(cb)
 
-        results_closed.append(cb)
-        results_open.append(ob)
-        results_provided.append(ep)
+        if result["openbook"] is not None:
+            ob = {**result["metadata"], **result["openbook"]}
+            results_open.append(ob)
+
+        if result["evidenceprovided"] is not None:
+            ep = {**result["metadata"], **result["evidenceprovided"]}
+            results_provided.append(ep)
 
     with open(WEB_DATA_PATH / "web-closedbook.json", "w") as f:
         json.dump(results_closed, f, indent=2)
