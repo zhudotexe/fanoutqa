@@ -2,7 +2,7 @@
   "name": "HTKG-RAG(deepseek-v3)",
   "authors": "Yiwei Jiang, Chao Zhang",
   "url": null,
-  "citation": "e.g. `Jiang et al., 2024",
+  "citation": "Jiang et al., 2024",
   "type": "OTHER",
   "context": 128000,
   "is_trained_for_function_calling": false,
