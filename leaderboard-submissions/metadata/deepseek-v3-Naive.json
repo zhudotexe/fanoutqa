@@ -1,0 +1,13 @@
+{
+  "name": "Naive RAG(deepseek-v3)",
+  "authors": "Yunfan Gao, Yun Xiong, Xinyu Gao, Kangxiang Jia, Jinliu Pan, Yuxi Bi, Yi Dai, Jiawei Sun, Meng Wang, Haofen Wang",
+  "url": null,
+  "citation": "e.g. `Gao et al., 2023",
+  "type": "OTHER",
+  "context": 128000,
+  "is_trained_for_function_calling": false,
+  "details": "deepseek-v3",
+  "closedbook_generations": null,
+  "openbook_generations": "results-Naive-deepseek-v3.jsonl",
+  "evidenceprovided_generations": null
+}

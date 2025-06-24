@@ -1,0 +1,13 @@
+{
+  "name": "LightRAG(deepseek-v3)",
+  "authors": "Zirui Guo, Lianghao Xia, Yanhua Yu, Tu Ao, Chao Huang",
+  "url": "https://github.com/HKUDS/LightRAG",
+  "citation": "e.g. `Guo et al., 2024",
+  "type": "OTHER",
+  "context": 128000,
+  "is_trained_for_function_calling": false,
+  "details": "deepseek-v3",
+  "closedbook_generations": null,
+  "openbook_generations": "results-LightRAG-deepseek-v3.jsonl",
+  "evidenceprovided_generations": null
+}
