@@ -1,11 +1,11 @@
 {
-  "_submission_hash": "1a7767e9e91d24a624ee67ebea1055d708caf58368b920f2ce5c1c6b812de4ca",
-  "_results_hash": "54dac942c0453e223e9ddc790565e08763600cfd2580382186390521c178d873",
+  "_submission_hash": "0e3e8ca61fe1dc2a109a059224a429f24b163718d02ef996bde261c7cf6fa925",
+  "_results_hash": "b2285adbb98880a502ad1fa35f67e4ae5057a89201cba7c5a6216d466b4a9531",
   "metadata": {
     "name": "HTKG-RAG(GPT-4o)",
     "authors": "Yiwei Jiang, Chao Zhang",
     "url": null,
-    "citation": "e.g. `Jiang et al., 2024",
+    "citation": "Jiang et al., 2024",
     "type": "OTHER",
     "context": 128000,
     "is_trained_for_function_calling": false,
@@ -35,7 +35,7 @@
       }
     },
     "bleurt": 0.5907336167929417,
-    "gpt": 0.4116022099447514
+    "gpt": 0.4046961325966851
   },
   "evidenceprovided": null
 }
