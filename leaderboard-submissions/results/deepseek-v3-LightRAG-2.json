@@ -1,0 +1,41 @@
+{
+  "_submission_hash": "cd5dc8a4698fbe74819c6501200ec097f706c45109da45e6e7a971ac70b2db00",
+  "_results_hash": "2f69016666382569fc18e73d2ec6cf017d23e95b3842e0a3e706d07a0f7a8a33",
+  "metadata": {
+    "name": "LightRAG(deepseek-v3)",
+    "authors": "Zirui Guo, Lianghao Xia, Yanhua Yu, Tu Ao, Chao Huang",
+    "url": "https://github.com/HKUDS/LightRAG",
+    "citation": "Guo et al., 2024",
+    "type": "OTHER",
+    "context": 128000,
+    "is_trained_for_function_calling": false,
+    "details": "deepseek-v3"
+  },
+  "closedbook": null,
+  "openbook": {
+    "acc": {
+      "loose": 0.3947460650154019,
+      "strict": 0.08977900552486189
+    },
+    "rouge": {
+      "rouge1": {
+        "precision": 0.35101659111196126,
+        "recall": 0.5313416145380869,
+        "fscore": 0.39343372272623733
+      },
+      "rouge2": {
+        "precision": 0.2052338377896277,
+        "recall": 0.2932340376647824,
+        "fscore": 0.22598402870744422
+      },
+      "rougeL": {
+        "precision": 0.2975352351287262,
+        "recall": 0.4522886016538771,
+        "fscore": 0.333711616507946
+      }
+    },
+    "bleurt": 0.4576739001586951,
+    "gpt": 0.21132596685082872
+  },
+  "evidenceprovided": null
+}
