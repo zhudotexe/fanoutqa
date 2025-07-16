@@ -1,0 +1,13 @@
+{
+  "name": "HTKG-RAG(GPT-4o)",
+  "authors": "Yiwei Jiang, Chao Zhang",
+  "url": null,
+  "citation": "Jiang et al., 2024",
+  "type": "OTHER",
+  "context": 128000,
+  "is_trained_for_function_calling": false,
+  "details": "gpt-4o-2024-05-13",
+  "closedbook_generations": null,
+  "openbook_generations": "results-htkg-NoEntity-gpt-4o.jsonl",
+  "evidenceprovided_generations": null
+}
