@@ -1,0 +1,89 @@
+{
+  "_submission_hash": "4d9698eaf11c31e13f67ba554bd8d3bc5421c70252895faa7a600b75844843d5",
+  "_results_hash": "12b011cf39de08537d2c6efafc9cb9497007cf615c9edaa7ead63044c55e068a",
+  "metadata": {
+    "name": "GPT-OSS 20B",
+    "authors": "OpenAI",
+    "url": "https://huggingface.co/openai/gpt-oss-20b",
+    "citation": "OpenAI, 2025",
+    "type": "FOUNDATION",
+    "context": 128000,
+    "is_trained_for_function_calling": true,
+    "details": "openai/gpt-oss-20b"
+  },
+  "closedbook": {
+    "acc": {
+      "loose": 0.3996488009517659,
+      "strict": 0.06629834254143646
+    },
+    "rouge": {
+      "rouge1": {
+        "precision": 0.49183724147885716,
+        "recall": 0.4686077010665555,
+        "fscore": 0.4506742499641231
+      },
+      "rouge2": {
+        "precision": 0.26820482208159646,
+        "recall": 0.26327574232328393,
+        "fscore": 0.2553931118947765
+      },
+      "rougeL": {
+        "precision": 0.43568492237584905,
+        "recall": 0.41154188155222865,
+        "fscore": 0.3970038946359894
+      }
+    },
+    "bleurt": 0.4668153443306849,
+    "gpt": 0.17403314917127072
+  },
+  "openbook": {
+    "acc": {
+      "loose": 0.4461880428948462,
+      "strict": 0.0718232044198895
+    },
+    "rouge": {
+      "rouge1": {
+        "precision": 0.5261016350112664,
+        "recall": 0.5189979463620156,
+        "fscore": 0.4868794516465306
+      },
+      "rouge2": {
+        "precision": 0.30472902773918403,
+        "recall": 0.30904365522329985,
+        "fscore": 0.2916366018718529
+      },
+      "rougeL": {
+        "precision": 0.46651200500944073,
+        "recall": 0.4558674980867992,
+        "fscore": 0.4294975160861318
+      }
+    },
+    "bleurt": 0.4928133870315486,
+    "gpt": 0.22099447513812154
+  },
+  "evidenceprovided": {
+    "acc": {
+      "loose": 0.5561028335439089,
+      "strict": 0.12569060773480664
+    },
+    "rouge": {
+      "rouge1": {
+        "precision": 0.6486599247264674,
+        "recall": 0.6413898254846896,
+        "fscore": 0.6007523581714306
+      },
+      "rouge2": {
+        "precision": 0.3983859959762378,
+        "recall": 0.4087346539254458,
+        "fscore": 0.38466961194774907
+      },
+      "rougeL": {
+        "precision": 0.5774732806854695,
+        "recall": 0.570154838470713,
+        "fscore": 0.5341822391788438
+      }
+    },
+    "bleurt": 0.5601862208372321,
+    "gpt": 0.39917127071823205
+  }
+}
