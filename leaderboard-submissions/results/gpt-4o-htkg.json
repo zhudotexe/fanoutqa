@@ -1,0 +1,41 @@
+{
+  "_submission_hash": "0e3e8ca61fe1dc2a109a059224a429f24b163718d02ef996bde261c7cf6fa925",
+  "_results_hash": "b2285adbb98880a502ad1fa35f67e4ae5057a89201cba7c5a6216d466b4a9531",
+  "metadata": {
+    "name": "HTKG-RAG(GPT-4o)",
+    "authors": "Yiwei Jiang, Chao Zhang",
+    "url": null,
+    "citation": "Jiang et al., 2024",
+    "type": "OTHER",
+    "context": 128000,
+    "is_trained_for_function_calling": false,
+    "details": "gpt-4o-2024-05-13"
+  },
+  "closedbook": null,
+  "openbook": {
+    "acc": {
+      "loose": 0.5832500515979394,
+      "strict": 0.1878453038674033
+    },
+    "rouge": {
+      "rouge1": {
+        "precision": 0.5991455027074478,
+        "recall": 0.7032656494395325,
+        "fscore": 0.6193676493443898
+      },
+      "rouge2": {
+        "precision": 0.43205988772021103,
+        "recall": 0.4851377874755673,
+        "fscore": 0.44184433250005556
+      },
+      "rougeL": {
+        "precision": 0.5506018450490454,
+        "recall": 0.6469517262812596,
+        "fscore": 0.569190203129343
+      }
+    },
+    "bleurt": 0.5907336167929417,
+    "gpt": 0.4046961325966851
+  },
+  "evidenceprovided": null
+}
