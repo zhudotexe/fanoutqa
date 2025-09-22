@@ -1,0 +1,13 @@
+{
+  "name": "GPT-OSS 120B",
+  "authors": "OpenAI",
+  "url": "https://huggingface.co/openai/gpt-oss-120b",
+  "citation": "OpenAI, 2025",
+  "type": "FOUNDATION",
+  "context": 128000,
+  "is_trained_for_function_calling": true,
+  "details": "openai/gpt-oss-120b",
+  "closedbook_generations": "results-closedbook-gpt-oss-120b.jsonl",
+  "openbook_generations": "results-openbook-gpt-oss-120b.jsonl",
+  "evidenceprovided_generations": "results-wiki-provided-gpt-oss-120b.jsonl"
+}
