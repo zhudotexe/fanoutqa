@@ -4,22 +4,18 @@ import functools
 import logging
 import urllib.parse
 
-import httpx
+import pywikibot
 
 from .models import Evidence
 from .utils import CACHE_DIR, DATASET_EPOCH, markdownify
 
-USER_AGENT = "fanoutqa/1.0.0 (andrz@seas.upenn.edu)"
 WIKI_CACHE_DIR = CACHE_DIR / "wikicache"
 WIKI_CACHE_DIR.mkdir(exist_ok=True, parents=True)
+PWB_CACHE_DIR = CACHE_DIR / "pywikibot"
+pywikibot.config.base_dir = str(PWB_CACHE_DIR.resolve())
 
 log = logging.getLogger(__name__)
-wikipedia = httpx.Client(
-    base_url="https://en.wikipedia.org/w/api.php",
-    headers={"User-Agent": USER_AGENT},
-    follow_redirects=True,
-    timeout=30,
-)
+_site = pywikibot.Site("en", "wikipedia")
 
 
 class LazyEvidence(Evidence):
@@ -39,36 +35,28 @@ class LazyEvidence(Evidence):
 
     @functools.cached_property
     def revid(self):
-        resp = wikipedia.get(
-            "",
-            params={
-                "format": "json",
-                "action": "query",
-                "prop": "revisions",
-                "rvprop": "ids|timestamp",
-                "rvlimit": 1,
-                "pageids": self.pageid,
-                "rvstart": DATASET_EPOCH.isoformat(),
-            },
+        req = _site.simple_request(
+            action="query",
+            prop="revisions",
+            rvprop="ids|timestamp",
+            rvlimit=1,
+            pageids=self.pageid,
+            rvstart=DATASET_EPOCH.isoformat(),
         )
-        resp.raise_for_status()
-        data = resp.json()
+        data = req.submit()
         page = data["query"]["pages"][str(self.pageid)]
-        return page["revisions"][0]["revid"]
+        try:
+            return page["revisions"][0]["revid"]
+        except KeyError:
+            return None
 
 
 @functools.lru_cache()
 def wiki_search(query: str, results=10) -> list[Evidence]:
     """Return a list of Evidence documents given the search query."""
     # get the list of articles that match the query
-    resp = wikipedia.get(
-        "", params={"format": "json", "action": "query", "list": "search", "srsearch": query, "srlimit": results}
-    )
-    resp.raise_for_status()
-    data = resp.json()
-
     # and return a LazyEvidence for each
-    return [LazyEvidence(title=d["title"], pageid=d["pageid"]) for d in data["query"]["search"]]
+    return [LazyEvidence(title=page.title(), pageid=page.pageid) for page in _site.search(query, total=results)]
 
 
 def wiki_content(doc: Evidence) -> str:
@@ -82,9 +70,8 @@ def wiki_content(doc: Evidence) -> str:
             pass
 
     # otherwise retrieve it from Wikipedia
-    resp = wikipedia.get("", params={"format": "json", "action": "parse", "oldid": doc.revid, "prop": "text"})
-    resp.raise_for_status()
-    data = resp.json()
+    req = _site.simple_request(action="parse", oldid=doc.revid, prop="text")
+    data = req.submit()
     try:
         html = data["parse"]["text"]["*"]
     except KeyError:
