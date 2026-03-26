@@ -134,9 +134,12 @@ class Scorer:
             results = self.rouge.score(str_answer(q.answer), str_answer(a["answer"]))
             for k, v in results.items():
                 scores[k].append(v)
-            raw_scores[q.id] = RougeScore(**{
-                k: RougeScorePart(precision=v.precision, recall=v.recall, fscore=v.fmeasure) for k, v in results.items()
-            })
+            raw_scores[q.id] = RougeScore(
+                **{
+                    k: RougeScorePart(precision=v.precision, recall=v.recall, fscore=v.fmeasure)
+                    for k, v in results.items()
+                }
+            )
 
         assert all(len(v) == self.eval_len for v in scores.values())
         assert len(raw_scores) == self.eval_len
