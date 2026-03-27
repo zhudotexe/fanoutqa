@@ -1,0 +1,41 @@
+{
+  "_submission_hash": "5821476a7ee12ea8885eb1a71275565fbb52334407feb52cddcc4678cc948812",
+  "_results_hash": "33a3915873297e15661a416078f4d3b3b257e836c3707b849b958f878455e47b",
+  "metadata": {
+    "name": "HTKG-RAG(deepseek-v3)",
+    "authors": "Yiwei Jiang, Chao Zhang",
+    "url": null,
+    "citation": "Jiang et al., 2024",
+    "type": "OTHER",
+    "context": 128000,
+    "is_trained_for_function_calling": false,
+    "details": "deepseek-v3"
+  },
+  "closedbook": null,
+  "openbook": {
+    "acc": {
+      "loose": 0.49569692749328703,
+      "strict": 0.19751381215469613
+    },
+    "rouge": {
+      "rouge1": {
+        "precision": 0.5909490410061667,
+        "recall": 0.7269471421514364,
+        "fscore": 0.6234278818747376
+      },
+      "rouge2": {
+        "precision": 0.4206059581420944,
+        "recall": 0.49867845998475213,
+        "fscore": 0.4396717083907083
+      },
+      "rougeL": {
+        "precision": 0.5480498701210798,
+        "recall": 0.6749741483924312,
+        "fscore": 0.5784092221592692
+      }
+    },
+    "bleurt": 0.5867992810164038,
+    "gpt": 0.462707182320442
+  },
+  "evidenceprovided": null
+}
