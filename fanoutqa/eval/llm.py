@@ -10,9 +10,14 @@ from fanoutqa.utils import CACHE_DIR
 
 LLM_CACHE_DIR = CACHE_DIR / "llmcache"
 LLM_CACHE_DIR.mkdir(exist_ok=True)
+LLM_JUDGE_MODEL = os.getenv("FANOUTQA_JUDGE_MODEL", "gpt-4o-2024-11-20")
 OPENAI_API_KEY = os.getenv("FANOUTQA_OPENAI_API_KEY", "")
+OPENAI_API_BASE = os.getenv("FANOUTQA_OPENAI_API_BASE", "https://api.openai.com/v1")
 
-engine = OpenAIEngine(api_key=OPENAI_API_KEY, model="gpt-4o-2024-11-20", temperature=0, seed=31415)
+
+engine = OpenAIEngine(
+    api_key=OPENAI_API_KEY, model=LLM_JUDGE_MODEL, api_base=OPENAI_API_BASE, temperature=0, seed=31415
+)
 factuality_system = "You are comparing a submitted answer to an expert answer on a given question."
 
 
