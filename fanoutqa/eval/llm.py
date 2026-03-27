@@ -16,7 +16,12 @@ OPENAI_API_BASE = os.getenv("FANOUTQA_OPENAI_API_BASE", "https://api.openai.com/
 
 
 engine = OpenAIEngine(
-    api_key=OPENAI_API_KEY, model=LLM_JUDGE_MODEL, api_base=OPENAI_API_BASE, temperature=0, seed=31415
+    api_key=OPENAI_API_KEY,
+    model=LLM_JUDGE_MODEL,
+    api_base=OPENAI_API_BASE,
+    temperature=0,
+    seed=31415,
+    max_context_size=16384,
 )
 factuality_system = "You are comparing a submitted answer to an expert answer on a given question."
 
