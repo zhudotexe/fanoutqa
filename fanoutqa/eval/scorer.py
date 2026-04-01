@@ -31,8 +31,6 @@ class Scorer:
         :param llm_cache_key: If this is provided, cache the LLM-as-judge generations with this key. We recommend
             setting this to a human-readable key for each system under test.
         """
-        from bleurt.score import BleurtScorer
-        from rouge_score.rouge_scorer import RougeScorer
 
         self.questions = questions
         self.questions_by_id = {q.id: q for q in self.questions}
@@ -49,8 +47,8 @@ class Scorer:
         self.llm_cache_key = llm_cache_key
 
         # ext evallers
-        self.rouge = RougeScorer(ROUGE_TYPES, use_stemmer=True)
-        self.bleurt = BleurtScorer("BLEURT-20")
+        self.rouge = None
+        self.bleurt = None
 
     async def score(self):
         acc, acc_raw = self.score_accuracy()
@@ -121,6 +119,11 @@ class Scorer:
         """Get the ROUGE-1, ROUGE-2, and ROUGE-L scores (P/R/F1) for the loaded qs and as."""
         import rouge_score.scoring
 
+        if self.rouge is None:
+            from rouge_score.rouge_scorer import RougeScorer
+
+            self.rouge = RougeScorer(ROUGE_TYPES, use_stemmer=True)
+
         raw_scores = {}  # qid -> RougeScore
         scores = {t: [] for t in ROUGE_TYPES}  # rouge_type -> list[Score]
         for q, a in self.get_qa_pairs():
@@ -134,12 +137,9 @@ class Scorer:
             results = self.rouge.score(str_answer(q.answer), str_answer(a["answer"]))
             for k, v in results.items():
                 scores[k].append(v)
-            raw_scores[q.id] = RougeScore(
-                **{
-                    k: RougeScorePart(precision=v.precision, recall=v.recall, fscore=v.fmeasure)
-                    for k, v in results.items()
-                }
-            )
+            raw_scores[q.id] = RougeScore(**{
+                k: RougeScorePart(precision=v.precision, recall=v.recall, fscore=v.fmeasure) for k, v in results.items()
+            })
 
         assert all(len(v) == self.eval_len for v in scores.values())
         assert len(raw_scores) == self.eval_len
@@ -153,6 +153,11 @@ class Scorer:
 
     def score_bleurt(self) -> Tuple[float, Dict[str, float]]:
         """Get the BLEURT score for the loaded qs and as."""
+        if self.bleurt is None:
+            from bleurt.score import BleurtScorer
+
+            self.bleurt = BleurtScorer("BLEURT-20")
+
         references = []
         candidates = []
         idx_to_id = {}
