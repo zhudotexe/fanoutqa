@@ -2,6 +2,7 @@ import asyncio
 import hashlib
 import json
 import os
+import re
 import traceback
 from collections import namedtuple
 from dataclasses import dataclass
@@ -163,6 +164,10 @@ async def eval_submission(metadata_fp: Path, check_result: CheckResult):
     #     "gpt": 0.0,
     # }
     # closedbook_results = openbook_results = evidenceprovided_results = dummy
+
+    # #24
+    if not re.fullmatch(r"[\w\-]+\.json", metadata_fp.name):
+        raise ValueError("Submission filenames must consist only of alphanumeric characters, dashes, and underscores")
 
     questions = fanoutqa.load_dev("fanoutqa-test-answers.json")
 
