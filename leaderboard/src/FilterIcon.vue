@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { FilterOption } from '@/filters'
 import clickOutside from 'click-outside-vue3'
-import { defineProps, ref } from 'vue'
+import { ref } from 'vue'
 
 // setup
 const props = defineProps<{
