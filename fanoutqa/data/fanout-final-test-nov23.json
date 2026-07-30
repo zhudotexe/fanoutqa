@@ -47,7 +47,7 @@
   },
   {
     "id": "fcb3eb5fabfac1f4",
-    "question": "Of the top 9 most-followed TikTok accounts (excluding TikTok itself), which personalities associated with those accounts are over 25 years of age?",
+    "question": "Of the top 10 most followed social personalities on Tiktok, which personalities are over 25 years of age?",
     "necessary_evidence": [
       {
         "pageid": 60917617,
@@ -56,10 +56,10 @@
         "url": "https://en.wikipedia.org/wiki/List_of_most-followed_TikTok_accounts"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Khaby Lame",
-        "url": "https://en.wikipedia.org/wiki/Khaby_Lame"
+        "pageid": 3120522,
+        "revid": 1185431165,
+        "title": "Kamala Harris",
+        "url": "https://en.wikipedia.org/wiki/Kamala_Harris"
       },
       {
         "pageid": 62810909,
@@ -74,28 +74,28 @@
         "url": "https://en.wikipedia.org/wiki/Bella_Poarch"
       },
       {
-        "pageid": 63440118,
-        "revid": 1185810591,
-        "title": "Addison Rae",
-        "url": "https://en.wikipedia.org/wiki/Addison_Rae"
-      },
-      {
         "pageid": 58920328,
         "revid": 1185656775,
         "title": "MrBeast",
         "url": "https://en.wikipedia.org/wiki/MrBeast"
       },
       {
-        "pageid": 41883053,
-        "revid": 1184814989,
-        "title": "Zach King",
-        "url": "https://en.wikipedia.org/wiki/Zach_King"
+        "pageid": 63440118,
+        "revid": 1185810591,
+        "title": "Addison Rae",
+        "url": "https://en.wikipedia.org/wiki/Addison_Rae"
       },
       {
         "pageid": 62018514,
         "revid": 1184999077,
         "title": "Kimberly Loaiza",
         "url": "https://en.wikipedia.org/wiki/Kimberly_Loaiza"
+      },
+      {
+        "pageid": 41883053,
+        "revid": 1184814989,
+        "title": "Zach King",
+        "url": "https://en.wikipedia.org/wiki/Zach_King"
       },
       {
         "pageid": 61760678,
@@ -108,6 +108,12 @@
         "revid": 1185846088,
         "title": "Will Smith",
         "url": "https://en.wikipedia.org/wiki/Will_Smith"
+      },
+      {
+        "pageid": 156126,
+        "revid": 1185679275,
+        "title": "Dwayne Johnson",
+        "url": "https://en.wikipedia.org/wiki/Dwayne_Johnson"
       }
     ],
     "categories": [
@@ -460,12 +466,6 @@
         "url": "https://en.wikipedia.org/wiki/Burj_Khalifa"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Merdeka 118",
-        "url": "https://en.wikipedia.org/wiki/Merdeka_118"
-      },
-      {
         "pageid": 16450146,
         "revid": 1185645098,
         "title": "Shanghai Tower",
@@ -482,6 +482,12 @@
         "revid": 1185571920,
         "title": "Ping An International Finance Centre",
         "url": "https://en.wikipedia.org/wiki/Ping_An_Finance_Centre"
+      },
+      {
+        "pageid": 24912179,
+        "revid": 1179801133,
+        "title": "Lotte World Tower",
+        "url": "https://en.wikipedia.org/wiki/Lotte_World_Tower"
       }
     ],
     "categories": [
@@ -512,22 +518,22 @@
         "url": "https://en.wikipedia.org/wiki/Microsoft"
       },
       {
+        "pageid": 290527,
+        "revid": 1184200621,
+        "title": "Saudi Aramco",
+        "url": "https://en.wikipedia.org/wiki/Saudi_Aramco"
+      },
+      {
         "pageid": 47489893,
         "revid": 1184949012,
         "title": "Alphabet Inc.",
         "url": "https://en.wikipedia.org/wiki/Alphabet_Inc"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Amazon (company)",
-        "url": "https://en.wikipedia.org/wiki/Amazon_(company)"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Nvidia",
-        "url": "https://en.wikipedia.org/wiki/Nvidia"
+        "pageid": 1298114,
+        "revid": 1182694264,
+        "title": "PetroChina",
+        "url": "https://en.wikipedia.org/wiki/PetroChina"
       }
     ],
     "categories": [
@@ -684,16 +690,16 @@
         "url": "https://en.wikipedia.org/wiki/List_of_Nobel_laureates_in_Physiology_or_Medicine"
       },
       {
+        "pageid": 66320318,
+        "revid": 1185393239,
+        "title": "Drew Weissman",
+        "url": "https://en.wikipedia.org/wiki/Drew_Weissman"
+      },
+      {
         "pageid": 73016,
         "revid": 1184754677,
         "title": "Svante P\u00e4\u00e4bo",
         "url": "https://en.wikipedia.org/wiki/Svante_P%C3%A4%C3%A4bo"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "David Julius",
-        "url": "https://en.wikipedia.org/wiki/David_Julius"
       },
       {
         "pageid": 66553329,
@@ -702,16 +708,16 @@
         "url": "https://en.wikipedia.org/wiki/Ardem_Patapoutian"
       },
       {
+        "pageid": 52298552,
+        "revid": 1182715671,
+        "title": "Charles M. Rice",
+        "url": "https://en.wikipedia.org/wiki/Charles_M._Rice"
+      },
+      {
         "pageid": 4833964,
         "revid": 1178760712,
         "title": "Harvey J. Alter",
         "url": "https://en.wikipedia.org/wiki/Harvey_J._Alter"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Michael Houghton (virologist)",
-        "url": "https://en.wikipedia.org/wiki/Michael_Houghton_(virologist)"
       }
     ],
     "categories": [
@@ -906,34 +912,34 @@
         "url": "https://en.wikipedia.org/wiki/List_of_missions_to_Mars"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "ExoMars",
-        "url": "https://en.wikipedia.org/wiki/ExoMars"
+        "pageid": 18959,
+        "revid": 1170838623,
+        "title": "2001 Mars Odyssey",
+        "url": "https://en.wikipedia.org/wiki/2001_Mars_Odyssey"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "InSight",
-        "url": "https://en.wikipedia.org/wiki/InSight"
+        "pageid": 178283,
+        "revid": 1176930130,
+        "title": "Mars Express",
+        "url": "https://en.wikipedia.org/wiki/Mars_Express"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Emirates Mars Mission",
-        "url": "https://en.wikipedia.org/wiki/Emirates_Mars_Mission"
+        "pageid": 453326,
+        "revid": 1185735195,
+        "title": "Mars Reconnaissance Orbiter",
+        "url": "https://en.wikipedia.org/wiki/Mars_Reconnaissance_Orbiter"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Tianwen-1",
-        "url": "https://en.wikipedia.org/wiki/Tianwen-1"
+        "pageid": 453544,
+        "revid": 1181850844,
+        "title": "Mars Science Laboratory",
+        "url": "https://en.wikipedia.org/wiki/Mars_Science_Laboratory"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Mars 2020",
-        "url": "https://en.wikipedia.org/wiki/Mars_2020"
+        "pageid": 19335567,
+        "revid": 1182395664,
+        "title": "MAVEN",
+        "url": "https://en.wikipedia.org/wiki/MAVEN"
       }
     ],
     "categories": [
@@ -1068,16 +1074,16 @@
         "url": "https://en.wikipedia.org/wiki/Sahara"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Deserts of Australia",
-        "url": "https://en.wikipedia.org/wiki/Deserts_of_Australia"
-      },
-      {
         "pageid": 199993,
         "revid": 1183938440,
         "title": "Arabian Desert",
         "url": "https://en.wikipedia.org/wiki/Arabian_Desert"
+      },
+      {
+        "pageid": 23306833,
+        "revid": 1185442156,
+        "title": "Gobi Desert",
+        "url": "https://en.wikipedia.org/wiki/Gobi_Desert"
       }
     ],
     "categories": [
@@ -1257,7 +1263,7 @@
   },
   {
     "id": "c20e5dc3cfd60650",
-    "question": "Identify the top three highest-grossing film franchises of all time and their most successful films.",
+    "question": "Identify the top five highest-grossing film franchises of all time and their most successful films.",
     "necessary_evidence": [
       {
         "pageid": 59892,
@@ -1272,16 +1278,28 @@
         "url": "https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Spider-Man in film",
-        "url": "https://en.wikipedia.org/wiki/Spider-Man_in_film"
-      },
-      {
         "pageid": 26678,
         "revid": 1185937156,
         "title": "Star Wars",
         "url": "https://en.wikipedia.org/wiki/Star_Wars"
+      },
+      {
+        "pageid": 7629286,
+        "revid": 1184678529,
+        "title": "Harry Potter (film series)",
+        "url": "https://en.wikipedia.org/wiki/Harry_Potter_(film_series)"
+      },
+      {
+        "pageid": 11056991,
+        "revid": 1184482005,
+        "title": "Jurassic Park",
+        "url": "https://en.wikipedia.org/wiki/Jurassic_Park_(franchise)"
+      },
+      {
+        "pageid": 27306717,
+        "revid": 1185490280,
+        "title": "Marvel Cinematic Universe",
+        "url": "https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe#Phase_Three"
       }
     ],
     "categories": [
@@ -1469,6 +1487,12 @@
         "url": "https://en.wikipedia.org/wiki/James_Harden"
       },
       {
+        "pageid": 72892,
+        "revid": 1185534954,
+        "title": "Los Angeles Clippers",
+        "url": "https://en.wikipedia.org/wiki/Los_Angeles_Clippers"
+      },
+      {
         "pageid": 72857,
         "revid": 1184682710,
         "title": "Philadelphia 76ers",
@@ -1485,12 +1509,6 @@
         "revid": 1183925793,
         "title": "Houston Rockets",
         "url": "https://en.wikipedia.org/wiki/Houston_Rockets"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Oklahoma City Thunder",
-        "url": "https://en.wikipedia.org/wiki/Oklahoma_City_Thunder"
       }
     ],
     "categories": [
@@ -1597,13 +1615,13 @@
   },
   {
     "id": "08cc854f584e1b45",
-    "question": "List the highest mountains in each continent and their respective first ascenders, using the Bass Seven Summits list with Mount Kosciuszko for Australia.",
+    "question": "List the highest mountains in each continent and their respective first ascenders.",
     "necessary_evidence": [
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Seven Summits",
-        "url": "https://en.wikipedia.org/wiki/Seven_Summits"
+        "pageid": 1821694,
+        "revid": 1183163225,
+        "title": "List of highest mountains on Earth",
+        "url": "https://en.wikipedia.org/wiki/List_of_highest_mountains_on_Earth"
       },
       {
         "pageid": 42179,
@@ -1707,7 +1725,7 @@
   },
   {
     "id": "d7f7eb18c52fecbd",
-    "question": "What are the first space missions to reach each of the outer planets of our Solar System?",
+    "question": "What are the first space missions to reach each of the five outer planets of our Solar System?",
     "necessary_evidence": [
       {
         "pageid": 26903,
@@ -1738,6 +1756,12 @@
         "revid": 1183933755,
         "title": "Exploration of Neptune",
         "url": "https://en.wikipedia.org/wiki/Exploration_of_Neptune"
+      },
+      {
+        "pageid": 28343916,
+        "revid": 1181594886,
+        "title": "Exploration of Pluto",
+        "url": "https://en.wikipedia.org/wiki/Exploration_of_Pluto"
       }
     ],
     "categories": [
@@ -1900,30 +1924,6 @@
         "revid": 1185649851,
         "title": "Alejandro Mayorkas",
         "url": "https://en.wikipedia.org/wiki/Alejandro_Mayorkas"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Jeff Zients",
-        "url": "https://en.wikipedia.org/wiki/Jeff_Zients"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Michael S. Regan",
-        "url": "https://en.wikipedia.org/wiki/Michael_S._Regan"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "William J. Burns",
-        "url": "https://en.wikipedia.org/wiki/William_J._Burns"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Jared Bernstein",
-        "url": "https://en.wikipedia.org/wiki/Jared_Bernstein"
       }
     ],
     "categories": [
@@ -2000,22 +2000,16 @@
         "url": "https://en.wikipedia.org/wiki/Dalano_Banton"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Malcolm Brogdon",
-        "url": "https://en.wikipedia.org/wiki/Malcolm_Brogdon"
-      },
-      {
         "pageid": 45800876,
         "revid": 1185775546,
         "title": "Jaylen Brown",
         "url": "https://en.wikipedia.org/wiki/Jaylen_Brown"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "JD Davison",
-        "url": "https://en.wikipedia.org/wiki/JD_Davison"
+        "pageid": 20286729,
+        "revid": 1185469276,
+        "title": "Jrue Holiday",
+        "url": "https://en.wikipedia.org/wiki/Jrue_Holiday"
       },
       {
         "pageid": 4629580,
@@ -2307,10 +2301,10 @@
         "url": "https://en.wikipedia.org/wiki/Demographics_of_Colombia#Census"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Demographics of Chile",
-        "url": "https://en.wikipedia.org/wiki/Demographics_of_Chile#Population"
+        "pageid": 676833,
+        "revid": 1185226300,
+        "title": "Inuktitut",
+        "url": "https://en.wikipedia.org/wiki/Inuktitut"
       }
     ],
     "categories": [
@@ -2384,7 +2378,7 @@
   },
   {
     "id": "eb61815fc5eaad35",
-    "question": "What are the top four best-selling albums in South Korea and their respective agencies/labels?",
+    "question": "What are the top four best-selling albums in South Korea and their respective artists?",
     "necessary_evidence": [
       {
         "pageid": 42485235,
@@ -2399,10 +2393,10 @@
         "url": "https://en.wikipedia.org/wiki/FML_(EP)"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Map of the Soul: Persona",
-        "url": "https://en.wikipedia.org/wiki/Map_of_the_Soul:_Persona"
+        "pageid": 75078165,
+        "revid": 1185398974,
+        "title": "Seventeenth Heaven",
+        "url": "https://en.wikipedia.org/wiki/Seventeenth_Heaven"
       },
       {
         "pageid": 73661001,
@@ -2863,7 +2857,7 @@
   },
   {
     "id": "ece52c471c549f24",
-    "question": "Who are the founders of the top 5 tech companies by revenue in the United States?",
+    "question": "Who are the founders of the top 5 tech companies in the United States?",
     "necessary_evidence": [
       {
         "pageid": 15373479,
@@ -2878,28 +2872,28 @@
         "url": "https://en.wikipedia.org/wiki/History_of_Apple_Inc."
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Alphabet Inc.",
-        "url": "https://en.wikipedia.org/wiki/Alphabet_Inc."
-      },
-      {
         "pageid": 4240094,
         "revid": 1184359736,
         "title": "History of Microsoft",
         "url": "https://en.wikipedia.org/wiki/History_of_Microsoft"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Dell Technologies",
-        "url": "https://en.wikipedia.org/wiki/Dell_Technologies"
+        "pageid": 58634020,
+        "revid": 1184676766,
+        "title": "History of Amazon",
+        "url": "https://en.wikipedia.org/wiki/History_of_Amazon"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Meta Platforms",
-        "url": "https://en.wikipedia.org/wiki/Meta_Platforms"
+        "pageid": 4338696,
+        "revid": 1185386646,
+        "title": "History of Google",
+        "url": "https://en.wikipedia.org/wiki/History_of_Google"
+      },
+      {
+        "pageid": 27951979,
+        "revid": 1184155989,
+        "title": "History of Facebook",
+        "url": "https://en.wikipedia.org/wiki/History_of_Facebook"
       }
     ],
     "categories": [
@@ -2936,16 +2930,16 @@
         "url": "https://en.wikipedia.org/wiki/Okja"
       },
       {
+        "pageid": 40284756,
+        "revid": 1184714978,
+        "title": "Sea Fog",
+        "url": "https://en.wikipedia.org/wiki/Sea_Fog"
+      },
+      {
         "pageid": 35816879,
         "revid": 1183416862,
         "title": "Snowpiercer",
         "url": "https://en.wikipedia.org/wiki/Snowpiercer"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Mother (2009 film)",
-        "url": "https://en.wikipedia.org/wiki/Mother_(2009_film)"
       }
     ],
     "categories": [
@@ -3021,28 +3015,28 @@
         "url": "https://en.wikipedia.org/wiki/United_States"
       },
       {
-        "pageid": 349303,
-        "revid": 1185594377,
-        "title": "Saudi Arabia",
-        "url": "https://en.wikipedia.org/wiki/Saudi_Arabia"
-      },
-      {
         "pageid": 25391,
         "revid": 1185169928,
         "title": "Russia",
         "url": "https://en.wikipedia.org/wiki/Russia"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Canada",
-        "url": "https://en.wikipedia.org/wiki/Canada"
+        "pageid": 349303,
+        "revid": 1185594377,
+        "title": "Saudi Arabia",
+        "url": "https://en.wikipedia.org/wiki/Saudi_Arabia"
       },
       {
         "pageid": 7515928,
         "revid": 1185532020,
         "title": "Iraq",
         "url": "https://en.wikipedia.org/wiki/Iraq"
+      },
+      {
+        "pageid": 5405,
+        "revid": 1185706762,
+        "title": "China",
+        "url": "https://en.wikipedia.org/wiki/China"
       }
     ],
     "categories": [
@@ -3052,13 +3046,13 @@
   },
   {
     "id": "eb656a895b97e99b",
-    "question": "Find the CEOs of the top nine companies by revenue in the Fortune 500 list of 2022. What college/university did they attend as an undergraduate?",
+    "question": "Find the CEO's of the top nine Fortune 500 companies by revenue. What college/university did they attend as an undergraduate?",
     "necessary_evidence": [
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Fortune 500",
-        "url": "https://en.wikipedia.org/wiki/Fortune_500"
+        "pageid": 19908980,
+        "revid": 1185795171,
+        "title": "List of presidents of the United States",
+        "url": "https://en.wikipedia.org/wiki/List_of_presidents_of_the_United_States"
       },
       {
         "pageid": 33589,
@@ -3223,6 +3217,12 @@
         "revid": 1185946854,
         "title": "Summer Olympic Games",
         "url": "https://en.wikipedia.org/wiki/Summer_Olympic_Games"
+      },
+      {
+        "pageid": 27862,
+        "revid": 1185116493,
+        "title": "Sydney",
+        "url": "https://en.wikipedia.org/wiki/Sydney"
       },
       {
         "pageid": 1216,
@@ -3461,28 +3461,28 @@
         "url": "https://en.wikipedia.org/wiki/List_of_current_monarchs_of_sovereign_states"
       },
       {
+        "pageid": 12153654,
+        "revid": 1185941901,
+        "title": "Elizabeth II",
+        "url": "https://en.wikipedia.org/wiki/Elizabeth_II"
+      },
+      {
         "pageid": 47255438,
         "revid": 1184411870,
         "title": "Hassanal Bolkiah",
         "url": "https://en.wikipedia.org/wiki/Hassanal_Bolkiah"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Margrethe II of Denmark",
-        "url": "https://en.wikipedia.org/wiki/Margrethe_II_of_Denmark"
+        "pageid": 393569,
+        "revid": 1183863849,
+        "title": "Qaboos bin Said",
+        "url": "https://en.wikipedia.org/wiki/Qaboos_bin_Said"
       },
       {
         "pageid": 104743,
         "revid": 1184162586,
         "title": "Carl XVI Gustaf",
         "url": "https://en.wikipedia.org/wiki/Carl_XVI_Gustaf"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Mswati III",
-        "url": "https://en.wikipedia.org/wiki/Mswati_III"
       },
       {
         "pageid": 197967,
@@ -3557,12 +3557,6 @@
         "revid": 1157914706,
         "title": "Ruben Boumtje-Boumtje",
         "url": "https://en.wikipedia.org/wiki/Ruben_Boumtje-Boumtje"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Joel Embiid",
-        "url": "https://en.wikipedia.org/wiki/Joel_Embiid"
       },
       {
         "pageid": 69333741,
@@ -3715,6 +3709,12 @@
         "url": "https://en.wikipedia.org/wiki/Heidi_Gardner"
       },
       {
+        "pageid": 68872753,
+        "revid": 1180710521,
+        "title": "James Austin Johnson",
+        "url": "https://en.wikipedia.org/wiki/James_Austin_Johnson"
+      },
+      {
         "pageid": 65334560,
         "revid": 1185010742,
         "title": "Punkie Johnson",
@@ -3733,6 +3733,12 @@
         "url": "https://en.wikipedia.org/wiki/Ego_Nwodim"
       },
       {
+        "pageid": 68840477,
+        "revid": 1183364757,
+        "title": "Sarah Sherman",
+        "url": "https://en.wikipedia.org/wiki/Sarah_Sherman"
+      },
+      {
         "pageid": 663679,
         "revid": 1185736181,
         "title": "Kenan Thompson",
@@ -3743,42 +3749,6 @@
         "revid": 1185589114,
         "title": "Bowen Yang",
         "url": "https://en.wikipedia.org/wiki/Bowen_Yang"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Marcello Hern\u00e1ndez",
-        "url": "https://en.wikipedia.org/wiki/Marcello_Hern%C3%A1ndez"
-      },
-      {
-        "pageid": 68872753,
-        "revid": 1180710521,
-        "title": "James Austin Johnson",
-        "url": "https://en.wikipedia.org/wiki/James_Austin_Johnson"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Molly Kearney",
-        "url": "https://en.wikipedia.org/wiki/Molly_Kearney"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Michael Longfellow",
-        "url": "https://en.wikipedia.org/wiki/Michael_Longfellow"
-      },
-      {
-        "pageid": 68840477,
-        "revid": 1183364757,
-        "title": "Sarah Sherman",
-        "url": "https://en.wikipedia.org/wiki/Sarah_Sherman"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Devon Walker",
-        "url": "https://en.wikipedia.org/wiki/Devon_Walker"
       }
     ],
     "categories": [
@@ -3913,10 +3883,10 @@
         "url": "https://en.wikipedia.org/wiki/Bill_Gates"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Larry Ellison",
-        "url": "https://en.wikipedia.org/wiki/Larry_Ellison"
+        "pageid": 29656,
+        "revid": 1185691812,
+        "title": "Steve Ballmer",
+        "url": "https://en.wikipedia.org/wiki/Steve_Ballmer"
       }
     ],
     "categories": [
@@ -4385,22 +4355,22 @@
         "url": "https://en.wikipedia.org/wiki/Singapore"
       },
       {
+        "pageid": 13404,
+        "revid": 1185841020,
+        "title": "Hong Kong",
+        "url": "https://en.wikipedia.org/wiki/Hong_Kong"
+      },
+      {
+        "pageid": 7607314,
+        "revid": 1185494220,
+        "title": "Gibraltar",
+        "url": "https://en.wikipedia.org/wiki/Gibraltar"
+      },
+      {
         "pageid": 18933277,
         "revid": 1185880801,
         "title": "Bahrain",
         "url": "https://en.wikipedia.org/wiki/Bahrain"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Maldives",
-        "url": "https://en.wikipedia.org/wiki/Maldives"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Malta",
-        "url": "https://en.wikipedia.org/wiki/Malta"
       }
     ],
     "categories": [
@@ -4502,7 +4472,7 @@
   },
   {
     "id": "4bc22abd7bd092f5",
-    "question": "Where are the five highest volcanoes located and when did they last erupt after the year 1500? (Indicate with the year 0 if there has been no eruption since then; use Unknown if the last eruption is unknown)",
+    "question": "Where are the five highest volcanoes located and when did they last erupt after the year 1500? (Indicate with the year 0 if there has been no eruption since then)",
     "necessary_evidence": [
       {
         "pageid": 15763623,
@@ -4655,28 +4625,28 @@
         "url": "https://en.wikipedia.org/wiki/Tokyo"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Jakarta",
-        "url": "https://en.wikipedia.org/wiki/Jakarta"
-      },
-      {
         "pageid": 37756,
         "revid": 1185858759,
         "title": "Delhi",
         "url": "https://en.wikipedia.org/wiki/Delhi"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Seoul",
-        "url": "https://en.wikipedia.org/wiki/Seoul"
-      },
-      {
         "pageid": 27643,
         "revid": 1185922962,
         "title": "Shanghai",
         "url": "https://en.wikipedia.org/wiki/Shanghai"
+      },
+      {
+        "pageid": 390875,
+        "revid": 1185771387,
+        "title": "S\u00e3o Paulo",
+        "url": "https://en.wikipedia.org/wiki/S%C3%A3o_Paulo"
+      },
+      {
+        "pageid": 18987,
+        "revid": 1185243080,
+        "title": "Mexico City",
+        "url": "https://en.wikipedia.org/wiki/Mexico_City"
       }
     ],
     "categories": [
@@ -4792,10 +4762,10 @@
         "url": "https://en.wikipedia.org/wiki/Computer_science"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Turing Award",
-        "url": "https://en.wikipedia.org/wiki/Turing_Award"
+        "pageid": 64857963,
+        "revid": 1184859126,
+        "title": "Cabinet of Joe Biden",
+        "url": "https://en.wikipedia.org/wiki/Cabinet_of_Joe_Biden"
       },
       {
         "pageid": 289616,
@@ -5040,7 +5010,7 @@
   },
   {
     "id": "61e8b3354235f798",
-    "question": "Who are the current CEOs of the top 5 car manufacturers by production volume in 2017?",
+    "question": "Who are the current CEOs of the top 5 car manufacturers?",
     "necessary_evidence": [
       {
         "pageid": 163778,
@@ -5061,22 +5031,22 @@
         "url": "https://en.wikipedia.org/wiki/Volkswagen_Group"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Hyundai Motor Company",
-        "url": "https://en.wikipedia.org/wiki/Hyundai_Motor_Company"
-      },
-      {
         "pageid": 12102,
         "revid": 1185880445,
         "title": "General Motors",
         "url": "https://en.wikipedia.org/wiki/General_Motors"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Ford Motor Company",
-        "url": "https://en.wikipedia.org/wiki/Ford_Motor_Company"
+        "pageid": 453463,
+        "revid": 1185046711,
+        "title": "Hyundai Motor Group",
+        "url": "https://en.wikipedia.org/wiki/Hyundai_Motor_Group"
+      },
+      {
+        "pageid": 25391,
+        "revid": 1185169928,
+        "title": "Russia",
+        "url": "https://en.wikipedia.org/wiki/Russia"
       }
     ],
     "categories": [
@@ -5101,6 +5071,12 @@
         "url": "https://en.wikipedia.org/wiki/Farewell_Yellow_Brick_Road"
       },
       {
+        "pageid": 72156094,
+        "revid": 1185932173,
+        "title": "The Eras Tour",
+        "url": "https://en.wikipedia.org/wiki/The_Eras_Tour"
+      },
+      {
         "pageid": 52992937,
         "revid": 1184667573,
         "title": "\u00f7 Tour",
@@ -5111,12 +5087,6 @@
         "revid": 1185927696,
         "title": "U2 360\u00b0 Tour",
         "url": "https://en.wikipedia.org/wiki/U2_360%C2%B0_Tour"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Music of the Spheres World Tour",
-        "url": "https://en.wikipedia.org/wiki/Music_of_the_Spheres_World_Tour"
       }
     ],
     "categories": [
@@ -5494,22 +5464,28 @@
         "url": "https://en.wikipedia.org/wiki/List_of_Marvel_Cinematic_Universe_films"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Avi Arad",
-        "url": "https://en.wikipedia.org/wiki/Avi_Arad"
+        "pageid": 316201,
+        "revid": 1184656601,
+        "title": "Jon Favreau",
+        "url": "https://en.wikipedia.org/wiki/Jon_Favreau"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Kevin Feige",
-        "url": "https://en.wikipedia.org/wiki/Kevin_Feige"
+        "pageid": 1811731,
+        "revid": 1184210218,
+        "title": "Louis Leterrier",
+        "url": "https://en.wikipedia.org/wiki/Louis_Leterrier"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Gale Anne Hurd",
-        "url": "https://en.wikipedia.org/wiki/Gale_Anne_Hurd"
+        "pageid": 101407,
+        "revid": 1185935568,
+        "title": "Kenneth Branagh",
+        "url": "https://en.wikipedia.org/wiki/Kenneth_Branagh"
+      },
+      {
+        "pageid": 3994403,
+        "revid": 1181660028,
+        "title": "Joe Johnston",
+        "url": "https://en.wikipedia.org/wiki/Joe_Johnston"
       }
     ],
     "categories": [
@@ -6096,28 +6072,28 @@
         "url": "https://en.wikipedia.org/wiki/Tokyo"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Jakarta",
-        "url": "https://en.wikipedia.org/wiki/Jakarta"
-      },
-      {
         "pageid": 37756,
         "revid": 1185858759,
         "title": "Delhi",
         "url": "https://en.wikipedia.org/wiki/Delhi"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Seoul",
-        "url": "https://en.wikipedia.org/wiki/Seoul"
-      },
-      {
         "pageid": 27643,
         "revid": 1185922962,
         "title": "Shanghai",
         "url": "https://en.wikipedia.org/wiki/Shanghai"
+      },
+      {
+        "pageid": 390875,
+        "revid": 1185771387,
+        "title": "S\u00e3o Paulo",
+        "url": "https://en.wikipedia.org/wiki/S%C3%A3o_Paulo"
+      },
+      {
+        "pageid": 18987,
+        "revid": 1185243080,
+        "title": "Mexico City",
+        "url": "https://en.wikipedia.org/wiki/Mexico_City"
       }
     ],
     "categories": [
@@ -6591,13 +6567,13 @@
   },
   {
     "id": "9843c3d557ea5e09",
-    "question": "Identify the capitals of the modern-day countries where the seven wonders of the ancient world were located.",
+    "question": "Identify the capitals of the countries where the seven wonders of the ancient world were located.",
     "necessary_evidence": [
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Seven Wonders of the Ancient World",
-        "url": "https://en.wikipedia.org/wiki/Seven_Wonders_of_the_Ancient_World"
+        "pageid": 21566765,
+        "revid": 1185866466,
+        "title": "South Asia",
+        "url": "https://en.wikipedia.org/wiki/South_Asia"
       },
       {
         "pageid": 8087628,
@@ -6900,12 +6876,6 @@
         "revid": 1185617037,
         "title": "Daft Punk",
         "url": "https://en.wikipedia.org/wiki/Daft_Punk"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Beck discography",
-        "url": "https://en.wikipedia.org/wiki/Beck_discography"
       }
     ],
     "categories": [
@@ -7361,13 +7331,13 @@
   },
   {
     "id": "83d614123a15f0dc",
-    "question": "What are the industries of the first four companies in the S&P 500 when ordered alphabetically?",
+    "question": "What are the industries of the top four companies in the S&P 500, ordered alphabetically?",
     "necessary_evidence": [
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "List of S&P 500 companies",
-        "url": "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies"
+        "pageid": 1092923,
+        "revid": 1185807050,
+        "title": "Google",
+        "url": "https://en.wikipedia.org/wiki/Google"
       },
       {
         "pageid": 7664801,
@@ -7544,12 +7514,6 @@
         "revid": 1185584200,
         "title": "List of best-selling books",
         "url": "https://en.wikipedia.org/wiki/List_of_best-selling_books"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Miguel de Cervantes",
-        "url": "https://en.wikipedia.org/wiki/Miguel_de_Cervantes"
       },
       {
         "pageid": 5884,
@@ -8731,13 +8695,13 @@
   },
   {
     "id": "bf91addf7e8dea97",
-    "question": "What are the heights in meters of the tallest mountains on each continent, including Europe and Australia/Oceania?",
+    "question": "What are the heights in meters of the tallest mountains on each continent?",
     "necessary_evidence": [
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Seven Summits",
-        "url": "https://en.wikipedia.org/wiki/Seven_Summits"
+        "pageid": 1821694,
+        "revid": 1183163225,
+        "title": "List of highest mountains on Earth",
+        "url": "https://en.wikipedia.org/wiki/List_of_highest_mountains_on_Earth"
       },
       {
         "pageid": 42179,
@@ -8768,18 +8732,6 @@
         "revid": 1184447320,
         "title": "Vinson Massif",
         "url": "https://en.wikipedia.org/wiki/Vinson_Massif"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Mount Elbrus",
-        "url": "https://en.wikipedia.org/wiki/Mount_Elbrus"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Puncak Jaya",
-        "url": "https://en.wikipedia.org/wiki/Puncak_Jaya"
       }
     ],
     "categories": [
@@ -9622,7 +9574,7 @@
   },
   {
     "id": "9d65fc86e094a33c",
-    "question": "Who performed at the Super Bowl halftime show in 2022 and how many studio albums does each performer have?",
+    "question": "Who performed at the Super Bowl in 2022 and how many studio albums does each performer have?",
     "necessary_evidence": [
       {
         "pageid": 1730307,
@@ -10399,7 +10351,7 @@
   },
   {
     "id": "37a223dab8f95200",
-    "question": "Who were the authors of the top 5 bestselling novels in 2013 and where were they born?",
+    "question": "Who were the authors of the top 5 bestselling novels in 2013 and where did they live?",
     "necessary_evidence": [
       {
         "pageid": 32971754,
@@ -10512,16 +10464,16 @@
         "url": "https://en.wikipedia.org/wiki/Economy_of_Australia"
       },
       {
-        "pageid": 31727,
-        "revid": 1185246137,
-        "title": "Economy of the United Kingdom",
-        "url": "https://en.wikipedia.org/wiki/Economy_of_the_United_Kingdom"
-      },
-      {
         "pageid": 5195,
         "revid": 1185018628,
         "title": "Economy of Canada",
         "url": "https://en.wikipedia.org/wiki/Economy_of_Canada"
+      },
+      {
+        "pageid": 31727,
+        "revid": 1185246137,
+        "title": "Economy of the United Kingdom",
+        "url": "https://en.wikipedia.org/wiki/Economy_of_the_United_Kingdom"
       },
       {
         "pageid": 21356,
@@ -10598,28 +10550,28 @@
         "url": "https://en.wikipedia.org/wiki/Tokyo"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "List of Indonesian provinces by highest point",
-        "url": "https://en.wikipedia.org/wiki/List_of_Indonesian_provinces_by_highest_point"
-      },
-      {
         "pageid": 20850512,
         "revid": 1167530355,
         "title": "List of Indian states and union territories by highest point",
         "url": "https://en.wikipedia.org/wiki/List_of_Indian_states_and_union_territories_by_highest_point"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Seoul",
-        "url": "https://en.wikipedia.org/wiki/Seoul"
-      },
-      {
         "pageid": 27643,
         "revid": 1185922962,
         "title": "Shanghai",
         "url": "https://en.wikipedia.org/wiki/Shanghai"
+      },
+      {
+        "pageid": 14978317,
+        "revid": 1180460669,
+        "title": "Pico do Jaragu\u00e1",
+        "url": "https://en.wikipedia.org/wiki/Pico_do_Jaragu%C3%A1#:~:text=Pico%20do%20Jaragu%C3%A1%20(Jaragu%C3%A1%20Peak,at%20the%20Serra%20da%20Cantareira."
+      },
+      {
+        "pageid": 18987,
+        "revid": 1185243080,
+        "title": "Mexico City",
+        "url": "https://en.wikipedia.org/wiki/Mexico_City"
       }
     ],
     "categories": [
@@ -11178,10 +11130,10 @@
         "url": "https://en.wikipedia.org/wiki/Damn_(Kendrick_Lamar_album)#Track_listing"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Mr. Morale & the Big Steppers",
-        "url": "https://en.wikipedia.org/wiki/Mr._Morale_%26_the_Big_Steppers"
+        "pageid": 32204294,
+        "revid": 1185948332,
+        "title": "Section.80",
+        "url": "https://en.wikipedia.org/wiki/Section.80"
       }
     ],
     "categories": [
@@ -11596,7 +11548,7 @@
   },
   {
     "id": "8a2b029f98c62714",
-    "question": "Identify the female astronauts with completed spaceflights born between 1948 and 1950 and the cities/towns where they were born.",
+    "question": "Identify the female astronauts born between 1948 and 1950 and the cities/towns where they were born.",
     "necessary_evidence": [
       {
         "pageid": 15039565,
@@ -11611,22 +11563,22 @@
         "url": "https://en.wikipedia.org/wiki/Svetlana_Savitskaya"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Judith Resnik",
-        "url": "https://en.wikipedia.org/wiki/Judith_Resnik"
+        "pageid": 627769,
+        "revid": 1184683583,
+        "title": "Janet Yellen",
+        "url": "https://en.wikipedia.org/wiki/Janet_Yellen"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Anna Lee Fisher",
-        "url": "https://en.wikipedia.org/wiki/Anna_Lee_Fisher"
+        "pageid": 57548040,
+        "revid": 1184980465,
+        "title": "Deb Haaland",
+        "url": "https://en.wikipedia.org/wiki/Deb_Haaland"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Bonnie J. Dunbar",
-        "url": "https://en.wikipedia.org/wiki/Bonnie_J._Dunbar"
+        "pageid": 34584857,
+        "revid": 1185601681,
+        "title": "Gina Raimondo",
+        "url": "https://en.wikipedia.org/wiki/Gina_Raimondo"
       }
     ],
     "categories": [
@@ -11774,12 +11726,6 @@
         "url": "https://en.wikipedia.org/wiki/Pennsylvania"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Rhode Island",
-        "url": "https://en.wikipedia.org/wiki/Rhode_Island"
-      },
-      {
         "pageid": 31716,
         "revid": 1185461219,
         "title": "Utah",
@@ -11848,12 +11794,6 @@
         "url": "https://en.wikipedia.org/wiki/NCAA_Division_I_Men%27s_Basketball_Tournament"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "UConn Huskies men's basketball",
-        "url": "https://en.wikipedia.org/wiki/UConn_Huskies_men%27s_basketball"
-      },
-      {
         "pageid": 3258978,
         "revid": 1185633670,
         "title": "Kansas Jayhawks men's basketball",
@@ -11876,6 +11816,12 @@
         "revid": 1182708921,
         "title": "Villanova Wildcats men's basketball",
         "url": "https://en.wikipedia.org/wiki/Villanova_Wildcats_men%27s_basketball"
+      },
+      {
+        "pageid": 8252650,
+        "revid": 1180997966,
+        "title": "North Carolina Tar Heels men's basketball",
+        "url": "https://en.wikipedia.org/wiki/North_Carolina_Tar_Heels_men%27s_basketball"
       }
     ],
     "categories": [
@@ -12205,7 +12151,7 @@
   },
   {
     "id": "5f4a3c15e2dc159a",
-    "question": "Who were the first Nobel Prize winners (1901), and how many times did each of them get married?",
+    "question": "Who were the first five Nobel Prize winners and how many times did each of them get married?",
     "necessary_evidence": [
       {
         "pageid": 1175987,
@@ -12220,6 +12166,18 @@
         "url": "https://en.wikipedia.org/wiki/Wilhelm_R%C3%B6ntgen"
       },
       {
+        "pageid": 88183,
+        "revid": 1179779694,
+        "title": "Hendrik Lorentz",
+        "url": "https://en.wikipedia.org/wiki/Hendrik_Lorentz"
+      },
+      {
+        "pageid": 209271,
+        "revid": 1179780252,
+        "title": "Pieter Zeeman",
+        "url": "https://en.wikipedia.org/wiki/Pieter_Zeeman"
+      },
+      {
         "pageid": 42909,
         "revid": 1165969647,
         "title": "Jacobus Henricus van 't Hoff",
@@ -12230,24 +12188,6 @@
         "revid": 1178838505,
         "title": "Emil von Behring",
         "url": "https://en.wikipedia.org/wiki/Emil_Adolf_von_Behring"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Sully Prudhomme",
-        "url": "https://en.wikipedia.org/wiki/Sully_Prudhomme"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Henry Dunant",
-        "url": "https://en.wikipedia.org/wiki/Henry_Dunant"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Fr\u00e9d\u00e9ric Passy",
-        "url": "https://en.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_Passy"
       }
     ],
     "categories": [
@@ -12348,7 +12288,7 @@
   },
   {
     "id": "01fcbb5cbb8ad363",
-    "question": "What is the current GDP (PPP) of each inhabited U.S. territory in US dollars?",
+    "question": "What is the current GDP (PPP) of each American territory in US dollars?",
     "necessary_evidence": [
       {
         "pageid": 509785,
@@ -12393,7 +12333,7 @@
   },
   {
     "id": "33fdf1e30473466f",
-    "question": "What was the budget for each of the films that won an Oscar at the 94th Academy Awards in 2022?",
+    "question": "What was the budget for each of the Oscar-winning films in 2022?",
     "necessary_evidence": [
       {
         "pageid": 67454547,
@@ -12466,30 +12406,6 @@
         "revid": 1185724874,
         "title": "Cruella (film)",
         "url": "https://en.wikipedia.org/wiki/Cruella_(film)"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "The Long Goodbye (Riz Ahmed album)",
-        "url": "https://en.wikipedia.org/wiki/The_Long_Goodbye_(Riz_Ahmed_album)"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "The Queen of Basketball",
-        "url": "https://en.wikipedia.org/wiki/The_Queen_of_Basketball"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Summer of Soul",
-        "url": "https://en.wikipedia.org/wiki/Summer_of_Soul"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "The Windshield Wiper",
-        "url": "https://en.wikipedia.org/wiki/The_Windshield_Wiper"
       }
     ],
     "categories": [
@@ -12677,28 +12593,28 @@
         "url": "https://en.wikipedia.org/wiki/Sony_Interactive_Entertainment"
       },
       {
+        "pageid": 69821945,
+        "revid": 1185944957,
+        "title": "Microsoft Gaming",
+        "url": "https://en.wikipedia.org/wiki/Microsoft_Gaming"
+      },
+      {
         "pageid": 54823402,
         "revid": 1177170362,
         "title": "Tencent Games",
         "url": "https://en.wikipedia.org/wiki/Tencent_Games"
       },
       {
+        "pageid": 856,
+        "revid": 1185504212,
+        "title": "Apple Inc.",
+        "url": "https://en.wikipedia.org/wiki/Apple_Inc."
+      },
+      {
         "pageid": 21197,
         "revid": 1185899333,
         "title": "Nintendo",
         "url": "https://en.wikipedia.org/wiki/Nintendo"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Microsoft",
-        "url": "https://en.wikipedia.org/wiki/Microsoft"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "NetEase",
-        "url": "https://en.wikipedia.org/wiki/NetEase"
       }
     ],
     "categories": [
@@ -13377,10 +13293,10 @@
     "question": "What will be the cost of the five tallest buildings in the world in 2023, in their respective currencies?",
     "necessary_evidence": [
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "List of tallest buildings",
-        "url": "https://en.wikipedia.org/wiki/List_of_tallest_buildings"
+        "pageid": 19679192,
+        "revid": 1185537321,
+        "title": "List of Nobel laureates in Physics",
+        "url": "https://en.wikipedia.org/wiki/List_of_Nobel_laureates_in_Physics"
       },
       {
         "pageid": 794957,
@@ -13658,16 +13574,16 @@
         "url": "https://en.wikipedia.org/wiki/Flea_(musician)"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Hillel Slovak",
-        "url": "https://en.wikipedia.org/wiki/Hillel_Slovak"
+        "pageid": 348736,
+        "revid": 1182187146,
+        "title": "Chad Smith",
+        "url": "https://en.wikipedia.org/wiki/Chad_Smith"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Jack Irons",
-        "url": "https://en.wikipedia.org/wiki/Jack_Irons"
+        "pageid": 183417,
+        "revid": 1184879607,
+        "title": "John Frusciante",
+        "url": "https://en.wikipedia.org/wiki/John_Frusciante"
       }
     ],
     "categories": [
@@ -13692,16 +13608,16 @@
         "url": "https://en.wikipedia.org/wiki/Italy"
       },
       {
-        "pageid": 5405,
-        "revid": 1185706762,
-        "title": "China",
-        "url": "https://en.wikipedia.org/wiki/China"
-      },
-      {
         "pageid": 11867,
         "revid": 1185869364,
         "title": "Germany",
         "url": "https://en.wikipedia.org/wiki/Germany"
+      },
+      {
+        "pageid": 26667,
+        "revid": 1185255247,
+        "title": "Spain",
+        "url": "https://en.wikipedia.org/wiki/Spain"
       },
       {
         "pageid": 5843419,
@@ -13710,10 +13626,10 @@
         "url": "https://en.wikipedia.org/wiki/France"
       },
       {
-        "pageid": 26667,
-        "revid": 1185255247,
-        "title": "Spain",
-        "url": "https://en.wikipedia.org/wiki/Spain"
+        "pageid": 5405,
+        "revid": 1185706762,
+        "title": "China",
+        "url": "https://en.wikipedia.org/wiki/China"
       }
     ],
     "categories": [
@@ -14408,12 +14324,6 @@
         "url": "https://en.wikipedia.org/wiki/Kunal_Nayyar"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Sara Gilbert",
-        "url": "https://en.wikipedia.org/wiki/Sara_Gilbert"
-      },
-      {
         "pageid": 718320,
         "revid": 1185903439,
         "title": "Mayim Bialik",
@@ -14424,18 +14334,6 @@
         "revid": 1183306848,
         "title": "Melissa Rauch",
         "url": "https://en.wikipedia.org/wiki/Melissa_Rauch"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Kevin Sussman",
-        "url": "https://en.wikipedia.org/wiki/Kevin_Sussman"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Laura Spencer (actress)",
-        "url": "https://en.wikipedia.org/wiki/Laura_Spencer_(actress)"
       }
     ],
     "categories": [
@@ -14491,7 +14389,7 @@
   },
   {
     "id": "50e6bc6da43d2b2d",
-    "question": "Who are the current justices on the Supreme Court of the United States and which college(s) did they attend?",
+    "question": "Who are the current justices on the Supreme Court and which college(s) did they attend?",
     "necessary_evidence": [
       {
         "pageid": 216429,
@@ -14504,12 +14402,6 @@
         "revid": 1185431089,
         "title": "John Roberts",
         "url": "https://en.wikipedia.org/wiki/John_Roberts"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Clarence Thomas",
-        "url": "https://en.wikipedia.org/wiki/Clarence_Thomas"
       },
       {
         "pageid": 1199173,
@@ -14712,7 +14604,7 @@
   },
   {
     "id": "5d52bc2cbbff2826",
-    "question": "List the capital cities of the five smallest countries in Europe by area, along with their respective countries' latest available population.",
+    "question": "List the capital cities of the five smallest countries in Europe by area, along with their respective population in the latest available census.",
     "necessary_evidence": [
       {
         "pageid": 7147041,
@@ -14822,7 +14714,7 @@
   },
   {
     "id": "be7ed296680ef5c4",
-    "question": "List the top 5 countries by nominal GDP in 2021 and their respective populations in the same year.",
+    "question": "List the top 5 countries by GDP in 2021 and their respective populations in the same year.",
     "necessary_evidence": [
       {
         "pageid": 380845,
@@ -14855,10 +14747,10 @@
         "url": "https://en.wikipedia.org/wiki/Demographics_of_Germany"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Demographics of India",
-        "url": "https://en.wikipedia.org/wiki/Demographics_of_India"
+        "pageid": 31725,
+        "revid": 1185936596,
+        "title": "Demography of the United Kingdom",
+        "url": "https://en.wikipedia.org/wiki/Demography_of_the_United_Kingdom"
       }
     ],
     "categories": [
@@ -14952,13 +14844,13 @@
   },
   {
     "id": "b56a00ad541b1397",
-    "question": "Which years were the Big Five men's association football leagues founded, respectively?",
+    "question": "Which years were the big five football leagues founded respectively?",
     "necessary_evidence": [
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Big Five (association football)",
-        "url": "https://en.wikipedia.org/wiki/Big_Five_(association_football)"
+        "pageid": 2849741,
+        "revid": 1159887620,
+        "title": "List of National Basketball Association seasons",
+        "url": "https://en.wikipedia.org/wiki/List_of_National_Basketball_Association_seasons"
       },
       {
         "pageid": 11250,
@@ -14997,7 +14889,7 @@
   },
   {
     "id": "a5d0b1ff33fe546a",
-    "question": "What is the biological domain of the five fastest land animals?",
+    "question": "What is the biological domain of the five fastest animals?",
     "necessary_evidence": [
       {
         "pageid": 34570233,
@@ -15006,34 +14898,34 @@
         "url": "https://en.wikipedia.org/wiki/Fastest_animals#By_speed"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Cheetah",
-        "url": "https://en.wikipedia.org/wiki/Cheetah"
+        "pageid": 157626,
+        "revid": 1185332348,
+        "title": "Peregrine falcon",
+        "url": "https://en.wikipedia.org/wiki/Peregrine_falcon"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Ostrich",
-        "url": "https://en.wikipedia.org/wiki/Ostrich"
+        "pageid": 88295,
+        "revid": 1170848454,
+        "title": "Golden eagle",
+        "url": "https://en.wikipedia.org/wiki/Golden_eagle"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Pronghorn",
-        "url": "https://en.wikipedia.org/wiki/Pronghorn"
+        "pageid": 377345,
+        "revid": 1147935752,
+        "title": "White-throated needletail",
+        "url": "https://en.wikipedia.org/wiki/White-throated_needletail"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Springbok",
-        "url": "https://en.wikipedia.org/wiki/Springbok"
+        "pageid": 221769,
+        "revid": 1173579026,
+        "title": "Eurasian hobby",
+        "url": "https://en.wikipedia.org/wiki/Eurasian_hobby"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Horse",
-        "url": "https://en.wikipedia.org/wiki/Horse"
+        "pageid": 801513,
+        "revid": 1183840542,
+        "title": "Mexican free-tailed bat",
+        "url": "https://en.wikipedia.org/wiki/Mexican_free-tailed_bat"
       }
     ],
     "categories": [
@@ -15463,10 +15355,10 @@
         "url": "https://en.wikipedia.org/wiki/TU_Wien"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Saclay Nuclear Research Centre",
-        "url": "https://en.wikipedia.org/wiki/Saclay_Nuclear_Research_Centre"
+        "pageid": 4732720,
+        "revid": 1184735196,
+        "title": "Pierre and Marie Curie University",
+        "url": "https://en.wikipedia.org/wiki/Pierre_and_Marie_Curie_University"
       },
       {
         "pageid": 53049,
@@ -15642,7 +15534,7 @@
   },
   {
     "id": "5ce67c851e186a7e",
-    "question": "What are the five oldest universities in continuous operation in the world and in which cities are they located?",
+    "question": "What are the five oldest universities in the world and in which cities are they located?",
     "necessary_evidence": [
       {
         "pageid": 363897,
@@ -15663,22 +15555,22 @@
         "url": "https://en.wikipedia.org/wiki/University_of_Oxford"
       },
       {
-        "pageid": 25978572,
-        "revid": 1184522407,
-        "title": "University of Cambridge",
-        "url": "https://en.wikipedia.org/wiki/University_of_Cambridge"
-      },
-      {
         "pageid": 579740,
         "revid": 1185931599,
         "title": "University of Salamanca",
         "url": "https://en.wikipedia.org/wiki/University_of_Salamanca"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "University of Padua",
-        "url": "https://en.wikipedia.org/wiki/University_of_Padua"
+        "pageid": 84692,
+        "revid": 1184923494,
+        "title": "University of Paris",
+        "url": "https://en.wikipedia.org/wiki/University_of_Paris"
+      },
+      {
+        "pageid": 25978572,
+        "revid": 1184522407,
+        "title": "University of Cambridge",
+        "url": "https://en.wikipedia.org/wiki/University_of_Cambridge"
       }
     ],
     "categories": [
@@ -15818,10 +15710,10 @@
     "question": "Among the countries participating in the 2022 World Cup in Qatar, list all countries that have won the World Cup at least three times.",
     "necessary_evidence": [
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "2022 FIFA World Cup",
-        "url": "https://en.wikipedia.org/wiki/2022_FIFA_World_Cup"
+        "pageid": 7199,
+        "revid": 1180302955,
+        "title": "List of cat breeds",
+        "url": "https://en.wikipedia.org/wiki/List_of_cat_breeds"
       },
       {
         "pageid": 1111350,
@@ -16483,7 +16375,7 @@
   },
   {
     "id": "d6b1df5bcae9b589",
-    "question": "Who were the writers for each of the top 5 Billboard Year-End Hot 100 singles of 2014?",
+    "question": "Who were the writers for each of the top 5 year-end Billboard pop songs in 2014 by popularity?",
     "necessary_evidence": [
       {
         "pageid": 44655089,
@@ -16510,10 +16402,10 @@
         "url": "https://en.wikipedia.org/wiki/All_of_Me_(John_Legend_song)"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Fancy (Iggy Azalea song)",
-        "url": "https://en.wikipedia.org/wiki/Fancy_(Iggy_Azalea_song)"
+        "pageid": 34584857,
+        "revid": 1185601681,
+        "title": "Gina Raimondo",
+        "url": "https://en.wikipedia.org/wiki/Gina_Raimondo"
       },
       {
         "pageid": 39547206,
@@ -16764,10 +16656,10 @@
         "url": "https://en.wikipedia.org/wiki/Reykjavik"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Georgetown, Guyana",
-        "url": "https://en.wikipedia.org/wiki/Georgetown,_Guyana"
+        "pageid": 57370,
+        "revid": 1184351125,
+        "title": "Paramaribo",
+        "url": "https://en.wikipedia.org/wiki/Paramaribo"
       }
     ],
     "categories": [
@@ -17006,16 +16898,16 @@
         "url": "https://en.wikipedia.org/wiki/Lovesick_(2014_film)"
       },
       {
+        "pageid": 22318957,
+        "revid": 1179889478,
+        "title": "Jonah Hex (film)",
+        "url": "https://en.wikipedia.org/wiki/Jonah_Hex_(film)"
+      },
+      {
         "pageid": 256337,
         "revid": 1185940320,
         "title": "Charlie's Angels: Full Throttle",
         "url": "https://en.wikipedia.org/wiki/Charlie%27s_Angels:_Full_Throttle"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "All the Queen's Men",
-        "url": "https://en.wikipedia.org/wiki/All_the_Queen%27s_Men"
       }
     ],
     "categories": [
@@ -17355,16 +17247,16 @@
         "url": "https://en.wikipedia.org/wiki/Beijing"
       },
       {
-        "pageid": 12537,
-        "revid": 1185146375,
-        "title": "Guangzhou",
-        "url": "https://en.wikipedia.org/wiki/Guangzhou"
-      },
-      {
         "pageid": 83368,
         "revid": 1184992519,
         "title": "Shenzhen",
         "url": "https://en.wikipedia.org/wiki/Shenzhen"
+      },
+      {
+        "pageid": 12537,
+        "revid": 1185146375,
+        "title": "Guangzhou",
+        "url": "https://en.wikipedia.org/wiki/Guangzhou"
       },
       {
         "pageid": 170375,
@@ -18467,7 +18359,7 @@
   },
   {
     "id": "a0aad4e6d1b78318",
-    "question": "What are the top two newspapers in the US by average weekday paid circulation in 2019, and where did the Editors-in-Chief of those newspapers most recently receive their education?",
+    "question": "What are the top two most-subscribed newspapers in the US, and where did the Editors-in-Chief of those newspapers most recently receive their education?",
     "necessary_evidence": [
       {
         "pageid": 7919475,
@@ -18476,16 +18368,16 @@
         "url": "https://en.wikipedia.org/wiki/List_of_newspapers_in_the_United_States"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "USA Today",
-        "url": "https://en.wikipedia.org/wiki/USA_Today"
+        "pageid": 30680,
+        "revid": 1185942126,
+        "title": "The New York Times",
+        "url": "https://en.wikipedia.org/wiki/The_New_York_Times"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Terence Samuel",
-        "url": "https://en.wikipedia.org/wiki/Terence_Samuel"
+        "pageid": 9542801,
+        "revid": 1182384408,
+        "title": "Joseph Kahn (journalist)",
+        "url": "https://en.wikipedia.org/wiki/Joseph_Kahn_(journalist)"
       },
       {
         "pageid": 173070,
@@ -18836,150 +18728,6 @@
         "revid": 1184479348,
         "title": "Adam Riess",
         "url": "https://en.wikipedia.org/wiki/Adam_Riess"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Serge Haroche",
-        "url": "https://en.wikipedia.org/wiki/Serge_Haroche"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "David J. Wineland",
-        "url": "https://en.wikipedia.org/wiki/David_J._Wineland"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Fran\u00e7ois Englert",
-        "url": "https://en.wikipedia.org/wiki/Fran%C3%A7ois_Englert"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Peter Higgs",
-        "url": "https://en.wikipedia.org/wiki/Peter_Higgs"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Isamu Akasaki",
-        "url": "https://en.wikipedia.org/wiki/Isamu_Akasaki"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Hiroshi Amano",
-        "url": "https://en.wikipedia.org/wiki/Hiroshi_Amano"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Shuji Nakamura",
-        "url": "https://en.wikipedia.org/wiki/Shuji_Nakamura"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Takaaki Kajita",
-        "url": "https://en.wikipedia.org/wiki/Takaaki_Kajita"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Arthur B. McDonald",
-        "url": "https://en.wikipedia.org/wiki/Arthur_B._McDonald"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "David J. Thouless",
-        "url": "https://en.wikipedia.org/wiki/David_J._Thouless"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Duncan Haldane",
-        "url": "https://en.wikipedia.org/wiki/Duncan_Haldane"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "J. Michael Kosterlitz",
-        "url": "https://en.wikipedia.org/wiki/J._Michael_Kosterlitz"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Rainer Weiss",
-        "url": "https://en.wikipedia.org/wiki/Rainer_Weiss"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Kip Thorne",
-        "url": "https://en.wikipedia.org/wiki/Kip_Thorne"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Barry Barish",
-        "url": "https://en.wikipedia.org/wiki/Barry_Barish"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Arthur Ashkin",
-        "url": "https://en.wikipedia.org/wiki/Arthur_Ashkin"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "G\u00e9rard Mourou",
-        "url": "https://en.wikipedia.org/wiki/G%C3%A9rard_Mourou"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Donna Strickland",
-        "url": "https://en.wikipedia.org/wiki/Donna_Strickland"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Jim Peebles",
-        "url": "https://en.wikipedia.org/wiki/Jim_Peebles"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Michel Mayor",
-        "url": "https://en.wikipedia.org/wiki/Michel_Mayor"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Didier Queloz",
-        "url": "https://en.wikipedia.org/wiki/Didier_Queloz"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Roger Penrose",
-        "url": "https://en.wikipedia.org/wiki/Roger_Penrose"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Reinhard Genzel",
-        "url": "https://en.wikipedia.org/wiki/Reinhard_Genzel"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Andrea M. Ghez",
-        "url": "https://en.wikipedia.org/wiki/Andrea_M._Ghez"
       }
     ],
     "categories": [
@@ -19119,7 +18867,7 @@
   },
   {
     "id": "4673b6aa8d9bdffe",
-    "question": "Who were the female cabinet members of UK Prime Minister Rishi Sunak as of 21 September 2023 and in which city or town were they born?",
+    "question": "Who are the current female cabinet members of the UK Prime Minister and in which city or town were they born?",
     "necessary_evidence": [
       {
         "pageid": 24150,
@@ -19134,12 +18882,6 @@
         "url": "https://en.wikipedia.org/wiki/Cabinet_of_the_United_Kingdom"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Suella Braverman",
-        "url": "https://en.wikipedia.org/wiki/Suella_Braverman"
-      },
-      {
         "pageid": 62577224,
         "revid": 1185206226,
         "title": "Claire Coutinho",
@@ -19150,6 +18892,12 @@
         "revid": 1185699365,
         "title": "Michelle Donelan",
         "url": "https://en.wikipedia.org/wiki/Michelle_Donelan"
+      },
+      {
+        "pageid": 46645960,
+        "revid": 1185519520,
+        "title": "Victoria Atkins",
+        "url": "https://en.wikipedia.org/wiki/Victoria_Atkins"
       },
       {
         "pageid": 7121294,
@@ -19164,12 +18912,6 @@
         "url": "https://en.wikipedia.org/wiki/Kemi_Badenoch"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Th\u00e9r\u00e8se Coffey",
-        "url": "https://en.wikipedia.org/wiki/Th%C3%A9r%C3%A8se_Coffey"
-      },
-      {
         "pageid": 54256282,
         "revid": 1184948529,
         "title": "Gillian Keegan",
@@ -19182,10 +18924,22 @@
         "url": "https://en.wikipedia.org/wiki/Lucy_Frazer"
       },
       {
+        "pageid": 62577702,
+        "revid": 1185494028,
+        "title": "Laura Trott (politician)",
+        "url": "https://en.wikipedia.org/wiki/Laura_Trott_(politician)"
+      },
+      {
         "pageid": 46399592,
         "revid": 1181264436,
         "title": "Victoria Prentis",
         "url": "https://en.wikipedia.org/wiki/Victoria_Prentis"
+      },
+      {
+        "pageid": 3321208,
+        "revid": 1185773900,
+        "title": "Esther McVey",
+        "url": "https://en.wikipedia.org/wiki/Esther_McVey"
       }
     ],
     "categories": [
@@ -19435,6 +19189,12 @@
         "url": "https://en.wikipedia.org/wiki/Russia"
       },
       {
+        "pageid": 5042916,
+        "revid": 1185732441,
+        "title": "Canada",
+        "url": "https://en.wikipedia.org/wiki/Canada"
+      },
+      {
         "pageid": 5405,
         "revid": 1185706762,
         "title": "China",
@@ -19445,12 +19205,6 @@
         "revid": 1185914171,
         "title": "United States",
         "url": "https://en.wikipedia.org/wiki/United_States"
-      },
-      {
-        "pageid": 5042916,
-        "revid": 1185732441,
-        "title": "Canada",
-        "url": "https://en.wikipedia.org/wiki/Canada"
       },
       {
         "pageid": 3383,
@@ -19465,6 +19219,12 @@
         "url": "https://en.wikipedia.org/wiki/Moscow"
       },
       {
+        "pageid": 22219,
+        "revid": 1185922120,
+        "title": "Ottawa",
+        "url": "https://en.wikipedia.org/wiki/Ottawa"
+      },
+      {
         "pageid": 18603746,
         "revid": 1185762800,
         "title": "Beijing",
@@ -19475,12 +19235,6 @@
         "revid": 1185828213,
         "title": "Washington, D.C.",
         "url": "https://en.wikipedia.org/wiki/Washington,_D.C."
-      },
-      {
-        "pageid": 22219,
-        "revid": 1185922120,
-        "title": "Ottawa",
-        "url": "https://en.wikipedia.org/wiki/Ottawa"
       },
       {
         "pageid": 4752,
@@ -19799,12 +19553,6 @@
         "url": "https://en.wikipedia.org/wiki/Aerial_(album)"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Director's Cut (Kate Bush album)",
-        "url": "https://en.wikipedia.org/wiki/Director%27s_Cut_(Kate_Bush_album)"
-      },
-      {
         "pageid": 33061373,
         "revid": 1183594530,
         "title": "50 Words for Snow",
@@ -20121,16 +19869,16 @@
         "url": "https://en.wikipedia.org/wiki/Bella_Poarch"
       },
       {
-        "pageid": 63440118,
-        "revid": 1185810591,
-        "title": "Addison Rae",
-        "url": "https://en.wikipedia.org/wiki/Addison_Rae"
-      },
-      {
         "pageid": 58920328,
         "revid": 1185656775,
         "title": "MrBeast",
         "url": "https://en.wikipedia.org/wiki/MrBeast"
+      },
+      {
+        "pageid": 63440118,
+        "revid": 1185810591,
+        "title": "Addison Rae",
+        "url": "https://en.wikipedia.org/wiki/Addison_Rae"
       }
     ],
     "categories": [
@@ -20207,10 +19955,10 @@
         "url": "https://en.wikipedia.org/wiki/The_Beatles_discography"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Bruce Springsteen discography",
-        "url": "https://en.wikipedia.org/wiki/Bruce_Springsteen_discography"
+        "pageid": 1348046,
+        "revid": 1185699464,
+        "title": "The Rolling Stones discography",
+        "url": "https://en.wikipedia.org/wiki/The_Rolling_Stones_discography"
       },
       {
         "pageid": 3496733,
@@ -20685,10 +20433,10 @@
         "url": "https://en.wikipedia.org/wiki/Attack_on_Titan_(season_3)"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Attack on Titan (season 4)",
-        "url": "https://en.wikipedia.org/wiki/Attack_on_Titan_(season_4)"
+        "pageid": 18879,
+        "revid": 1185703170,
+        "title": "Massachusetts Institute of Technology",
+        "url": "https://en.wikipedia.org/wiki/Massachusetts_Institute_of_Technology"
       }
     ],
     "categories": [
@@ -20825,7 +20573,7 @@
   },
   {
     "id": "f553f4ceda138193",
-    "question": "What are the birth years of the players who have won the most Super Bowl MVP Awards?",
+    "question": "What are the birth years of the five players who have won the most Superbowl MVP Awards?",
     "necessary_evidence": [
       {
         "pageid": 291253,
@@ -20862,12 +20610,6 @@
         "revid": 1185493534,
         "title": "Eli Manning",
         "url": "https://en.wikipedia.org/wiki/Eli_Manning"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Patrick Mahomes",
-        "url": "https://en.wikipedia.org/wiki/Patrick_Mahomes"
       }
     ],
     "categories": [
@@ -21399,7 +21141,7 @@
   },
   {
     "id": "4dcdb8fc0c2a75ec",
-    "question": "What are the nationalities of the men's singles gold medalists of the Badminton World Federation's World Championships from 2018 to 2023?",
+    "question": "What are the nationalities of the gold medalists of the Badminton World Federation's World Championships from 2018 to 2023?",
     "necessary_evidence": [
       {
         "pageid": 48698353,
@@ -21430,6 +21172,12 @@
         "revid": 1185585982,
         "title": "Kento Momota",
         "url": "https://en.wikipedia.org/wiki/Kento_Momota"
+      },
+      {
+        "pageid": 341315,
+        "revid": 1183571334,
+        "title": "Chen Long",
+        "url": "https://en.wikipedia.org/wiki/Chen_Long"
       }
     ],
     "categories": [
@@ -21735,10 +21483,10 @@
     "question": "List the five longest rivers in Asia and their respective countries of origin.",
     "necessary_evidence": [
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "List of longest rivers of Asia",
-        "url": "https://en.wikipedia.org/wiki/List_of_longest_rivers_of_Asia"
+        "pageid": 69140,
+        "revid": 1158223825,
+        "title": "List of rivers of Asia",
+        "url": "https://en.wikipedia.org/wiki/List_of_rivers_of_Asia"
       },
       {
         "pageid": 6613,
@@ -22031,16 +21779,62 @@
         "url": "https://en.wikipedia.org/wiki/Massachusetts"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Washington (state)",
-        "url": "https://en.wikipedia.org/wiki/Washington_(state)"
+        "pageid": 5399,
+        "revid": 1184871986,
+        "title": "Colorado",
+        "url": "https://en.wikipedia.org/wiki/Colorado"
       }
     ],
     "categories": [
       "Statistics",
       "Real Estate",
       "Demographics"
+    ]
+  },
+  {
+    "id": "36146d2306ce9ca3",
+    "question": "Identify five space missions to Mars and their launch dates.",
+    "necessary_evidence": [
+      {
+        "pageid": 34749440,
+        "revid": 1183660523,
+        "title": "List of missions to Mars",
+        "url": "https://en.wikipedia.org/wiki/List_of_missions_to_Mars"
+      },
+      {
+        "pageid": 18959,
+        "revid": 1170838623,
+        "title": "2001 Mars Odyssey",
+        "url": "https://en.wikipedia.org/wiki/2001_Mars_Odyssey"
+      },
+      {
+        "pageid": 178283,
+        "revid": 1176930130,
+        "title": "Mars Express",
+        "url": "https://en.wikipedia.org/wiki/Mars_Express"
+      },
+      {
+        "pageid": 453326,
+        "revid": 1185735195,
+        "title": "Mars Reconnaissance Orbiter",
+        "url": "https://en.wikipedia.org/wiki/Mars_Reconnaissance_Orbiter"
+      },
+      {
+        "pageid": 19335567,
+        "revid": 1182395664,
+        "title": "MAVEN",
+        "url": "https://en.wikipedia.org/wiki/MAVEN"
+      },
+      {
+        "pageid": 37837437,
+        "revid": 1183672578,
+        "title": "Mars 2020",
+        "url": "https://en.wikipedia.org/wiki/Mars_2020"
+      }
+    ],
+    "categories": [
+      "Astronomy",
+      "Space Exploration"
     ]
   },
   {
@@ -22159,7 +21953,7 @@
   },
   {
     "id": "fa0f1d17591333db",
-    "question": "Who are the gold medalists from the top 5 countries with the highest gold medal count in the 2022 Winter Olympics?",
+    "question": "Who are the gold medalists from the top 5 countries with the highest gold medal count in the 2022 Olympics?",
     "necessary_evidence": [
       {
         "pageid": 68469651,
@@ -22180,10 +21974,10 @@
         "url": "https://en.wikipedia.org/wiki/Germany_at_the_2022_Winter_Olympics"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "China at the 2022 Winter Olympics",
-        "url": "https://en.wikipedia.org/wiki/China_at_the_2022_Winter_Olympics"
+        "pageid": 63860371,
+        "revid": 1185538844,
+        "title": "Canada at the 2022 Winter Olympics",
+        "url": "https://en.wikipedia.org/wiki/Canada_at_the_2022_Winter_Olympics"
       },
       {
         "pageid": 63860497,
@@ -22192,10 +21986,10 @@
         "url": "https://en.wikipedia.org/wiki/United_States_at_the_2022_Winter_Olympics"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Sweden at the 2022 Winter Olympics",
-        "url": "https://en.wikipedia.org/wiki/Sweden_at_the_2022_Winter_Olympics"
+        "pageid": 68144327,
+        "revid": 1138577030,
+        "title": "Netherlands at the 2022 Winter Olympics",
+        "url": "https://en.wikipedia.org/wiki/Netherlands_at_the_2022_Winter_Olympics"
       }
     ],
     "categories": [
@@ -22251,7 +22045,7 @@
   },
   {
     "id": "6278aab195fc848f",
-    "question": "What was the renewable electricity generation in terawatt-hours (TWh) in 2020 for the top 5 countries leading in hydroelectricity production? Provide the generation for each country.",
+    "question": "What was the renewable energy consumption in terawatt-hours (TWh) in 2020 for the top 5 countries leading in clean energy production? Provide the consumption for each country.",
     "necessary_evidence": [
       {
         "pageid": 11347578,
@@ -22266,16 +22060,16 @@
         "url": "https://en.wikipedia.org/wiki/Renewable_energy_in_China"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Electricity sector in Canada",
-        "url": "https://en.wikipedia.org/wiki/Electricity_sector_in_Canada"
+        "pageid": 11456251,
+        "revid": 1185803349,
+        "title": "Renewable energy in the United States",
+        "url": "https://en.wikipedia.org/wiki/Renewable_energy_in_the_United_States"
       },
       {
-        "pageid": 10826830,
-        "revid": 1177668607,
-        "title": "Renewable energy in Brazil",
-        "url": "https://en.wikipedia.org/wiki/Renewable_energy_in_Brazil"
+        "pageid": 9347277,
+        "revid": 1178122994,
+        "title": "Renewable energy in Germany",
+        "url": "https://en.wikipedia.org/wiki/Renewable_energy_in_Germany"
       },
       {
         "pageid": 23127931,
@@ -22284,10 +22078,10 @@
         "url": "https://en.wikipedia.org/wiki/Renewable_energy_in_India"
       },
       {
-        "pageid": 11456251,
-        "revid": 1185803349,
-        "title": "Renewable energy in the United States",
-        "url": "https://en.wikipedia.org/wiki/Renewable_energy_in_the_United_States"
+        "pageid": 10826830,
+        "revid": 1177668607,
+        "title": "Renewable energy in Brazil",
+        "url": "https://en.wikipedia.org/wiki/Renewable_energy_in_Brazil"
       }
     ],
     "categories": [
@@ -22443,22 +22237,22 @@
         "url": "https://en.wikipedia.org/wiki/Al_Horford"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Malcolm Brogdon",
-        "url": "https://en.wikipedia.org/wiki/Malcolm_Brogdon"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Derrick White (basketball)",
-        "url": "https://en.wikipedia.org/wiki/Derrick_White_(basketball)"
+        "pageid": 20286729,
+        "revid": 1185469276,
+        "title": "Jrue Holiday",
+        "url": "https://en.wikipedia.org/wiki/Jrue_Holiday"
       },
       {
         "pageid": 53468755,
         "revid": 1185465716,
         "title": "Luke Kornet",
         "url": "https://en.wikipedia.org/wiki/Luke_Kornet"
+      },
+      {
+        "pageid": 45800876,
+        "revid": 1185775546,
+        "title": "Jaylen Brown",
+        "url": "https://en.wikipedia.org/wiki/Jaylen_Brown"
       },
       {
         "pageid": 42616154,
@@ -22614,22 +22408,22 @@
         "url": "https://en.wikipedia.org/wiki/List_of_presidents_of_the_United_States"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Joe Biden",
-        "url": "https://en.wikipedia.org/wiki/Joe_Biden"
+        "pageid": 675561,
+        "revid": 1185854989,
+        "title": "Lewis Hamilton",
+        "url": "https://en.wikipedia.org/wiki/Lewis_Hamilton"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Donald Trump",
-        "url": "https://en.wikipedia.org/wiki/Donald_Trump"
+        "pageid": 20396,
+        "revid": 1185255210,
+        "title": "Michael Schumacher",
+        "url": "https://en.wikipedia.org/wiki/Michael_Schumacher"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Barack Obama",
-        "url": "https://en.wikipedia.org/wiki/Barack_Obama"
+        "pageid": 6437759,
+        "revid": 1183871598,
+        "title": "Sebastian Vettel",
+        "url": "https://en.wikipedia.org/wiki/Sebastian_Vettel"
       },
       {
         "pageid": 3414021,
@@ -23137,6 +22931,12 @@
         "revid": 1185609783,
         "title": "Lionel Messi",
         "url": "https://en.wikipedia.org/wiki/Lionel_Messi"
+      },
+      {
+        "pageid": 13362678,
+        "revid": 1185608901,
+        "title": "Robert Lewandowski",
+        "url": "https://en.wikipedia.org/wiki/Robert_Lewandowski"
       }
     ],
     "categories": [
@@ -23270,16 +23070,16 @@
         "url": "https://en.wikipedia.org/wiki/Mariner_7"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Mars 2",
-        "url": "https://en.wikipedia.org/wiki/Mars_2"
+        "pageid": 37449,
+        "revid": 1177724268,
+        "title": "Mariner 9",
+        "url": "https://en.wikipedia.org/wiki/Mariner_9"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Mars 3",
-        "url": "https://en.wikipedia.org/wiki/Mars_3"
+        "pageid": 82968,
+        "revid": 1183915904,
+        "title": "Viking 1",
+        "url": "https://en.wikipedia.org/wiki/Viking_1"
       }
     ],
     "categories": [
@@ -23472,16 +23272,16 @@
         "url": "https://en.wikipedia.org/wiki/Economy_of_China"
       },
       {
-        "pageid": 15578,
-        "revid": 1184997560,
-        "title": "Economy of Japan",
-        "url": "https://en.wikipedia.org/wiki/Economy_of_Japan"
-      },
-      {
         "pageid": 11930,
         "revid": 1184995236,
         "title": "Economy of Germany",
         "url": "https://en.wikipedia.org/wiki/Economy_of_Germany"
+      },
+      {
+        "pageid": 15578,
+        "revid": 1184997560,
+        "title": "Economy of Japan",
+        "url": "https://en.wikipedia.org/wiki/Economy_of_Japan"
       },
       {
         "pageid": 1472206,
@@ -24217,6 +24017,12 @@
         "url": "https://en.wikipedia.org/wiki/Trayce_Jackson-Davis"
       },
       {
+        "pageid": 59094267,
+        "revid": 1181299201,
+        "title": "Usman Garuba",
+        "url": "https://en.wikipedia.org/wiki/Usman_Garuba"
+      },
+      {
         "pageid": 44474373,
         "revid": 1185744055,
         "title": "Kevon Looney",
@@ -24333,10 +24139,10 @@
         "url": "https://en.wikipedia.org/wiki/Michael_Imperioli"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Dominic Chianese",
-        "url": "https://en.wikipedia.org/wiki/Dominic_Chianese"
+        "pageid": 36044408,
+        "revid": 1185331002,
+        "title": "Adam Driver",
+        "url": "https://en.wikipedia.org/wiki/Adam_Driver"
       },
       {
         "pageid": 249731,
@@ -24770,22 +24576,10 @@
         "url": "https://en.wikipedia.org/wiki/University_of_Pennsylvania"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "University of Pennsylvania School of Arts and Sciences",
-        "url": "https://en.wikipedia.org/wiki/University_of_Pennsylvania_School_of_Arts_and_Sciences"
-      },
-      {
         "pageid": 2037203,
         "revid": 1185150203,
         "title": "Perelman School of Medicine at the University of Pennsylvania",
         "url": "https://en.wikipedia.org/wiki/Perelman_School_of_Medicine_at_the_University_of_Pennsylvania"
-      },
-      {
-        "pageid": 176400,
-        "revid": 1185909108,
-        "title": "University of Pennsylvania Law School",
-        "url": "https://en.wikipedia.org/wiki/University_of_Pennsylvania_Law_School"
       },
       {
         "pageid": 10636076,
@@ -24794,10 +24588,22 @@
         "url": "https://en.wikipedia.org/wiki/University_of_Pennsylvania_School_of_Engineering_and_Applied_Science"
       },
       {
+        "pageid": 176400,
+        "revid": 1185909108,
+        "title": "University of Pennsylvania Law School",
+        "url": "https://en.wikipedia.org/wiki/University_of_Pennsylvania_Law_School"
+      },
+      {
         "pageid": 11653077,
         "revid": 1163346191,
         "title": "University of Pennsylvania School of Design",
         "url": "https://en.wikipedia.org/wiki/University_of_Pennsylvania_School_of_Design"
+      },
+      {
+        "pageid": 7187205,
+        "revid": 1119866757,
+        "title": "University of Pennsylvania School of Dental Medicine",
+        "url": "https://en.wikipedia.org/wiki/University_of_Pennsylvania_School_of_Dental_Medicine"
       }
     ],
     "categories": [
@@ -25247,7 +25053,7 @@
   },
   {
     "id": "8f4f6d6572a2addd",
-    "question": "How many of the five largest fast food restaurant chains worldwide offer beef alternative options in India?",
+    "question": "How many of the five largest fast food restaurant chains in India offer beef alternative options?",
     "necessary_evidence": [
       {
         "pageid": 49944972,
@@ -25280,10 +25086,10 @@
         "url": "https://en.wikipedia.org/wiki/KFC"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Whopper",
-        "url": "https://en.wikipedia.org/wiki/Whopper"
+        "pageid": 73859679,
+        "revid": 1185098949,
+        "title": "Mixue Ice Cream & Tea",
+        "url": "https://en.wikipedia.org/wiki/Mixue_Ice_Cream_%26_Tea"
       }
     ],
     "categories": [
@@ -25505,7 +25311,7 @@
   },
   {
     "id": "1620f02f078d4973",
-    "question": "What are the elevations in meters of the highest points of the countries that border Germany?",
+    "question": "What are the highest points (in meters) of the countries that border Germany?",
     "necessary_evidence": [
       {
         "pageid": 21493015,
@@ -25778,10 +25584,10 @@
         "url": "https://en.wikipedia.org/wiki/One_World_Trade_Center"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Central Park Tower",
-        "url": "https://en.wikipedia.org/wiki/Central_Park_Tower"
+        "pageid": 909036,
+        "revid": 1185947144,
+        "title": "Elon Musk",
+        "url": "https://en.wikipedia.org/wiki/Elon_Musk"
       },
       {
         "pageid": 28176,
@@ -25790,10 +25596,10 @@
         "url": "https://en.wikipedia.org/wiki/Willis_Tower"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "111 West 57th Street",
-        "url": "https://en.wikipedia.org/wiki/111_West_57th_Street"
+        "pageid": 172395,
+        "revid": 1185603108,
+        "title": "Larry Ellison",
+        "url": "https://en.wikipedia.org/wiki/Larry_Ellison"
       },
       {
         "pageid": 43817435,
@@ -25852,10 +25658,10 @@
     "question": "Of the main cast of the television show 'iCarly', who is currently signed with a label (or labels) and which one(s)?",
     "necessary_evidence": [
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "iCarly",
-        "url": "https://en.wikipedia.org/wiki/ICarly"
+        "pageid": 15573,
+        "revid": 1185720931,
+        "title": "Japan",
+        "url": "https://en.wikipedia.org/wiki/Japan"
       },
       {
         "pageid": 723489,
@@ -25895,7 +25701,7 @@
   },
   {
     "id": "caad94e07cae6d1f",
-    "question": "What are the founding years of the oldest universities in the countries tied for the highest literacy rates?",
+    "question": "What are the founding years of the oldest universities in the five countries with the highest literacy rates?",
     "necessary_evidence": [
       {
         "pageid": 3101583,
@@ -25904,52 +25710,34 @@
         "url": "https://en.wikipedia.org/wiki/List_of_countries_by_literacy_rate"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Universitat d'Andorra",
-        "url": "https://en.wikipedia.org/wiki/Universitat_d%27Andorra"
+        "pageid": 1522498,
+        "revid": 1185063198,
+        "title": "Education in North Korea",
+        "url": "https://en.wikipedia.org/wiki/Education_in_North_Korea"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "University of Helsinki",
-        "url": "https://en.wikipedia.org/wiki/University_of_Helsinki"
+        "pageid": 600,
+        "revid": 1185661147,
+        "title": "Andorra",
+        "url": "https://en.wikipedia.org/wiki/Education_in_Andorra"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Kim Il Sung University",
-        "url": "https://en.wikipedia.org/wiki/Kim_Il_Sung_University"
+        "pageid": 72218775,
+        "revid": 1173476854,
+        "title": "Education in Greenland",
+        "url": "https://en.wikipedia.org/wiki/Education_in_Greenland"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "University of Liechtenstein",
-        "url": "https://en.wikipedia.org/wiki/University_of_Liechtenstein"
+        "pageid": 16568388,
+        "revid": 1159942136,
+        "title": "Education in Uzbekistan",
+        "url": "https://en.wikipedia.org/wiki/Education_in_Uzbekistan"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "University of Luxembourg",
-        "url": "https://en.wikipedia.org/wiki/University_of_Luxembourg"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "University of Oslo",
-        "url": "https://en.wikipedia.org/wiki/University_of_Oslo"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Comenius University",
-        "url": "https://en.wikipedia.org/wiki/Comenius_University"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "National University of Uzbekistan",
-        "url": "https://en.wikipedia.org/wiki/National_University_of_Uzbekistan"
+        "pageid": 16569312,
+        "revid": 1180502851,
+        "title": "Education in Azerbaijan",
+        "url": "https://en.wikipedia.org/wiki/Education_in_Azerbaijan"
       }
     ],
     "categories": [
@@ -26302,16 +26090,16 @@
         "url": "https://en.wikipedia.org/wiki/John_Isner"
       },
       {
-        "pageid": 933652,
-        "revid": 1174001681,
-        "title": "Ivo Karlovi\u0107",
-        "url": "https://en.wikipedia.org/wiki/Ivo_Karlovi%C4%87"
-      },
-      {
         "pageid": 25202957,
         "revid": 1183280139,
         "title": "Jerzy Janowicz",
         "url": "https://en.wikipedia.org/wiki/Jerzy_Janowicz"
+      },
+      {
+        "pageid": 933652,
+        "revid": 1174001681,
+        "title": "Ivo Karlovi\u0107",
+        "url": "https://en.wikipedia.org/wiki/Ivo_Karlovi%C4%87"
       },
       {
         "pageid": 26431480,
@@ -26332,16 +26120,16 @@
         "url": "https://en.wikipedia.org/wiki/Chris_Guccione_(tennis)"
       },
       {
-        "pageid": 1500943,
-        "revid": 1164986279,
-        "title": "Joachim Johansson",
-        "url": "https://en.wikipedia.org/wiki/Joachim_Johansson"
-      },
-      {
         "pageid": 2107034,
         "revid": 1185041176,
         "title": "Feliciano L\u00f3pez",
         "url": "https://en.wikipedia.org/wiki/Feliciano_L%C3%B3pez"
+      },
+      {
+        "pageid": 1500943,
+        "revid": 1164986279,
+        "title": "Joachim Johansson",
+        "url": "https://en.wikipedia.org/wiki/Joachim_Johansson"
       }
     ],
     "categories": [
@@ -26351,7 +26139,7 @@
   },
   {
     "id": "fe01464c12adaa71",
-    "question": "What are the populations of the top 5 countries by nominal GDP?",
+    "question": "What are the populations of the top 5 countries by GDP?",
     "necessary_evidence": [
       {
         "pageid": 380845,
@@ -26372,16 +26160,16 @@
         "url": "https://en.wikipedia.org/wiki/GDP_of_China"
       },
       {
-        "pageid": 15578,
-        "revid": 1184997560,
-        "title": "Economy of Japan",
-        "url": "https://en.wikipedia.org/wiki/Economy_of_Japan"
-      },
-      {
         "pageid": 11930,
         "revid": 1184995236,
         "title": "Economy of Germany",
         "url": "https://en.wikipedia.org/wiki/Economy_of_Germany"
+      },
+      {
+        "pageid": 15578,
+        "revid": 1184997560,
+        "title": "Economy of Japan",
+        "url": "https://en.wikipedia.org/wiki/Economy_of_Japan"
       },
       {
         "pageid": 1472206,
@@ -27186,7 +26974,7 @@
   },
   {
     "id": "cba4a78d210c4272",
-    "question": "List the transnational UNESCO World Heritage site in India and the session in which it was listed.",
+    "question": "List the five most recent transnational UNESCO World Heritage sites in India and the sessions in which they were listed.",
     "necessary_evidence": [
       {
         "pageid": 19243417,
@@ -27195,10 +26983,34 @@
         "url": "https://en.wikipedia.org/wiki/List_of_World_Heritage_Sites_in_India"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "The Architectural Work of Le Corbusier",
-        "url": "https://en.wikipedia.org/wiki/The_Architectural_Work_of_Le_Corbusier"
+        "pageid": 74860488,
+        "revid": 1179523120,
+        "title": "Sacred Ensembles of the Hoysalas",
+        "url": "https://en.wikipedia.org/wiki/Sacred_Ensembles_of_the_Hoysalas"
+      },
+      {
+        "pageid": 727708,
+        "revid": 1185694228,
+        "title": "Shantiniketan",
+        "url": "https://en.wikipedia.org/wiki/Shantiniketan"
+      },
+      {
+        "pageid": 3816992,
+        "revid": 1172833937,
+        "title": "Dholavira",
+        "url": "https://en.wikipedia.org/wiki/Dholavira"
+      },
+      {
+        "pageid": 6950434,
+        "revid": 1180691093,
+        "title": "Ramappa Temple",
+        "url": "https://en.wikipedia.org/wiki/Ramappa_Temple"
+      },
+      {
+        "pageid": 166537,
+        "revid": 1185750201,
+        "title": "Jaipur",
+        "url": "https://en.wikipedia.org/wiki/Jaipur"
       }
     ],
     "categories": [
@@ -27209,7 +27021,7 @@
   },
   {
     "id": "0e70163df3274ee0",
-    "question": "What is the highest level of education obtained by the first child of each of the last three US presidents?",
+    "question": "What is the highest level of education, specified by degree, obtained by the first child of each of the last three US presidents?",
     "necessary_evidence": [
       {
         "pageid": 19908980,
@@ -27224,10 +27036,10 @@
         "url": "https://en.wikipedia.org/wiki/List_of_children_of_presidents_of_the_United_States"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Beau Biden",
-        "url": "https://en.wikipedia.org/wiki/Beau_Biden"
+        "pageid": 41192135,
+        "revid": 1179001301,
+        "title": "Doug McMillon",
+        "url": "https://en.wikipedia.org/wiki/Doug_McMillon"
       },
       {
         "pageid": 5679119,
@@ -27379,12 +27191,6 @@
         "url": "https://en.wikipedia.org/wiki/List_of_NFL_drafts"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Bryce Young",
-        "url": "https://en.wikipedia.org/wiki/Bryce_Young"
-      },
-      {
         "pageid": 69234290,
         "revid": 1183973207,
         "title": "Travon Walker",
@@ -27407,6 +27213,12 @@
         "revid": 1185931568,
         "title": "Kyler Murray",
         "url": "https://en.wikipedia.org/wiki/Kyler_Murray"
+      },
+      {
+        "pageid": 40430353,
+        "revid": 1184820820,
+        "title": "Baker Mayfield",
+        "url": "https://en.wikipedia.org/wiki/Baker_Mayfield"
       }
     ],
     "categories": [
@@ -27501,7 +27313,7 @@
   },
   {
     "id": "1d0b0c7b1d5ecf26",
-    "question": "What are the five longest river systems in Asia and their respective lengths in kilometers?",
+    "question": "What are the five longest rivers in Asia and their respective lengths in kilometers?",
     "necessary_evidence": [
       {
         "pageid": 922586,
@@ -27516,28 +27328,28 @@
         "url": "https://en.wikipedia.org/wiki/Yangtze"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "List of river systems by length",
-        "url": "https://en.wikipedia.org/wiki/List_of_rivers_by_length"
-      },
-      {
         "pageid": 50819,
         "revid": 1184161413,
         "title": "Yellow River",
         "url": "https://en.wikipedia.org/wiki/Yellow_River"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "List of river systems by length",
-        "url": "https://en.wikipedia.org/wiki/List_of_rivers_by_length"
+        "pageid": 69147,
+        "revid": 1185867993,
+        "title": "Mekong",
+        "url": "https://en.wikipedia.org/wiki/Mekong"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "List of river systems by length",
-        "url": "https://en.wikipedia.org/wiki/List_of_rivers_by_length"
+        "pageid": 367402,
+        "revid": 1184070957,
+        "title": "Lena (river)",
+        "url": "https://en.wikipedia.org/wiki/Lena_River"
+      },
+      {
+        "pageid": 62594,
+        "revid": 1177926599,
+        "title": "Irtysh",
+        "url": "https://en.wikipedia.org/wiki/Irtysh_River"
       }
     ],
     "categories": [
@@ -27693,10 +27505,16 @@
         "url": "https://en.wikipedia.org/wiki/Operating_system"
       },
       {
-        "pageid": 18890,
-        "revid": 1185946140,
-        "title": "Microsoft Windows",
-        "url": "https://en.wikipedia.org/wiki/Microsoft_Windows"
+        "pageid": 21347364,
+        "revid": 1182269936,
+        "title": "Unix",
+        "url": "https://en.wikipedia.org/wiki/Unix"
+      },
+      {
+        "pageid": 18932622,
+        "revid": 1185837207,
+        "title": "Berkeley Software Distribution",
+        "url": "https://en.wikipedia.org/wiki/Berkeley_Software_Distribution"
       },
       {
         "pageid": 20640,
@@ -27711,16 +27529,10 @@
         "url": "https://en.wikipedia.org/wiki/Linux"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Android (operating system)",
-        "url": "https://en.wikipedia.org/wiki/Android_(operating_system)"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "IOS",
-        "url": "https://en.wikipedia.org/wiki/IOS"
+        "pageid": 18890,
+        "revid": 1185946140,
+        "title": "Microsoft Windows",
+        "url": "https://en.wikipedia.org/wiki/Microsoft_Windows"
       }
     ],
     "categories": [
@@ -27772,10 +27584,10 @@
     "question": "What are the heights in meters of the top 5 scoring NFL players of all time?",
     "necessary_evidence": [
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "List of National Football League career scoring leaders",
-        "url": "https://en.wikipedia.org/wiki/List_of_National_Football_League_career_scoring_leaders"
+        "pageid": 8588996,
+        "revid": 1185862434,
+        "title": "List of National Basketball Association career scoring leaders",
+        "url": "https://en.wikipedia.org/wiki/List_of_National_Basketball_Association_career_scoring_leaders"
       },
       {
         "pageid": 440001,
@@ -27926,22 +27738,22 @@
         "url": "https://en.wikipedia.org/wiki/French_language"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Chinese language",
-        "url": "https://en.wikipedia.org/wiki/Chinese_language"
+        "pageid": 52153,
+        "revid": 1177613197,
+        "title": "Cree language",
+        "url": "https://en.wikipedia.org/wiki/Cree_language"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Hindustani language",
-        "url": "https://en.wikipedia.org/wiki/Hindustani_language"
+        "pageid": 676833,
+        "revid": 1185226300,
+        "title": "Inuktitut",
+        "url": "https://en.wikipedia.org/wiki/Inuktitut"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Spanish language",
-        "url": "https://en.wikipedia.org/wiki/Spanish_language"
+        "pageid": 544738,
+        "revid": 1184680373,
+        "title": "Ojibwe language",
+        "url": "https://en.wikipedia.org/wiki/Ojibwe_language"
       }
     ],
     "categories": [
@@ -28000,10 +27812,10 @@
     "question": "What is the average temperature in Fahrenheit during January for the 4 states with the highest median household incomes in the United States as of 2021?",
     "necessary_evidence": [
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "List of U.S. states and territories by income",
-        "url": "https://en.wikipedia.org/wiki/List_of_U.S._states_and_territories_by_income"
+        "pageid": 380845,
+        "revid": 1185842191,
+        "title": "List of countries by GDP (nominal)",
+        "url": "https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)"
       },
       {
         "pageid": 16768092,
@@ -28145,16 +27957,16 @@
         "url": "https://en.wikipedia.org/wiki/List_of_the_largest_trading_partners_of_the_United_States"
       },
       {
+        "pageid": 58461967,
+        "revid": 1127801490,
+        "title": "List of the largest trading partners of Japan",
+        "url": "https://en.wikipedia.org/wiki/List_of_the_largest_trading_partners_of_Japan"
+      },
+      {
         "pageid": 42710815,
         "revid": 1177423370,
         "title": "List of the largest trading partners of Germany",
         "url": "https://en.wikipedia.org/wiki/List_of_the_largest_trading_partners_of_Germany"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Economy of Belgium",
-        "url": "https://en.wikipedia.org/wiki/Economy_of_Belgium"
       }
     ],
     "categories": [
@@ -28388,7 +28200,7 @@
   },
   {
     "id": "3890476e3384a0df",
-    "question": "What were the top 5 Billboard singles of 2022 and what are the current ages of the artists who performed those songs, or years active for bands?",
+    "question": "What were the top 5 Billboard singles of 2022 and what are the current ages of the artists who performed those songs?",
     "necessary_evidence": [
       {
         "pageid": 72391173,
@@ -28397,22 +28209,16 @@
         "url": "https://en.wikipedia.org/wiki/Billboard_Year-End_Hot_100_singles_of_2022"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Glass Animals",
-        "url": "https://en.wikipedia.org/wiki/Glass_Animals"
+        "pageid": 59380507,
+        "revid": 1185809024,
+        "title": "Jack Harlow",
+        "url": "https://en.wikipedia.org/wiki/Jack_Harlow"
       },
       {
         "pageid": 35459623,
         "revid": 1185749258,
         "title": "Harry Styles",
         "url": "https://en.wikipedia.org/wiki/Harry_Styles"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "The Kid Laroi",
-        "url": "https://en.wikipedia.org/wiki/The_Kid_Laroi"
       },
       {
         "pageid": 23680998,
@@ -28510,7 +28316,7 @@
   },
   {
     "id": "762d0b015fc0fb98",
-    "question": "What are the top 5 countries with the most gold medals at the Summer Olympic Games and where is each country's capital?",
+    "question": "What are the top 5 countries with the most gold medals and where is each country's capital?",
     "necessary_evidence": [
       {
         "pageid": 27566,
@@ -28519,10 +28325,16 @@
         "url": "https://en.wikipedia.org/wiki/Summer_Olympic_Games"
       },
       {
-        "pageid": 3434750,
-        "revid": 1185914171,
-        "title": "United States",
-        "url": "https://en.wikipedia.org/wiki/United_States"
+        "pageid": 5405,
+        "revid": 1185706762,
+        "title": "China",
+        "url": "https://en.wikipedia.org/wiki/China"
+      },
+      {
+        "pageid": 5843419,
+        "revid": 1185856656,
+        "title": "France",
+        "url": "https://en.wikipedia.org/wiki/France"
       },
       {
         "pageid": 26779,
@@ -28537,16 +28349,10 @@
         "url": "https://en.wikipedia.org/wiki/United_Kingdom"
       },
       {
-        "pageid": 5405,
-        "revid": 1185706762,
-        "title": "China",
-        "url": "https://en.wikipedia.org/wiki/China"
-      },
-      {
-        "pageid": 5843419,
-        "revid": 1185856656,
-        "title": "France",
-        "url": "https://en.wikipedia.org/wiki/France"
+        "pageid": 3434750,
+        "revid": 1185914171,
+        "title": "United States",
+        "url": "https://en.wikipedia.org/wiki/United_States"
       }
     ],
     "categories": [
@@ -28781,7 +28587,7 @@
   },
   {
     "id": "3acfa1879ed91a4f",
-    "question": "How many of the distinct players among the last ten National Basketball Association Most Valuable Player Award winners have won a championship within the last decade?",
+    "question": "How many of the last ten National Basketball Association Most Valuable Players have won a championship within the last decade?",
     "necessary_evidence": [
       {
         "pageid": 631870,
@@ -29475,7 +29281,7 @@
   },
   {
     "id": "dee344ccddfbd4bb",
-    "question": "What year was each publisher in the top 50 best-selling Nintendo Switch games list with a Wikipedia page founded?",
+    "question": "What year was each North American publisher in the top 50 best-selling Nintendo Switch games list with a Wikipedia page founded?",
     "necessary_evidence": [
       {
         "pageid": 53899626,
@@ -29502,52 +29308,16 @@
         "url": "https://en.wikipedia.org/wiki/Capcom"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Xbox Game Studios",
-        "url": "https://en.wikipedia.org/wiki/Xbox_Game_Studios"
-      },
-      {
         "pageid": 30657528,
         "revid": 1183453052,
         "title": "Mojang Studios",
         "url": "https://en.wikipedia.org/wiki/Mojang"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Koei Tecmo",
-        "url": "https://en.wikipedia.org/wiki/Koei_Tecmo"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Konami",
-        "url": "https://en.wikipedia.org/wiki/Konami"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Innersloth",
-        "url": "https://en.wikipedia.org/wiki/Innersloth"
-      },
-      {
         "pageid": 8880989,
         "revid": 1181168990,
         "title": "Bandai Namco Entertainment",
         "url": "https://en.wikipedia.org/wiki/Bandai_Namco_Entertainment"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Square Enix",
-        "url": "https://en.wikipedia.org/wiki/Square_Enix"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Ubisoft",
-        "url": "https://en.wikipedia.org/wiki/Ubisoft"
       }
     ],
     "categories": [
@@ -29971,22 +29741,22 @@
         "url": "https://en.wikipedia.org/wiki/Geography_of_Germany"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "United Kingdom",
-        "url": "https://en.wikipedia.org/wiki/United_Kingdom"
+        "pageid": 31724,
+        "revid": 1179644102,
+        "title": "Geography of the United Kingdom",
+        "url": "https://en.wikipedia.org/wiki/Geography_of_the_United_Kingdom"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "France",
-        "url": "https://en.wikipedia.org/wiki/France"
+        "pageid": 67472,
+        "revid": 1183118640,
+        "title": "Geography of France",
+        "url": "https://en.wikipedia.org/wiki/Geography_of_France"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Italy",
-        "url": "https://en.wikipedia.org/wiki/Italy"
+        "pageid": 14699,
+        "revid": 1183832744,
+        "title": "Geography of Italy",
+        "url": "https://en.wikipedia.org/wiki/Geography_of_Italy"
       },
       {
         "pageid": 25702,
@@ -30300,16 +30070,16 @@
         "url": "https://en.wikipedia.org/wiki/Demographics_of_China"
       },
       {
-        "pageid": 11929,
-        "revid": 1185342027,
-        "title": "Demographics of Germany",
-        "url": "https://en.wikipedia.org/wiki/Demographics_of_Germany"
-      },
-      {
         "pageid": 67475,
         "revid": 1182163140,
         "title": "Demographics of France",
         "url": "https://en.wikipedia.org/wiki/Demographics_of_France"
+      },
+      {
+        "pageid": 11929,
+        "revid": 1185342027,
+        "title": "Demographics of Germany",
+        "url": "https://en.wikipedia.org/wiki/Demographics_of_Germany"
       },
       {
         "pageid": 27391,
@@ -30357,6 +30127,12 @@
         "revid": 1178984449,
         "title": "Annie Ernaux",
         "url": "https://en.wikipedia.org/wiki/Annie_Ernaux"
+      },
+      {
+        "pageid": 782556,
+        "revid": 1184689103,
+        "title": "Jon Fosse",
+        "url": "https://en.wikipedia.org/wiki/Jon_Fosse"
       }
     ],
     "categories": [
@@ -30575,28 +30351,28 @@
         "url": "https://en.wikipedia.org/wiki/South_Sudan"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Serbia",
-        "url": "https://en.wikipedia.org/wiki/Serbia"
+        "pageid": 17238590,
+        "revid": 1185941394,
+        "title": "Eritrea",
+        "url": "https://en.wikipedia.org/wiki/Eritrea"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Montenegro",
-        "url": "https://en.wikipedia.org/wiki/Montenegro"
+        "pageid": 21292,
+        "revid": 1185065529,
+        "title": "Namibia",
+        "url": "https://en.wikipedia.org/wiki/Namibia"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "East Timor",
-        "url": "https://en.wikipedia.org/wiki/East_Timor"
+        "pageid": 34399,
+        "revid": 1185774779,
+        "title": "Zimbabwe",
+        "url": "https://en.wikipedia.org/wiki/Zimbabwe"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Palau",
-        "url": "https://en.wikipedia.org/wiki/Palau"
+        "pageid": 17207794,
+        "revid": 1185927494,
+        "title": "Djibouti",
+        "url": "https://en.wikipedia.org/wiki/Djibouti"
       }
     ],
     "categories": [
@@ -30639,10 +30415,10 @@
         "url": "https://en.wikipedia.org/wiki/Dalano_Banton"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Jay Scrubb",
-        "url": "https://en.wikipedia.org/wiki/Jay_Scrubb"
+        "pageid": 57805864,
+        "revid": 1182243052,
+        "title": "Oshae Brissett",
+        "url": "https://en.wikipedia.org/wiki/Oshae_Brissett"
       }
     ],
     "categories": [
@@ -31212,7 +30988,7 @@
   },
   {
     "id": "ae45fbc5ee91f944",
-    "question": "What are the GDPs of the five smallest countries in Africa?",
+    "question": "What are the GDPs (in billion USD) of the five smallest countries in Africa?",
     "necessary_evidence": [
       {
         "pageid": 50165241,
@@ -31661,10 +31437,10 @@
         "url": "https://en.wikipedia.org/wiki/List_of_most_expensive_paintings"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Salvator Mundi (Leonardo)",
-        "url": "https://en.wikipedia.org/wiki/Salvator_Mundi_(Leonardo)"
+        "pageid": 2002913,
+        "revid": 1153446163,
+        "title": "Salvator Mundi",
+        "url": "https://en.wikipedia.org/wiki/Salvator_Mundi"
       },
       {
         "pageid": 49545338,
@@ -31914,10 +31690,10 @@
         "url": "https://en.wikipedia.org/wiki/List_of_best-selling_music_artists"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "George Harrison",
-        "url": "https://en.wikipedia.org/wiki/George_Harrison"
+        "pageid": 29812,
+        "revid": 1185888175,
+        "title": "The Beatles",
+        "url": "https://en.wikipedia.org/wiki/The_Beatles"
       },
       {
         "pageid": 9288,
@@ -31938,10 +31714,10 @@
         "url": "https://en.wikipedia.org/wiki/Elton_John"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "John Deacon",
-        "url": "https://en.wikipedia.org/wiki/John_Deacon"
+        "pageid": 42010,
+        "revid": 1185439506,
+        "title": "Queen (band)",
+        "url": "https://en.wikipedia.org/wiki/Queen_(band)"
       }
     ],
     "categories": [
@@ -31991,7 +31767,7 @@
   },
   {
     "id": "2afe65dc14985d4c",
-    "question": "Who are the presidents of the 5 most populous countries in the world?",
+    "question": "Who are the presidents of the two most populous countries in the world?",
     "necessary_evidence": [
       {
         "pageid": 69058,
@@ -32184,16 +31960,16 @@
         "url": "https://en.wikipedia.org/wiki/Thomas_Mills_High_School"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Ariana Grande",
-        "url": "https://en.wikipedia.org/wiki/Ariana_Grande"
+        "pageid": 35119251,
+        "revid": 1185728841,
+        "title": "Arijit Singh",
+        "url": "https://en.wikipedia.org/wiki/Arijit_Singh"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "North Broward Preparatory School",
-        "url": "https://en.wikipedia.org/wiki/North_Broward_Preparatory_School"
+        "pageid": 34663326,
+        "revid": 1136036263,
+        "title": "Sripat Singh College",
+        "url": "https://en.wikipedia.org/wiki/Sripat_Singh_College"
       }
     ],
     "categories": [
@@ -32643,12 +32419,6 @@
         "url": "https://en.wikipedia.org/wiki/The_Legend_of_Zelda:_Tears_of_the_Kingdom"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Six Ages 2: Lights Going Out",
-        "url": "https://en.wikipedia.org/wiki/Six_Ages_2:_Lights_Going_Out"
-      },
-      {
         "pageid": 60979422,
         "revid": 1185852081,
         "title": "Baldur's Gate 3",
@@ -32665,6 +32435,12 @@
         "revid": 1184223911,
         "title": "Metroid Prime",
         "url": "https://en.wikipedia.org/wiki/Metroid_Prime#Metroid_Prime_Remastered"
+      },
+      {
+        "pageid": 70944656,
+        "revid": 1185795420,
+        "title": "Resident Evil 4 (2023 video game)",
+        "url": "https://en.wikipedia.org/wiki/Resident_Evil_4_(2023_video_game)"
       }
     ],
     "categories": [
@@ -32803,10 +32579,10 @@
         "url": "https://en.wikipedia.org/wiki/East_Coast_of_the_United_States"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "East Coast of the United States",
-        "url": "https://en.wikipedia.org/wiki/East_Coast_of_the_United_States"
+        "pageid": 645042,
+        "revid": 1185803123,
+        "title": "New York City",
+        "url": "https://en.wikipedia.org/wiki/New_York_City"
       },
       {
         "pageid": 50585,
@@ -32821,10 +32597,10 @@
         "url": "https://en.wikipedia.org/wiki/Jacksonville,_Florida"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "East Coast of the United States",
-        "url": "https://en.wikipedia.org/wiki/East_Coast_of_the_United_States"
+        "pageid": 57447,
+        "revid": 1185401183,
+        "title": "Charlotte, North Carolina",
+        "url": "https://en.wikipedia.org/wiki/Charlotte,_North_Carolina"
       },
       {
         "pageid": 108956,
@@ -33215,7 +32991,7 @@
   },
   {
     "id": "b4e77fbcd0b8fcab",
-    "question": "What are the names of the astronauts that are part of the Artemis 2 crew to travel to the Moon, and how much time have they spent in space in days, hours, and minutes?",
+    "question": "What are the names of the astronauts that are part of the Artemis 2 crew to land on the moon, and how much time have they spent in space in days, hours, and minutes?",
     "necessary_evidence": [
       {
         "pageid": 60758751,
@@ -33255,7 +33031,7 @@
   },
   {
     "id": "75af6f16200263c3",
-    "question": "What is the 2023 estimated PPP per capita GDP of countries or organizations that designated Hamas as a terrorist group, where applicable?",
+    "question": "What is the 2023 estimated PPP per capita GDP of countries that designated HAMAS as a terrorist group?",
     "necessary_evidence": [
       {
         "pageid": 13913,
@@ -33292,18 +33068,6 @@
         "revid": 1185720931,
         "title": "Japan",
         "url": "https://en.wikipedia.org/wiki/Japan"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "List of countries by GDP (PPP) per capita",
-        "url": "https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(PPP)_per_capita"
-      },
-      {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Organization of American States",
-        "url": "https://en.wikipedia.org/wiki/Organization_of_American_States"
       },
       {
         "pageid": 23420,
@@ -34046,7 +33810,7 @@
   },
   {
     "id": "6190f0998886e14d",
-    "question": "What are the primary occupations of the Wikipedia-linked presenters of The Game Awards 2022? Keep occupations gender-neutral (ex: Actor/Actress should just be 'Actor')",
+    "question": "What are the primary occupations of the Presenters of The Game Awards 2022? Keep occupations gender-neutral (ex: Actor/Actress should just be 'Actor')",
     "necessary_evidence": [
       {
         "pageid": 71207437,
@@ -34514,10 +34278,10 @@
     "question": "Which cities do the top 5 NBA teams with the most championships come from?",
     "necessary_evidence": [
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "List of NBA champions",
-        "url": "https://en.wikipedia.org/wiki/List_of_NBA_champions"
+        "pageid": 70868861,
+        "revid": 1184291763,
+        "title": "2023 NBA Finals",
+        "url": "https://en.wikipedia.org/wiki/2023_NBA_Finals"
       },
       {
         "pageid": 72893,
@@ -34802,10 +34566,10 @@
         "url": "https://en.wikipedia.org/wiki/List_of_Spotify_streaming_records"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Blinding Lights",
-        "url": "https://en.wikipedia.org/wiki/Blinding_Lights"
+        "pageid": 27815578,
+        "revid": 1185868378,
+        "title": "Minecraft",
+        "url": "https://en.wikipedia.org/wiki/Minecraft"
       },
       {
         "pageid": 52788441,
@@ -35520,13 +35284,13 @@
   },
   {
     "id": "70b7334c2e55ec58",
-    "question": "What are the capital cities of the five countries with the largest economies by nominal GDP?",
+    "question": "What are the capital cities of the countries with the largest economies?",
     "necessary_evidence": [
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "List of countries by GDP (nominal)",
-        "url": "https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)"
+        "pageid": 19908980,
+        "revid": 1185795171,
+        "title": "List of presidents of the United States",
+        "url": "https://en.wikipedia.org/wiki/List_of_presidents_of_the_United_States"
       },
       {
         "pageid": 108956,
@@ -35541,16 +35305,16 @@
         "url": "https://en.wikipedia.org/wiki/Beijing"
       },
       {
-        "pageid": 3354,
-        "revid": 1185815581,
-        "title": "Berlin",
-        "url": "https://en.wikipedia.org/wiki/Berlin"
-      },
-      {
         "pageid": 30057,
         "revid": 1185512854,
         "title": "Tokyo",
         "url": "https://en.wikipedia.org/wiki/Tokyo"
+      },
+      {
+        "pageid": 3354,
+        "revid": 1185815581,
+        "title": "Berlin",
+        "url": "https://en.wikipedia.org/wiki/Berlin"
       },
       {
         "pageid": 51585,
@@ -35994,10 +35758,10 @@
         "url": "https://en.wikipedia.org/wiki/KGF:_Chapter_2"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Pathaan (film)",
-        "url": "https://en.wikipedia.org/wiki/Pathaan_(film)"
+        "pageid": 70937790,
+        "revid": 1185852719,
+        "title": "Jawan (film)",
+        "url": "https://en.wikipedia.org/wiki/Jawan_(film)"
       }
     ],
     "categories": [
@@ -36040,10 +35804,10 @@
         "url": "https://en.wikipedia.org/wiki/Agatha_Christie"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Miguel de Cervantes",
-        "url": "https://en.wikipedia.org/wiki/Miguel_de_Cervantes"
+        "pageid": 295094,
+        "revid": 1176581520,
+        "title": "Cao Xueqin",
+        "url": "https://en.wikipedia.org/wiki/Cao_Xueqin"
       }
     ],
     "categories": [
@@ -36488,10 +36252,10 @@
         "url": "https://en.wikipedia.org/wiki/Denmark"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Sweden",
-        "url": "https://en.wikipedia.org/wiki/Sweden"
+        "pageid": 27318,
+        "revid": 1185356760,
+        "title": "Singapore",
+        "url": "https://en.wikipedia.org/wiki/Singapore"
       },
       {
         "pageid": 25734,
@@ -36585,10 +36349,10 @@
         "url": "https://en.wikipedia.org/wiki/KFC"
       },
       {
-        "pageid": "###TBD###",
-        "revid": "###TBD###",
-        "title": "Burger King",
-        "url": "https://en.wikipedia.org/wiki/Burger_King"
+        "pageid": 73859679,
+        "revid": 1185098949,
+        "title": "Mixue Ice Cream & Tea",
+        "url": "https://en.wikipedia.org/wiki/Mixue_Ice_Cream_%26_Tea"
       }
     ],
     "categories": [

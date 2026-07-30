@@ -16,6 +16,11 @@ generate completions to submit to us for evaluation.
 To view the leaderboards and more documentation about how to use this dataset, check out our website
 at <https://fanoutqa.com>!
 
+> [!NOTE]
+> As of July 2026, we have released an updated dev and test set with some answer corrections based on the
+> bundled local Wikipedia (September 2023). Please update to `fanoutqa>=1.3.0` or re-download the data files from our
+> server to ensure up-to-date evaluation.
+
 ## Requirements and Installation
 
 The `fanoutqa` package requires Python 3.8+.
@@ -102,6 +107,15 @@ class TestQuestion:
 
 ## Wikipedia Retrieval
 
+> [!NOTE]
+> Starting April 2026, Wikipedia has added ratelimits to prevent high-throughput scraping of the Wikipedia API. This
+> means that you may encounter frequent ratelimits attempting to benchmark a system on FanOutQA in parallel.
+> 
+> Instead, we recommend hosting your own mirror of Wikipedia to make requests to, using the ZIM HTML archives and Kiwix.
+> See below for basic setup instructions.
+
+### Python API
+
 To retrieve the contents of Wikipedia pages used as evidence, this package queries Wikipedia's Revisions API. There
 are two main functions to interface with Wikipedia:
 
@@ -110,12 +124,42 @@ are two main functions to interface with Wikipedia:
 
 To save on time waiting for requests and computation power (both locally and on Wikipedia's end), this package
 aggressively caches retrieved Wikipedia pages. By default, this cache is located in `~/.cache/fanoutqa/wikicache`.
-We provide many cached pages (~9GB) you can prepopulate this cache with, by using the following commands:
+
+### Self-hosting Wikipedia
+
+**Download ZIM archives**
+
+Download the epoch-dated ZIM archives for FanOutQA.
 
 ```shell
-mkdir -p ~/.cache/fanoutqa
-wget -O ~/.cache/fanoutqa/wikicache.tar.gz https://datasets.mechanus.zhu.codes/fanoutqa/wikicache.tar.gz 
-tar -xzf ~/.cache/fanoutqa/wikicache.tar.gz
+wget https://datasets.mechanus.zhu.codes/fanoutqa/wikipedia_en_all_nopic_2023-09.zim
+```
+
+**Download kiwix tools**
+
+Use the right binary for your system from https://download.kiwix.org/release/kiwix-tools/
+
+e.g.
+```shell
+wget https://download.kiwix.org/release/kiwix-tools/kiwix-tools_linux-x86_64-3.8.2.tar.gz
+tar -xzf 'kiwix-tools_linux-x86_64-3.8.2.tar.gz'
+mv kiwix-tools_linux-x86_64-3.8.2 kiwix-tools
+rm kiwix-tools_linux-x86_64-3.8.2.tar.gz
+```
+
+**Run ZIM viewer**
+
+```shell
+# for fanoutqa
+kiwix-tools/kiwix-serve --port 8888 wikipedia_en_all_nopic_2023-09.zim
+```
+
+**Point fanoutqa to local ZIM viewer**
+
+```shell
+export FANOUTQA_WIKIPEDIA_TYPE=kiwix
+export FANOUTQA_KIWIX_BASE=http://127.0.0.1:8888
+export FANOUTQA_KIWIX_ZIMNAME=wikipedia_en_all_nopic_2023-09
 ```
 
 ## Evaluation
