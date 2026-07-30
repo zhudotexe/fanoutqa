@@ -1,0 +1,41 @@
+{
+  "_submission_hash": "ab821ceb293564a8ec87c38de30338536e8f0bbecca58d925b07b0f6c038faaf",
+  "_results_hash": "910220b764da7136a0467ca2c9e42135224ffa900b1d6a85bc12fba270d7bed5",
+  "metadata": {
+    "name": "Naive RAG(deepseek-v3)",
+    "authors": "Yunfan Gao, Yun Xiong, Xinyu Gao, Kangxiang Jia, Jinliu Pan, Yuxi Bi, Yi Dai, Jiawei Sun, Meng Wang, Haofen Wang",
+    "url": null,
+    "citation": "Gao et al., 2023",
+    "type": "OTHER",
+    "context": 128000,
+    "is_trained_for_function_calling": false,
+    "details": "deepseek-v3"
+  },
+  "closedbook": null,
+  "openbook": {
+    "acc": {
+      "loose": 0.20645879321054186,
+      "strict": 0.04005524861878453
+    },
+    "rouge": {
+      "rouge1": {
+        "precision": 0.2861697437346116,
+        "recall": 0.31322507030007674,
+        "fscore": 0.26939583760919217
+      },
+      "rouge2": {
+        "precision": 0.1600623619177905,
+        "recall": 0.1671991866981499,
+        "fscore": 0.14652605200589033
+      },
+      "rougeL": {
+        "precision": 0.25260506454911336,
+        "recall": 0.2753772734359518,
+        "fscore": 0.23637888383116815
+      }
+    },
+    "bleurt": 0.37448525963896545,
+    "gpt": 0.11740331491712708
+  },
+  "evidenceprovided": null
+}

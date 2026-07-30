@@ -1,0 +1,13 @@
+{
+  "name": "HTKG-RAG(deepseek-v3)",
+  "authors": "Yiwei Jiang, Chao Zhang",
+  "url": null,
+  "citation": "Jiang et al., 2024",
+  "type": "OTHER",
+  "context": 128000,
+  "is_trained_for_function_calling": false,
+  "details": "deepseek-v3",
+  "closedbook_generations": null,
+  "openbook_generations": "results-htkg-deepseek-v3.jsonl",
+  "evidenceprovided_generations": null
+}
