@@ -23,7 +23,18 @@ FANOUTQA_KIWIX_BASE = os.getenv("FANOUTQA_KIWIX_BASE")
 FANOUTQA_KIWIX_ZIMNAME = os.getenv("FANOUTQA_KIWIX_ZIMNAME")
 
 log = logging.getLogger(__name__)
-_site = pywikibot.Site("en", "wikipedia")
+
+
+@functools.cache
+def _get_site():
+    """Lazily construct the pywikibot Site.
+
+    ``pywikibot.Site(...)`` makes a live network request to en.wikipedia.org when
+    constructed, so building it at import time breaks offline/air-gapped use (e.g.
+    ``FANOUTQA_WIKIPEDIA_TYPE=kiwix``) and any environment that merely
+    ``import fanoutqa``. Defer construction until a live code path actually needs it.
+    """
+    return pywikibot.Site("en", "wikipedia")
 
 
 # ==== impl ====
@@ -44,7 +55,7 @@ class LazyEvidence(Evidence):
 
     @functools.cached_property
     def revid(self):
-        req = _site.simple_request(
+        req = _get_site().simple_request(
             action="query",
             prop="revisions",
             rvprop="ids|timestamp",
@@ -64,7 +75,7 @@ def _wiki_search_live(query: str, results=10) -> list[Evidence]:
     """Return a list of Evidence documents given the search query."""
     # get the list of articles that match the query
     # and return a LazyEvidence for each
-    return [LazyEvidence(title=page.title(), pageid=page.pageid) for page in _site.search(query, total=results)]
+    return [LazyEvidence(title=page.title(), pageid=page.pageid) for page in _get_site().search(query, total=results)]
 
 
 def _wiki_content_live(doc: Evidence):
@@ -77,7 +88,7 @@ def _wiki_content_live(doc: Evidence):
             pass
 
     # otherwise retrieve it from Wikipedia
-    req = _site.simple_request(action="parse", oldid=doc.revid, prop="text")
+    req = _get_site().simple_request(action="parse", oldid=doc.revid, prop="text")
     data = req.submit()
     try:
         html = data["parse"]["text"]["*"]
@@ -92,7 +103,7 @@ def _wiki_content_live(doc: Evidence):
 
 
 def _wiki_search_kiwix(query: str, results: int = 10) -> list[Evidence]:
-    params = urllib.urlencode(
+    params = urllib.parse.urlencode(
         {"pattern": query, "start": 0, "pageLength": results, "books.name": FANOUTQA_KIWIX_ZIMNAME}
     )
     resp = httpx.get(f"{FANOUTQA_KIWIX_BASE}/search?{params}")
